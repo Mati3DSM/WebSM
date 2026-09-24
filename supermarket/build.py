@@ -4,36 +4,35 @@ import html
 import pathlib
 
 OUT = pathlib.Path(__file__).parent
-CDN = "https://cdn.prod.website-files.com/66730869bdf27a5a83765455/"
-REEL_MP4 = ("https://cdn.prod.website-files.com/66730869bdf27a5a83765455%2F"
-            "66ccb3fab9b13427bc559e96_Web%20Reel%20Sin%20Logo%20Al%20Final-transcode.mp4")
+CDN = "assets/"
+REEL_MP4 = ("assets/videos/Web-Reel-Sin-Logo-Al-Final-transcode.mp4")
 
 IMG = {
-    "board":    CDN + "66d1d1e183b44a53856747b8_65a7cdaf61dd0965e6c71514_Mesa%20de%20trabajo%2068.png",
-    "abstract": CDN + "6673086abdf27a5a83765536_abstract.png",
-    "gif_hero": CDN + "689a4f18f77e50061b6e9778_Comp_1_1.gif",
-    "gif_brand": CDN + "689378ecf3046648477eaaca_Comp%20(1).gif",
-    "gif_film": CDN + "68937c266963a5439fc81f73_Comp%2B2.gif",
-    "gif_strat": CDN + "68937d6105777952dee55ca6_Comp%2B4.gif",
-    "gif_ux":   CDN + "6894ca1a85f93d0aee4cc932_Comp%2B3.gif",
-    "ab1": CDN + "6673086abdf27a5a8376551c_hamza-shaikh-uXtvnZl_FWM-unsplash.webp",
-    "ab2": CDN + "6673086abdf27a5a8376551d_louise-viallesoubranne-5EhN4wbfvBc-unsplash.webp",
-    "ab3": CDN + "6673086abdf27a5a83765531_kobu-agency-MBtcLadqc6c-unsplash.webp",
-    "ab4": CDN + "6673086abdf27a5a83765518_philipp-mandler-CiNHG2xuVlQ-unsplash.webp",
-    "ab5": CDN + "6673086abdf27a5a83765519_annie-spratt-hCb3lIB8L8E-unsplash.webp",
-    "of2": CDN + "66d1ff9214af8e80f180c4eb_oficina02.jpg",
-    "of3": CDN + "66d1fecd8d1a247453342a89_oficina03.jpg",
-    "of1": CDN + "66d1fecc7c2e698c39ffccbd_oficina01_V2.png",
-    "ai":  CDN + "68408dd3a95e332b1bd3e712_SM%20About%20Us_V2.jpg",
-    "contact": CDN + "6673086abdf27a5a83765535_6443e29428b76c2c75ba68c3_635fc1d77b758d09fde119e9_006.webp",
+    "board":    CDN + "images/logo.png",
+    "abstract": CDN + "images/abstract.png",
+    "gif_hero": CDN + "images/offer.gif",
+    "gif_brand": CDN + "images/label.gif",
+    "gif_film": CDN + "images/film.gif",
+    "gif_strat": CDN + "images/like.gif",
+    "gif_ux":   CDN + "images/mobile.gif",
+    "ab1": CDN + "images/hamza-shaikh-uXtvnZl_FWM-unsplash.webp",
+    "ab2": CDN + "images/louise-viallesoubranne-5EhN4wbfvBc-unsplash.webp",
+    "ab3": CDN + "images/kobu-agency-MBtcLadqc6c-unsplash.webp",
+    "ab4": CDN + "images/philipp-mandler-CiNHG2xuVlQ-unsplash.webp",
+    "ab5": CDN + "images/annie-spratt-hCb3lIB8L8E-unsplash.webp",
+    "of2": CDN + "images/oficina02.jpg",
+    "of3": CDN + "images/oficina03.jpg",
+    "of1": CDN + "images/oficina01_V2.png",
+    "ai":  CDN + "images/SM-About-Us_V2.jpg",
+    "contact": CDN + "images/phone_006.webp",
 }
 TEAM = [
-    ("Martín Marinovic", "Founder", CDN + "668881ab93250e3d7655eb7b_martin.jpeg"),
-    ("Andrés Schmisser", "Founder", CDN + "668881d590384a51e7e5c0ad_andres.jpeg"),
-    ("Ignacio Acosta", "Global Business Development", CDN + "668881e20dff414077429c9f_Nacho_2.jpg"),
-    ("Catalina Mulhall", "Creative Director", CDN + "6688830b8879e12b63950642_catalina.jpeg"),
-    ("George Marinovic", "Finance &amp; HR GM", CDN + "6688831cf9edc70638174f13_george.jpeg"),
-    ("Hernán Marinovic", "Accounts GM", CDN + "668883330f5902791d386ece_hernan.jpeg"),
+    ("Martín Marinovic", "Founder", CDN + "images/martin.jpeg"),
+    ("Andrés Schmisser", "Founder", CDN + "images/andres.jpeg"),
+    ("Ignacio Acosta", "Global Business Development", CDN + "images/Nacho_2.jpg"),
+    ("Catalina Mulhall", "Creative Director", CDN + "images/catalina.jpeg"),
+    ("George Marinovic", "Finance &amp; HR GM", CDN + "images/george.jpeg"),
+    ("Hernán Marinovic", "Accounts GM", CDN + "images/hernan.jpeg"),
 ]
 
 WORKS = [
@@ -45,23 +44,23 @@ WORKS = [
     ("Swift Categorías", "swift-categorias"), ("Tienda La Virginia", "tienda-la-virginia"),
     ("Método UCEMA", "metodo-ucema"), ("P!CKERS by McCain", "p-ckers-by-mccain"),
     ("Aero Assist Handling", "aero-assist-handling"),
-    ("Brand Character — Rob", "brand-character---rob"),
+    ("Brand Character — Rob", "brand-character-rob"),
     ("Revlon Love is On", "revlon-love-is-on"), ("Revlon Naté", "revlon-nate"),
     ("Barça Games", "barca-games"), ("Revlon Colorburst", "revlon-butter"),
     ("Revlon", "revlon"), ("Coca Cola", "coca-cola"), ("Izzi", "izzi"),
     ("Tigo Rebranding", "tigo-rebranding"), ("Sodastream", "sodastream"),
-    ("Nubceo", "nubceo"), ("Tigo Money", "beooty-78367"), ("Prester", "prester"),
-    ("Facebank", "facebank"), ("UCEMA", "timetracking-2c951"), ("PEISA", "peisa"),
+    ("Nubceo", "nubceo"), ("Tigo Money", "tigo-money"), ("Prester", "prester"),
+    ("Facebank", "facebank"), ("UCEMA", "ucema"), ("PEISA", "peisa"),
     ("Vireyes", "vireyes"), ("Lati", "lati"), ("Chocolates Arcor", "chocolates-arcor"),
     ("Serenito", "serenito"), ("Oky", "oky"), ("Felaban", "felaban"),
-    ("Stanley", "stanley"), ("Eron", "eron"), ("Glenhaven", "glanhaven"),
+    ("Stanley", "stanley"), ("Eron", "eron"), ("Glenhaven", "glenhaven"),
     ("Delicia", "delicia"), ("GoGym", "gogym"), ("Arcor Frutas", "arcor-frutas"),
     ("Tigoooool", "tigoooool"), ("Clave", "clave"), ("Miller", "miller"),
     ("Rob Ortiz", "rob-ortiz"), ("Deconté", "deconte"),
     ("Club de la Cerveza", "club-de-la-cerveza"), ("Swift Grasa", "swift-grasa"),
     ("Natural One", "natural-one"), ("Levite Limonada", "levite-limonada"),
     ("Hogareñas", "hogarenas"), ("Mr Pops", "mr-pops"),
-    ("Natural Break — Arcor", "natural-break--arcor"), ("Prestix", "prestix"),
+    ("Natural Break — Arcor", "natural-break-arcor"), ("Prestix", "prestix"),
     ("Quilmes Pumas", "quilmes-pumas"), ("Arcor Patria", "arcor-patria"),
     ("Cutex", "cutex"), ("Wing", "wing"), ("Cutex Pro", "cutex-pro"),
     ("Vital Polvo", "vital-polvo"), ("Alicante", "alicante"),
@@ -75,7 +74,6 @@ NAV = [("Home", "index.html"), ("Services", "services.html"), ("Works", "works.h
        ("About", "about.html"), ("Reels", "reel.html"), ("Contact", "contact.html")]
 
 WORK_BASE = "work/"          # local project pages
-LIVE_BASE = "https://www.wearesupermarket.com/works/"
 
 
 def header(current, pre=""):
@@ -157,7 +155,6 @@ def page(title, current, body, description="", pre=""):
 """
 
 
-CDN2 = "https://cdn.prod.website-files.com/6673086abdf27a5a837654c3/"
 
 PROJECTS = {
     "barca-games-social-media": {
@@ -173,21 +170,21 @@ PROJECTS = {
             "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
             "and Carnival — each with its own graphic identity and tone, driving visibility, "
             "downloads, and fan engagement through festive, high-impact content."),
-        "hero": CDN2 + "6849a3083190def1433ecdbc_IMG%20DAMERO.jpg",
+        "hero": CDN + "barca-games-social-hero.jpg",
         "media": [
-            ("full",  CDN2 + "68499577cfa233b97c3b2d16_CasoBG_Redes_artboard%201.jpg"),
+            ("full",  CDN + "68499577cfa233b97c3b2d16_CasoBG_Redes_artboard%201.jpg"),
             ("quote", "One app, three seasons, three graphic identities."),
-            ("pair",  [(CDN2 + "6849a31a2d57027c3a8b1c1d_PORTADA%2BCHRISTMAS%20(1).gif", "Christmas"),
-                       CDN2 + "68499576013472df82753e35_CasoBG_Redes_Artboard%203.jpg"]),
-            ("pair",  [CDN2 + "6849957681efda02019d9549_CasoBG_Redes-04.jpg",
-                       CDN2 + "68499576b552d4bfdce90495_CasoBG_Redes-05.jpg"]),
-            ("bleed", (CDN2 + "6849a338abd145fe33f2bf8d_PORTADA%2BKINGS%20(1).gif", "King's Day")),
-            ("pair",  [CDN2 + "684995787d3f19255638a61d_CasoBG_Redes-06.jpg",
-                       CDN2 + "6849a3450090ded6eac28e07_POSTEOS%20(1).gif"]),
-            ("full",  CDN2 + "68499576f1871ab022e8ebcf_CasoBG_Redes-08.jpg"),
-            ("bleed", (CDN2 + "6849a3566ddb2e1ba7f23aa2_PORTADA_CARNAVAL%20(1).gif", "Carnival")),
-            ("pair",  [CDN2 + "6849957534494e873acaae6a_CasoBG_Redes-11.jpg",
-                       CDN2 + "68499583bd077a2628895460_SALTO.gif"]),
+            ("pair",  [(CDN + "6849a31a2d57027c3a8b1c1d_PORTADA%2BCHRISTMAS%20(1).gif", "Christmas"),
+                       CDN + "68499576013472df82753e35_CasoBG_Redes_Artboard%203.jpg"]),
+            ("pair",  [CDN + "6849957681efda02019d9549_CasoBG_Redes-04.jpg",
+                       CDN + "68499576b552d4bfdce90495_CasoBG_Redes-05.jpg"]),
+            ("bleed", (CDN + "6849a338abd145fe33f2bf8d_PORTADA%2BKINGS%20(1).gif", "King's Day")),
+            ("pair",  [CDN + "684995787d3f19255638a61d_CasoBG_Redes-06.jpg",
+                       CDN + "6849a3450090ded6eac28e07_POSTEOS%20(1).gif"]),
+            ("full",  CDN + "68499576f1871ab022e8ebcf_CasoBG_Redes-08.jpg"),
+            ("bleed", (CDN + "6849a3566ddb2e1ba7f23aa2_PORTADA_CARNAVAL%20(1).gif", "Carnival")),
+            ("pair",  [CDN + "6849957534494e873acaae6a_CasoBG_Redes-11.jpg",
+                       CDN + "68499583bd077a2628895460_SALTO.gif"]),
         ],
         "credits": [("Creative direction", "Supermarket"),
                     ("Art direction &amp; design", "Supermarket"),
@@ -200,8 +197,9 @@ featured = WORKS[1], WORKS[0], WORKS[2], WORKS[3], WORKS[4]
 cards = []
 for i, (name, slug) in enumerate(featured):
     wide = ' card--wide' if i == 0 else ''
+    thumb = PROJECTS.get(slug, {}).get("thumb") or POOL[i % len(POOL)]
     cards.append(f"""      <a class="card{wide}" href="{WORK_BASE}{slug}.html">
-        <div class="card__figure"><img src="{POOL[i % len(POOL)]}" alt="" loading="lazy"></div>
+        <div class="card__figure"><img src="{thumb}" alt="" loading="lazy"></div>
         <h3 class="card__name">{name}</h3>
         <p class="meta">View project</p>
       </a>""")
@@ -505,23 +503,31 @@ def _split(item):
     return item, ""
 
 
-def _fig(item, cls="shot"):
+def _path(url, pre=""):
+    """Prefixes local asset paths so they resolve from work/<slug>.html."""
+    if url.startswith(("http://", "https://", "//", "/", "data:", "#")):
+        return url
+    return pre + url
+
+
+def _fig(item, cls="shot", pre=""):
     url, cap = _split(item)
+    url = _path(url, pre)
     figcap = f'<figcaption class="shot__cap">{cap}</figcaption>' if cap else ""
     return (f'<figure class="{cls}"><img src="{url}" alt="" loading="lazy">'
             f'{figcap}</figure>')
 
 
-def module_html(kind, payload):
+def module_html(kind, payload, pre=""):
     if kind == "bleed":
-        return f'  {_fig(payload, "shot shot--bleed")}'
+        return f'  {_fig(payload, "shot shot--bleed", pre)}'
     if kind == "full":
-        return f'  <div class="wrap">{_fig(payload)}</div>'
+        return f'  <div class="wrap">{_fig(payload, pre=pre)}</div>'
     if kind in ("pair", "trio"):
-        cells = "".join(_fig(i) for i in payload)
+        cells = "".join(_fig(i, pre=pre) for i in payload)
         return f'  <div class="wrap"><div class="shots shots--{kind}">{cells}</div></div>'
     if kind == "video":
-        return (f'  <div class="wrap"><video class="shot shot--video" src="{payload}" '
+        return (f'  <div class="wrap"><video class="shot shot--video" src="{_path(payload, pre)}" '
                 f'autoplay muted loop playsinline preload="metadata"></video></div>')
     if kind == "embed":
         return (f'  <div class="wrap"><div class="reel__frame">'
@@ -534,6 +540,7 @@ def module_html(kind, payload):
 
 
 def project_page(i):
+    pre = "../"                      # las fichas viven en work/
     name, slug = WORKS[i]
     d = PROJECTS.get(slug, {})
     prev_name, prev_slug = WORKS[i - 1]
@@ -548,16 +555,16 @@ def project_page(i):
 
     intro = (f'<div class="work__intro"><p>{d["intro"]}</p></div>'
              if d.get("intro") else
-             '<!-- Description (CMS rich text) binds here -->')
+             '<!-- Intro pending: add "intro" in PROJECTS -->')
 
-    hero = d.get("hero") or POOL[i % len(POOL)]
+    hero = _path(d.get("hero") or POOL[i % len(POOL)], pre)
 
     if d.get("media"):
-        media = "\n".join(module_html(k, v) for k, v in d["media"])
+        media = "\n".join(module_html(k, v, pre) for k, v in d["media"])
     else:
-        media = ("  <!-- Gallery (CMS) binds here. Módulos disponibles:\n"
+        media = ("  <!-- Placeholder gallery: add \"media\" in PROJECTS. Módulos:\n"
                  "       bleed · full · pair · trio · video · embed · quote -->\n"
-                 + "\n".join(module_html(k, v) for k, v in [
+                 + "\n".join(module_html(k, v, pre) for k, v in [
                      ("full", POOL[(i + 1) % len(POOL)]),
                      ("pair", [POOL[(i + 2) % len(POOL)], POOL[(i + 3) % len(POOL)]]),
                      ("bleed", POOL[(i + 4) % len(POOL)])]))
@@ -598,7 +605,7 @@ def project_page(i):
 </article>"""
 
     return page(name, "works.html", body,
-                d.get("intro", "")[:150] or f"{name} — a Supermarket project.", pre="../")
+                d.get("intro", "")[:150] or f"{name} — a Supermarket project.", pre=pre)
 
 
 workdir = OUT / "work"
