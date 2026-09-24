@@ -38,20 +38,31 @@
   document.body.appendChild(preview);
   var img = preview.querySelector('img');
 
-  var x = 0, y = 0, cx = 0, cy = 0, raf = null, on = false;
+  var x = 0, y = 0, cx = 0, cy = 0, raf = null, on = false, placed = false;
+
+  /* The loop only runs while the preview is still easing toward the
+     cursor; once it settles it stops and waits for the next event.  */
+  function start() {
+    if (!raf) raf = requestAnimationFrame(loop);
+  }
 
   function loop() {
     cx += (x - cx) * 0.16;
     cy += (y - cy) * 0.16;
     preview.style.transform =
       'translate(' + cx + 'px,' + cy + 'px) translate(-50%,-50%) scale(' + (on ? 1 : 0.96) + ')';
+    if (Math.abs(x - cx) < 0.1 && Math.abs(y - cy) < 0.1) {
+      raf = null;
+      return;
+    }
     raf = requestAnimationFrame(loop);
   }
 
   index.addEventListener('pointermove', function (e) {
     x = e.clientX + 130;
     y = e.clientY;
-    if (!raf) { cx = x; cy = y; loop(); }
+    if (!placed) { cx = x; cy = y; placed = true; }
+    start();
   });
 
   index.addEventListener('pointerover', function (e) {
@@ -60,17 +71,20 @@
     img.src = row.getAttribute('data-img');
     on = true;
     preview.setAttribute('data-on', 'true');
+    start();
   });
 
   index.addEventListener('pointerout', function (e) {
     if (e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest('[data-img]')) return;
     on = false;
     preview.setAttribute('data-on', 'false');
+    start();
   });
 
   index.addEventListener('pointerleave', function () {
     on = false;
     preview.setAttribute('data-on', 'false');
+    start();
   });
 })();
 
