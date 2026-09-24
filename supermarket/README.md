@@ -61,7 +61,7 @@ dato que falta para que la página quede terminada.
 Una sola plantilla, `work/<slug>.html`, generada para los 60 proyectos.
 **Barça Games Social Media está cargado con su contenido real**: sirve de referencia
 de cómo se ve la plantilla llena. Los otros 59 tienen la misma estructura esperando
-los campos del CMS.
+su entrada en `PROJECTS`.
 
 ### Vocabulario de módulos
 
@@ -87,18 +87,20 @@ dos frases, probablemente sean dos casos.
 
 Al final va el bloque **Credits**, con el mismo rail de hairlines del encabezado.
 
-Mapeo con tu colección de Webflow:
+Campos de cada proyecto en `PROJECTS[slug]`:
 
-| Campo CMS   | Dónde aparece                                       |
-|-------------|-----------------------------------------------------|
-| Name        | Titular grande                                       |
-| Client      | Rail de datos, a la derecha del titular              |
-| Year        | Rail de datos                                        |
-| Segment     | Rail de datos                                        |
-| Services    | Rail de datos                                        |
-| Description | Bloque de texto único, debajo del hero               |
-| Hero        | Imagen a sangre completa, 16:9                       |
-| Gallery     | Stream de piezas: alterna ancho completo y pares     |
+| Campo      | Dónde aparece                                        |
+|------------|------------------------------------------------------|
+| (nombre)   | Titular grande; sale de la tupla en `WORKS`          |
+| `client`   | Rail de datos, a la derecha del titular              |
+| `year`     | Rail de datos                                        |
+| `segment`  | Rail de datos                                        |
+| `services` | Rail de datos                                        |
+| `intro`    | Bloque de texto único, debajo del hero               |
+| `hero`     | Imagen a sangre completa, 16:9                       |
+| `thumb`    | Miniatura 4:3 en Works (grilla y preview del índice) |
+| `media`    | Galería: secuencia de módulos                        |
+| `credits`  | Bloque de créditos al final                          |
 
 Cuatro cosas que estaban rotas en las fichas actuales y acá quedaron resueltas:
 
@@ -122,12 +124,11 @@ ficha — una agencia no debería cropear su propio trabajo para que entre en un
    imágenes tuyas ya existentes como placeholder. En `build.py`, la lista `POOL`
    y las tuplas de `WORKS` son el único lugar a tocar; en el HTML, cada fila del
    índice lleva su `data-img`.
-2. **Links de proyecto.** Van a `work/<slug>.html` con los slugs reales de tu
-   Webflow, así que la migración es directa. Para volver a apuntar al sitio vivo,
-   cambiá `WORK_BASE` por `LIVE_BASE` en `build.py`.
-   El contenido de cada ficha se carga en el diccionario `PROJECTS`.
+2. **Links de proyecto.** Van a `work/<slug>.html`; el slug de cada uno se define
+   en `WORKS` dentro de `build.py`. El contenido de cada ficha se carga en el
+   diccionario `PROJECTS`.
 3. **Formulario.** `main.js` valida y muestra los estados de éxito y error; el
-   `action` está vacío. Apuntalo a Formspree, a tu endpoint o al form de Webflow.
+   `action` está vacío. Apuntalo a Formspree o a tu propio endpoint.
 4. **Fuente.** Se carga desde Google Fonts. Para producción conviene
    self-hostear el .woff2 variable de Archivo.
 5. **Video de portada.** Autoplay muteado con `poster`. Pesa: vale la pena servir
