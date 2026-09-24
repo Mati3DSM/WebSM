@@ -170,7 +170,7 @@ PROJECTS = {
             "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
             "and Carnival — each with its own graphic identity and tone, driving visibility, "
             "downloads, and fan engagement through festive, high-impact content."),
-        "hero": CDN + "barca-games-social-hero.jpg",
+        "hero": CDN + "images/works/Barca-Games/barca-games-social-hero.jpg",
         "media": [
             ("full",  CDN + "68499577cfa233b97c3b2d16_CasoBG_Redes_artboard%201.jpg"),
             ("quote", "One app, three seasons, three graphic identities."),
