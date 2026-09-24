@@ -157,39 +157,180 @@ def page(title, current, body, description="", pre=""):
 
 
 PROJECTS = {
-    "barca-games-social-media": {
-        "client": "Barça Games",
-        "year": "",
+    "alicante": {
+        "client": "La Virginia",
+        "year": "2021",
         "segment": "",
         "services": "Social media strategy, art direction, design, content production",
         "intro": (
-            "We led the social media campaign for Barça Games, a mobile app offering a wide "
-            "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            " quis nostrud exercitation ullamco laboris nisi ut aliqui "
             "strategy to design and production of Instagram posts, Stories, and Reels, helping "
             "build an engaging and playful presence for the app across platforms. We developed "
             "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
             "and Carnival — each with its own graphic identity and tone, driving visibility, "
             "downloads, and fan engagement through festive, high-impact content."),
-        "hero": CDN + "images/works/Barca-Games/barca-games-social-hero.jpg",
+        "thumb": CDN + "images/Works/Alicante/AlicanteBanner.jpeg", # <- nueva línea
+        "hero": CDN + "images/Works/Alicante/AlicanteBanner.jpeg",
         "media": [
-            ("full",  CDN + "68499577cfa233b97c3b2d16_CasoBG_Redes_artboard%201.jpg"),
+            ("full",  CDN + "images/Works/Alicante/AlicanteBanner.jpeg"),
             ("quote", "One app, three seasons, three graphic identities."),
-            ("pair",  [(CDN + "6849a31a2d57027c3a8b1c1d_PORTADA%2BCHRISTMAS%20(1).gif", "Christmas"),
-                       CDN + "68499576013472df82753e35_CasoBG_Redes_Artboard%203.jpg"]),
-            ("pair",  [CDN + "6849957681efda02019d9549_CasoBG_Redes-04.jpg",
-                       CDN + "68499576b552d4bfdce90495_CasoBG_Redes-05.jpg"]),
-            ("bleed", (CDN + "6849a338abd145fe33f2bf8d_PORTADA%2BKINGS%20(1).gif", "King's Day")),
-            ("pair",  [CDN + "684995787d3f19255638a61d_CasoBG_Redes-06.jpg",
-                       CDN + "6849a3450090ded6eac28e07_POSTEOS%20(1).gif"]),
-            ("full",  CDN + "68499576f1871ab022e8ebcf_CasoBG_Redes-08.jpg"),
-            ("bleed", (CDN + "6849a3566ddb2e1ba7f23aa2_PORTADA_CARNAVAL%20(1).gif", "Carnival")),
-            ("pair",  [CDN + "6849957534494e873acaae6a_CasoBG_Redes-11.jpg",
-                       CDN + "68499583bd077a2628895460_SALTO.gif"]),
+            ("full",  CDN + "images/Works/Alicante/AlicanteMockupSopaLista.jpeg"),
+            ("pair",  [(CDN + "images/Works/Alicante/AlicanteMockupSopaListaSupermercado.jpeg"),
+                       CDN + "images/Works/Alicante/AlicanteMockupSopaListaSupermercado2.jpeg"]),
+            ("bleed", (CDN + "images/Works/Alicante/AlicanteSopaListaArte.jpeg")),
+            ("full",  CDN + "images/Works/Alicante/AlicanteMockupSopaListaSupermercado.jpeg"),
+            ("bleed", (CDN + "images/Works/Alicante/AlicanteMockupCartel.jpeg")),
         ],
         "credits": [("Creative direction", "Supermarket"),
                     ("Art direction &amp; design", "Supermarket"),
                     ("Content production", "Supermarket")],
     },
+    "vital-polvo": {
+            "client": "Vital",
+            "year": "2017",
+            "segment": "",
+            "services": "Social media strategy, art direction, design, content production",
+            "intro": (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                "build an engaging and playful presence for the app across platforms. We developed "
+                "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                "downloads, and fan engagement through festive, high-impact content."),
+            "thumb": CDN + "images/Works/Vital Polvo/VitalPolvoBanner.jpeg", # <- nueva línea
+            "hero": CDN + "images/Works/Vital Polvo/VitalPolvoBanner.jpeg",
+            "media": [
+                ("full",  CDN + "images/Works/Vital Polvo/VitalPolvoTV.jpeg"),
+                ("quote", "One app, three seasons, three graphic identities."),
+                ("full",  CDN + "images/Works/Vital Polvo/VitalPolvoCartelEsquina.jpeg"),
+                ("pair",  [(CDN + "images\Works\Vital Polvo\VitalPolvoMamadera.jpeg"),
+                           CDN + "images/Works/Vital Polvo/VitalPolvoBolsoMamá.jpeg"]),
+                ("bleed", (CDN + "images/Works/Vital Polvo/VitalPolvoMockupSupermercado.jpeg")),
+                ("full",  CDN + "images/Works/Vital Polvo/VitalPolvoMockupCochecito.jpeg"),
+          
+            ],
+            "credits": [("Creative direction", "Supermarket"),
+                        ("Art direction &amp; design", "Supermarket"),
+                        ("Content production", "Supermarket")],
+        },
+    "cutex-pro": {
+                                "client": "Cutex Pro",
+                                "year": "2017",
+                                "segment": "",
+                                "services": "Social media strategy, art direction, design, content production",
+                                "intro": (
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                                    " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                                    "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                    "build an engaging and playful presence for the app across platforms. We developed "
+                                    "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                    "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                    "downloads, and fan engagement through festive, high-impact content."),
+                                "thumb": CDN + "images/Works/Cutex Pro/CutexProBanner.jpeg", # <- nueva línea
+                                "hero": CDN + "images/Works/Cutex Pro/CutexProBanner.jpeg",
+                                "media": [
+                                    ("full",  CDN + "images/Works/Cutex Pro/CutexProGrid.jpeg"),
+                                    ("quote", "One app, three seasons, three graphic identities."),
+                                    ("bleed",  CDN + "images/Works/Cutex Pro/CutexProCartel.jpeg"),
+                                    ("pair",  [(CDN + "images/Works/Cutex Pro/CutexProA4.jpeg"),
+                                               CDN + "images/Works/Cutex Pro/CutexProRevista2.jpeg"]),
+                                    ("full",  CDN + "images/Works/Cutex Pro/CutexProStand.jpeg"),
+                                    ("full", (CDN + "images/Works/Cutex Pro/CutexProMockupsVarios.jpeg")),
+                                    ("bleed",  CDN + "images/Works/Cutex Pro/CutexProRevista.jpeg"),
+                                    ("full", (CDN + "images/Works/Cutex Pro/CutexProMockupsVarios2.jpeg")),
+                                    ("full", (CDN + "images/Works/Cutex Pro/CutexProCatalogo.jpeg")),
+                                    ("pair",  [(CDN + "images/Works/Cutex Pro/CutexProCartelSalientes.jpeg"),
+                                                CDN + "images/Works/Cutex Pro/CutexProRevista3.jpeg"]),
+                                    ("full",  CDN + "images/Works/Cutex Pro/CutexProExibidores.jpeg"),
+                                    ("bleed", (CDN + "images/Works/Cutex Pro/CutexProCarteles.jpeg")),
+                                    ("full",  CDN + "images/Works/Cutex Pro/CutexProTablet.jpeg"),
+                              
+                                ],
+                                "credits": [("Creative direction", "Supermarket"),
+                                            ("Art direction &amp; design", "Supermarket"),
+                                            ("Content production", "Supermarket")],
+                            },         
+    "wing": {
+                                    "client": "Wing",
+                                    "year": "2017",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                                        " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Wing/WingBanner.jpeg", # <- nueva línea
+                                    "hero": CDN + "images/Works/Wing/WingVentana.jpeg",
+                                    "media": [
+                                        ("full",  CDN + "images/Works/Wing/WingBanner.jpeg"),
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Wing/WingLogo.jpeg"),
+                                        ("bleed",  CDN + "images/Works/Wing/WingMockupVertical.jpeg"),
+                                        ("bleed",  CDN + "images/Works/Wing/WingGrid.jpeg"),
+                                        ("pair",  [(CDN + "images/Works/Wing/WingMockupCartel.jpeg"),
+                                                   CDN + "images/Works/Wing/WingMockupCamion.jpeg"]),
+                                        ("full",  CDN + "images/Works/Wing/WingArtesVarios.jpeg"),
+                                        ("full", (CDN + "images/Works/Wing/WingOficina.jpeg")),
+                                        ("full", (CDN + "images/Works/Wing/WingMockupPhone.jpeg")),
+                                        ("bleed", (CDN + "images/Works/Wing/WingKVFoto2.jpg")),
+                                        ("full", (CDN + "images/Works/Wing/WingMockupPhone.jpeg")),
+                                        ("full", (CDN + "images/Works/Wing/WingComputer.jpeg")),
+                                        ("pair",  [(CDN + "images/Works/Wing/WingKVFoto.jpg"),
+                                                    CDN + "images/Works/Wing/WingMockupPhone2.jpeg"]),
+                                        ("full",  CDN + "images/Works/Wing/WingIconography.jpeg"),
+                                        ("full",  CDN + "images/Works/Wing/WingEmbajador.jpeg"),
+                                        ("full",  CDN + "images/Works/Wing/WingEmbajador2.jpeg"),
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },      
+    "cutex": {
+                                    "client": "Cutex",
+                                    "year": "2017",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                                        " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Cutex/CutexPortadaCartel.jpeg", # <- nueva línea
+                                    "hero": CDN + "images/Works/Cutex/CutexBanner.jpeg",
+                                    "media": [
+                                        ("full",  CDN + "images/Works/Cutex/CutexPortadaCartel.jpeg"),
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Cutex/CutexBotellas.jpeg"),
+                                        ("full",  CDN + "images/Works/Cutex/CutexEsmaltes.jpeg"),
+                                        ("full",  CDN + "images/Works/Cutex/CutexPapel.jpeg"),
+                                        ("pair",  [(CDN + "images/Works/Cutex/CutexCartelesVerticales.jpeg"),
+                                                   CDN + "images/Works/Cutex/CutexMockupPuesto.jpeg"]),
+                                        ("full",  CDN + "images/Works/Cutex Pro/CutexProStand.jpeg"),
+                                        ("full", (CDN + "images/Works/Cutex Pro/CutexProMockupsVarios.jpeg")),
+                                        ("bleed",  CDN + "images/Works/Cutex Pro/CutexProRevista.jpeg"),
+                                        ("full", (CDN + "images/Works/Cutex Pro/CutexProMockupsVarios2.jpeg")),
+                                        ("full", (CDN + "images/Works/Cutex Pro/CutexProCatalogo.jpeg")),
+                                        ("pair",  [(CDN + "images/Works/Cutex Pro/CutexProCartelSalientes.jpeg"),
+                                                    CDN + "images/Works/Cutex Pro/CutexProRevista3.jpeg"]),
+                                        ("full",  CDN + "images/Works/Cutex Pro/CutexProExibidores.jpeg"),
+                                        ("bleed", (CDN + "images/Works/Cutex Pro/CutexProCarteles.jpeg")),
+                                        ("full",  CDN + "images/Works/Cutex Pro/CutexProTablet.jpeg"),
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },
 }
 
 # ------------------------------------------------------------------ HOME
