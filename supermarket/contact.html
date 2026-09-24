@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Supermarket</title>
+  <meta name="description" content="Super results start here.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+  <div class="header__inner">
+    <a class="brand" href="index.html" aria-label="Supermarket, home">
+      <span class="brand__mark">Supermarket</span>
+      <span class="brand__dot" aria-hidden="true"></span>
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" data-open="false" aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="works.html">Works</a><a href="about.html">About</a><a href="reel.html">Reels</a><a href="contact.html" aria-current="page">Contact</a></nav>
+  </div>
+</header>
+<main id="main">
+<section class="pagehead wrap">
+  <h1 class="display">Super results start here</h1>
+</section>
+
+<section class="wrap section--tight" style="padding-top:0">
+  <div class="statement" style="align-items:start">
+    <div>
+      <p class="lede" style="margin-bottom:32px">Feel free to write us a message. We reply within one
+      working day.</p>
+      <form class="form" id="contact-form" action="#" method="post" novalidate>
+        <div class="field">
+          <label for="name">What's your name?</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">What's your email address?</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div>
+          <button class="btn" type="submit">Send message</button>
+        </div>
+        <p class="form__msg form__msg--ok" role="status" tabindex="-1">Thank you. Your message has been sent.</p>
+        <p class="form__msg form__msg--err" role="alert" tabindex="-1">Something went wrong. Check your name, a valid email and your message, then send again.</p>
+      </form>
+    </div>
+    <div class="service__media" style="aspect-ratio:4/5"><img src="https://cdn.prod.website-files.com/66730869bdf27a5a83765455/6673086abdf27a5a83765535_6443e29428b76c2c75ba68c3_635fc1d77b758d09fde119e9_006.webp" alt="" loading="lazy"></div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <a class="footer__cta" href="mailto:hello@wearesupermarket.com">Let's work<br>together</a>
+    <div class="footer__grid">
+      <div>
+        <p class="footer__k">Our locations</p>
+        <ul>
+          <li class="footer__loc">Buenos Aires, Argentina<a href="mailto:martin@wearesupermarket.com">martin@wearesupermarket.com</a></li>
+          <li class="footer__loc">Miami, USA<a href="mailto:nacho@wearesupermarket.com">nacho@wearesupermarket.com</a></li>
+          <li class="footer__loc">Madrid, España<a href="mailto:diego@wearesupermarket.com">diego@wearesupermarket.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__k">Connect with us</p>
+        <ul>
+          <li><a href="https://www.instagram.com/wearesupermarket/" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/supermarketbrands/" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__k">Contact us</p>
+        <ul><li><a href="mailto:hello@wearesupermarket.com">hello@wearesupermarket.com</a></li></ul>
+      </div>
+      <div>
+        <p class="footer__k">Start a project</p>
+        <a class="btn" href="mailto:hello@wearesupermarket.com" style="margin-top:0;background:#F8F8F7;color:#000;border-color:#F8F8F7">Get in touch</a>
+      </div>
+    </div>
+    <div class="footer__base">
+      <p>Rights reserved since 2009 &nbsp; Supermarket Agency™</p>
+      <p>Effective, no excuses.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
