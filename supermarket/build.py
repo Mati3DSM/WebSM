@@ -205,7 +205,7 @@ PROJECTS = {
                 ("full",  CDN + "images/Works/Vital Polvo/VitalPolvoTV.jpeg"),
                 ("quote", "One app, three seasons, three graphic identities."),
                 ("full",  CDN + "images/Works/Vital Polvo/VitalPolvoCartelEsquina.jpeg"),
-                ("pair",  [(CDN + "images\Works\Vital Polvo\VitalPolvoMamadera.jpeg"),
+                ("pair",  [(CDN + "images/Works/Vital Polvo/VitalPolvoMamadera.jpeg"),
                            CDN + "images/Works/Vital Polvo/VitalPolvoBolsoMamá.jpeg"]),
                 ("bleed", (CDN + "images/Works/Vital Polvo/VitalPolvoMockupSupermercado.jpeg")),
                 ("full",  CDN + "images/Works/Vital Polvo/VitalPolvoMockupCochecito.jpeg"),
@@ -283,9 +283,9 @@ PROJECTS = {
                                         ("full", (CDN + "images/Works/Wing/WingComputer.jpeg")),
                                         ("pair",  [(CDN + "images/Works/Wing/WingKVFoto.jpg"),
                                                     CDN + "images/Works/Wing/WingMockupPhone2.jpeg"]),
-                                        ("full",  CDN + "images/Works/Wing/WingIconography.jpeg"),
-                                        ("full",  CDN + "images/Works/Wing/WingEmbajador.jpeg"),
-                                        ("full",  CDN + "images/Works/Wing/WingEmbajador2.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Wing/WingIconography.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Wing/WingEmbajador.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Wing/WingEmbajador2.jpeg"),
                                   
                                     ],
                                     "credits": [("Creative direction", "Supermarket"),
@@ -315,17 +315,21 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Cutex/CutexPapel.jpeg"),
                                         ("pair",  [(CDN + "images/Works/Cutex/CutexCartelesVerticales.jpeg"),
                                                    CDN + "images/Works/Cutex/CutexMockupPuesto.jpeg"]),
-                                        ("full",  CDN + "images/Works/Cutex Pro/CutexProStand.jpeg"),
-                                        ("full", (CDN + "images/Works/Cutex Pro/CutexProMockupsVarios.jpeg")),
-                                        ("bleed",  CDN + "images/Works/Cutex Pro/CutexProRevista.jpeg"),
-                                        ("full", (CDN + "images/Works/Cutex Pro/CutexProMockupsVarios2.jpeg")),
-                                        ("full", (CDN + "images/Works/Cutex Pro/CutexProCatalogo.jpeg")),
-                                        ("pair",  [(CDN + "images/Works/Cutex Pro/CutexProCartelSalientes.jpeg"),
-                                                    CDN + "images/Works/Cutex Pro/CutexProRevista3.jpeg"]),
-                                        ("full",  CDN + "images/Works/Cutex Pro/CutexProExibidores.jpeg"),
-                                        ("bleed", (CDN + "images/Works/Cutex Pro/CutexProCarteles.jpeg")),
-                                        ("full",  CDN + "images/Works/Cutex Pro/CutexProTablet.jpeg"),
-                                  
+                                        ("full",  CDN + "images/Works/Cutex/CutexMockupsRevista.jpeg"),
+                                        ("pair",  [(CDN + "images/Works/Cutex/CutexBannersVerticales.jpeg"),
+                                                   CDN + "images/Works/Cutex/CutexExibidores.jpeg"]),
+                                        ("full", (CDN + "images/Works/Cutex/CutexExibidores2.jpeg")),
+                                        ("bleed",  CDN + "images/Works/Cutex/CutexBannerCalle.jpeg"),
+                                        ("pair",  [(CDN + "images/Works/Cutex/CutexMockupDiario2.jpeg"),
+                                                    CDN + "images/Works/Cutex/CutexGrid.jpeg"]),
+                                        ("full",  CDN + "images/Works/Cutex/CutexPapel2.jpeg"),
+                                        ("full",  CDN + "images/Works/Cutex/CutexStickers.jpeg"),
+                                        ("bleed", (CDN + "images/Works/Cutex/CutexGrid2.jpeg")),
+                                        ("full",  CDN + "images/Works/Cutex/CutexBotellas2.jpeg"),
+                                        ("full",  CDN + "images/Works/Cutex/CutexMockupsShopping.jpeg"),
+                                        ("full",  CDN + "images/Works/Cutex/CutexMockupDiario.jpeg"),
+                                        ("pair",  [(CDN + "images/Works/Cutex/CutexMockupCartelCalle.jpeg"),
+                                                    CDN + "images/Works/Cutex/CutexMockupCartelesGondolas.jpeg"]),
                                     ],
                                     "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
@@ -619,6 +623,9 @@ for filename, title, current, body, desc in PAGES:
 #    ("full",   url)              pieza a ancho de grilla
 #    ("pair",   [url, url])       dos piezas en fila
 #    ("trio",   [url, url, url])  tres piezas en fila
+#    ("sheet",  url)              como "full", pero sin separación arriba/abajo:
+#                                  encadená varios "sheet" seguidos para que se
+#                                  lean como una sola imagen continua
 #    ("video",  url)              mp4 propio, autoplay muteado en loop
 #    ("embed",  youtube_id)       reproductor de YouTube
 #    ("quote",  texto)            una frase grande: la idea del caso
@@ -664,6 +671,8 @@ def module_html(kind, payload, pre=""):
         return f'  {_fig(payload, "shot shot--bleed", pre)}'
     if kind == "full":
         return f'  <div class="wrap">{_fig(payload, pre=pre)}</div>'
+    if kind == "sheet":
+        return f'  <div class="wrap wrap--sheet">{_fig(payload, "shot shot--sheet", pre)}</div>'
     if kind in ("pair", "trio"):
         cells = "".join(_fig(i, pre=pre) for i in payload)
         return f'  <div class="wrap"><div class="shots shots--{kind}">{cells}</div></div>'
