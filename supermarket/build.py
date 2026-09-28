@@ -8,6 +8,11 @@ OUT = pathlib.Path(__file__).parent
 CDN = "assets/"
 REEL_MP4 = ("assets/videos/Web-Reel-Sin-Logo-Al-Final-transcode.mp4")
 
+# CAMBIAR antes de publicar: dominio final, sin barra al final.
+# Se usa para <link rel="canonical">, Open Graph, robots.txt y sitemap.xml.
+DOMAIN = "https://www.wearesupermarket.com/"
+DEFAULT_OG_IMAGE = CDN + "images/logo.png"  # imagen de respaldo para compartir en redes
+
 IMG = {
     "board":    CDN + "images/logo.png",
     "abstract": CDN + "images/abstract.png",
@@ -131,14 +136,30 @@ FOOTER = """<footer class="footer">
 </footer>"""
 
 
-def page(title, current, body, description="", pre=""):
-    desc = f'\n  <meta name="description" content="{html.escape(description)}">' if description else ""
+def page(title, current, body, description="", pre="", path="", image=None):
+    full_title = f"{title} — Supermarket"
+    desc_text = description or "Supermarket is a global creative agency."
+    desc = f'\n  <meta name="description" content="{html.escape(desc_text)}">'
+    canonical = f"{DOMAIN}/{path}"
+    og_image = f"{DOMAIN}/{image or DEFAULT_OG_IMAGE}"
+    social = f"""
+  <link rel="canonical" href="{canonical}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Supermarket">
+  <meta property="og:title" content="{html.escape(full_title)}">
+  <meta property="og:description" content="{html.escape(desc_text)}">
+  <meta property="og:url" content="{canonical}">
+  <meta property="og:image" content="{og_image}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{html.escape(full_title)}">
+  <meta name="twitter:description" content="{html.escape(desc_text)}">
+  <meta name="twitter:image" content="{og_image}">"""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title} — Supermarket</title>{desc}
+  <title>{full_title}</title>{desc}{social}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
@@ -2145,7 +2166,7 @@ for i, (name, slug) in enumerate(featured):
     wide = ' card--wide' if i == 0 else ''
     thumb = PROJECTS.get(slug, {}).get("thumb") or POOL[i % len(POOL)]
     cards.append(f"""      <a class="card{wide}" href="{WORK_BASE}{slug}.html">
-        <div class="card__figure"><img src="{thumb}" alt="" loading="lazy"></div>
+        <div class="card__figure"><img src="{thumb}" alt="{html.escape(name)}" loading="lazy"></div>
         <h3 class="card__name">{name}</h3>
         <p class="meta">View project</p>
       </a>""")
@@ -2237,7 +2258,7 @@ for i, (name, slug) in enumerate(WORKS):
     rows.append(f"""      <li><a class="index__row" href="{WORK_BASE}{slug}.html" data-img="{thumb}">
         <span class="index__name">{name}</span><span class="index__cue">View project</span></a></li>""")
     tiles.append(f"""      <li><a class="tile" href="{WORK_BASE}{slug}.html">
-        <div class="tile__figure"><img src="{thumb}" alt="" loading="lazy"></div>
+        <div class="tile__figure"><img src="{thumb}" alt="{html.escape(name)}" loading="lazy"></div>
         <p class="tile__name">{name}</p></a></li>""")
 
 works_body = f"""<section class="pagehead wrap">
@@ -2411,7 +2432,7 @@ PAGES = [
 ]
 
 for filename, title, current, body, desc in PAGES:
-    (OUT / filename).write_text(page(title, current, body, desc), encoding="utf-8")
+    (OUT / filename).write_text(page(title, current, body, desc, path=filename), encoding="utf-8")
     print("wrote", filename)
 
 # =====================================================================
@@ -2550,6 +2571,8 @@ def project_page(i):
              '<!-- Intro pending: add "intro" in PROJECTS -->')
 
     hero = _path(d.get("hero") or POOL[i % len(POOL)], pre)
+    hero_client = d.get("client") or client_for(name)
+    hero_alt = html.escape(f"{name} — {hero_client}" if hero_client else name)
 
     if d.get("media"):
         media = "\n".join(module_html(k, v, pre) for k, v in d["media"])
@@ -2578,7 +2601,7 @@ def project_page(i):
     <dl class="rail">{rail}</dl>
   </header>
 
-  <figure class="work__hero"><img src="{hero}" alt="" fetchpriority="high"></figure>
+  <figure class="work__hero"><img src="{hero}" alt="{hero_alt}" fetchpriority="high"></figure>
 
   <div class="wrap work__body">
     {intro}
@@ -2597,7 +2620,8 @@ def project_page(i):
 </article>"""
 
     return page(name, "works.html", body,
-                d.get("intro", "")[:150] or f"{name} — a Supermarket project.", pre=pre)
+                d.get("intro", "")[:150] or f"{name} — a Supermarket project.", pre=pre,
+                path=f"work/{slug}.html", image=d.get("hero"))
 
 
 workdir = OUT / "work"
@@ -2605,3 +2629,25 @@ workdir.mkdir(exist_ok=True)
 for i in range(len(WORKS)):
     (workdir / (WORKS[i][1] + ".html")).write_text(project_page(i), encoding="utf-8")
 print("wrote", len(WORKS), "project pages")
+
+# ------------------------------------------------------------- SEO: sitemap + robots
+all_paths = [filename for filename, *_ in PAGES] + [f"work/{slug}.html" for _, slug in WORKS]
+
+urls = "\n".join(
+    f"  <url><loc>{DOMAIN}/{p}</loc></url>" for p in all_paths
+)
+sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{urls}
+</urlset>
+"""
+(OUT / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+print("wrote sitemap.xml —", len(all_paths), "urls")
+
+robots = f"""User-agent: *
+Allow: /
+
+Sitemap: {DOMAIN}/sitemap.xml
+"""
+(OUT / "robots.txt").write_text(robots, encoding="utf-8")
+print("wrote robots.txt")
