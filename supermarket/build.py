@@ -1489,16 +1489,16 @@ PROJECTS = {
                 "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                 "and Carnival — each with its own graphic identity and tone, driving visibility, "
                 "downloads, and fan engagement through festive, high-impact content."),
-            "thumb": CDN + "images/Works/Vital Polvo/VitalPolvoBanner.jpeg", # <- nueva línea
-            "hero": CDN + "images/Works/Vital Polvo/VitalPolvoBanner.jpeg",
+            "thumb": CDN + "images/Works/Vital-Polvo/VitalPolvoBanner.jpeg", # <- nueva línea
+            "hero": CDN + "images/Works/Vital-Polvo/VitalPolvoBanner.jpeg",
             "media": [
-                ("full",  CDN + "images/Works/Vital Polvo/VitalPolvoTV.jpeg"),
+                ("full",  CDN + "images/Works/Vital-Polvo/VitalPolvoTV.jpeg"),
                 ("quote", "One app, three seasons, three graphic identities."),
-                ("full",  CDN + "images/Works/Vital Polvo/VitalPolvoCartelEsquina.jpeg"),
-                ("pair",  [(CDN + "images/Works/Vital Polvo/VitalPolvoMamadera.jpeg"),
-                           CDN + "images/Works/Vital Polvo/VitalPolvoBolsoMamá.jpeg"]),
-                ("bleed", (CDN + "images/Works/Vital Polvo/VitalPolvoMockupSupermercado.jpeg")),
-                ("full",  CDN + "images/Works/Vital Polvo/VitalPolvoMockupCochecito.jpeg"),
+                ("full",  CDN + "images/Works/Vital-Polvo/VitalPolvoCartelEsquina.jpeg"),
+                ("pair",  [(CDN + "images/Works/Vital-Polvo/VitalPolvoMamadera.jpeg"),
+                           CDN + "images/Works/Vital-Polvo/VitalPolvoBolsoMamá.jpeg"]),
+                ("bleed", (CDN + "images/Works/Vital-Polvo/VitalPolvoMockupSupermercado.jpeg")),
+                ("full",  CDN + "images/Works/Vital-Polvo/VitalPolvoMockupCochecito.jpeg"),
           
             ],
             "credits": [("Creative direction", "Supermarket"),
@@ -1518,24 +1518,24 @@ PROJECTS = {
                                     "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                                     "and Carnival — each with its own graphic identity and tone, driving visibility, "
                                     "downloads, and fan engagement through festive, high-impact content."),
-                                "thumb": CDN + "images/Works/Cutex Pro/CutexProBanner.jpeg", # <- nueva línea
-                                "hero": CDN + "images/Works/Cutex Pro/CutexProBanner.jpeg",
+                                "thumb": CDN + "images/Works/Cutex-Pro/CutexProBanner.jpeg", # <- nueva línea
+                                "hero": CDN + "images/Works/Cutex-Pro/CutexProBanner.jpeg",
                                 "media": [
-                                    ("full",  CDN + "images/Works/Cutex Pro/CutexProGrid.jpeg"),
+                                    ("full",  CDN + "images/Works/Cutex-Pro/CutexProGrid.jpeg"),
                                     ("quote", "One app, three seasons, three graphic identities."),
-                                    ("bleed",  CDN + "images/Works/Cutex Pro/CutexProCartel.jpeg"),
-                                    ("pair",  [(CDN + "images/Works/Cutex Pro/CutexProA4.jpeg"),
-                                               CDN + "images/Works/Cutex Pro/CutexProRevista2.jpeg"]),
-                                    ("full",  CDN + "images/Works/Cutex Pro/CutexProStand.jpeg"),
-                                    ("full", (CDN + "images/Works/Cutex Pro/CutexProMockupsVarios.jpeg")),
-                                    ("bleed",  CDN + "images/Works/Cutex Pro/CutexProRevista.jpeg"),
-                                    ("full", (CDN + "images/Works/Cutex Pro/CutexProMockupsVarios2.jpeg")),
-                                    ("full", (CDN + "images/Works/Cutex Pro/CutexProCatalogo.jpeg")),
-                                    ("pair",  [(CDN + "images/Works/Cutex Pro/CutexProCartelSalientes.jpeg"),
-                                                CDN + "images/Works/Cutex Pro/CutexProRevista3.jpeg"]),
-                                    ("full",  CDN + "images/Works/Cutex Pro/CutexProExibidores.jpeg"),
-                                    ("bleed", (CDN + "images/Works/Cutex Pro/CutexProCarteles.jpeg")),
-                                    ("full",  CDN + "images/Works/Cutex Pro/CutexProTablet.jpeg"),
+                                    ("bleed",  CDN + "images/Works/Cutex-Pro/CutexProCartel.jpeg"),
+                                    ("pair",  [(CDN + "images/Works/Cutex-Pro/CutexProA4.jpeg"),
+                                               CDN + "images/Works/Cutex-Pro/CutexProRevista2.jpeg"]),
+                                    ("full",  CDN + "images/Works/Cutex-Pro/CutexProStand.jpeg"),
+                                    ("full", (CDN + "images/Works/Cutex-Pro/CutexProMockupsVarios.jpeg")),
+                                    ("bleed",  CDN + "images/Works/Cutex-Pro/CutexProRevista.jpeg"),
+                                    ("full", (CDN + "images/Works/Cutex-Pro/CutexProMockupsVarios2.jpeg")),
+                                    ("full", (CDN + "images/Works/Cutex-Pro/CutexProCatalogo.jpeg")),
+                                    ("pair",  [(CDN + "images/Works/Cutex-Pro/CutexProCartelSalientes.jpeg"),
+                                                CDN + "images/Works/Cutex-Pro/CutexProRevista3.jpeg"]),
+                                    ("full",  CDN + "images/Works/Cutex-Pro/CutexProExibidores.jpeg"),
+                                    ("bleed", (CDN + "images/Works/Cutex-Pro/CutexProCarteles.jpeg")),
+                                    ("full",  CDN + "images/Works/Cutex-Pro/CutexProTablet.jpeg"),
                               
                                 ],
                                 "credits": [("Creative direction", "Supermarket"),
@@ -1638,13 +1638,13 @@ PROJECTS = {
                                         "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                                         "and Carnival — each with its own graphic identity and tone, driving visibility, "
                                         "downloads, and fan engagement through festive, high-impact content."),
-                                    "thumb": CDN + "images/Works/Arcor Patria/ArcorPatriaBanner.jpeg", # <- nueva línea
-                                    "hero": CDN + "images/Works/Arcor Patria/ArcorPatriaBanner.jpeg",
+                                    "thumb": CDN + "images/Works/Arcor-Patria/ArcorPatriaBanner.jpeg", # <- nueva línea
+                                    "hero": CDN + "images/Works/Arcor-Patria/ArcorPatriaBanner.jpeg",
                                     "media": [
-                                        ("sheet",  CDN + "images/Works/Arcor Patria/ArcorPatriaSheet1.jpeg"),
-                                        ("sheet",  CDN + "images/Works/Arcor Patria/ArcorPatriaSheet2.jpeg"),
-                                        ("sheet",  CDN + "images/Works/Arcor Patria/ArcorPatriaSheet3.jpeg"),
-                                        ("sheet",  CDN + "images/Works/Arcor Patria/ArcorPatriaSheet4.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Arcor-Patria/ArcorPatriaSheet1.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Arcor-Patria/ArcorPatriaSheet2.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Arcor-Patria/ArcorPatriaSheet3.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Arcor-Patria/ArcorPatriaSheet4.jpeg"),
                                     ],
                                     "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
@@ -1663,13 +1663,13 @@ PROJECTS = {
                                             "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                                             "and Carnival — each with its own graphic identity and tone, driving visibility, "
                                             "downloads, and fan engagement through festive, high-impact content."),
-                                        "thumb": CDN + "images/Works/Quilmes Pumas/QuilmesPumasCartelBanner.png", # <- nueva línea
-                                        "hero": CDN + "images/Works/Quilmes Pumas/QuilmesPumasCartelBanner.png",
+                                        "thumb": CDN + "images/Works/Quilmes-Pumas/QuilmesPumasCartelBanner.png", # <- nueva línea
+                                        "hero": CDN + "images/Works/Quilmes-Pumas/QuilmesPumasCartelBanner.png",
                                         "media": [
-                                            ("full",  CDN + "images/Works/Quilmes Pumas/QuilmesPumasKV.png"),
-                                            ("full",  CDN + "images/Works/Quilmes Pumas/QuilmesPumasMockupCartelBondi.png"),
-                                            ("full",  CDN + "images/Works/Quilmes Pumas/QuilmesPumasKV2.png"),
-                                            ("full",  CDN + "images/Works/Quilmes Pumas/QuilmesPumasMockupCancha.png"),
+                                            ("full",  CDN + "images/Works/Quilmes-Pumas/QuilmesPumasKV.png"),
+                                            ("full",  CDN + "images/Works/Quilmes-Pumas/QuilmesPumasMockupCartelBondi.png"),
+                                            ("full",  CDN + "images/Works/Quilmes-Pumas/QuilmesPumasKV2.png"),
+                                            ("full",  CDN + "images/Works/Quilmes-Pumas/QuilmesPumasMockupCancha.png"),
                                         ],
                                         "credits": [("Creative direction", "Supermarket"),
                                                     ("Art direction &amp; design", "Supermarket"),
@@ -1758,18 +1758,18 @@ PROJECTS = {
                         "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                         "and Carnival — each with its own graphic identity and tone, driving visibility, "
                         "downloads, and fan engagement through festive, high-impact content."),
-                    "thumb": CDN + "images/Works/Mr Pops/MrPopsBanner.jpeg", # <- nueva línea
-                    "hero": CDN + "images/Works/Mr Pops/MrPopsBanner.jpeg",
+                    "thumb": CDN + "images/Works/Mr-Pops/MrPopsBanner.jpeg", # <- nueva línea
+                    "hero": CDN + "images/Works/Mr-Pops/MrPopsBanner.jpeg",
                     "media": [
-                        ("full",  CDN + "images/Works/Mr Pops/MrPopsKV.jpeg"),
+                        ("full",  CDN + "images/Works/Mr-Pops/MrPopsKV.jpeg"),
                         ("quote", "One app, three seasons, three graphic identities."),
-                        ("full",  CDN + "images/Works/Mr Pops/MrPopsKV2.jpeg"),
-                        ("pair",  [(CDN + "images/Works/Mr Pops/MrPopsKV3.jpeg"),
-                                   CDN + "images/Works/Mr Pops/MrPopsKV4.jpeg"]),
-                        ("bleed", (CDN + "images/Works/Mr Pops/MrPopsMockupSupermercadoCartel.jpeg")),
-                        ("full",  CDN + "images/Works/Mr Pops/MrPopsKV5.jpeg"),
-                        ("full",  CDN + "images/Works/Mr Pops/MrPopsMockupSupermercadoCaja.jpeg"),
-                        ("bleed", (CDN + "images/Works/MR Pops/MrPopsMockupSupermercadoVentana.jpeg")),
+                        ("full",  CDN + "images/Works/Mr-Pops/MrPopsKV2.jpeg"),
+                        ("pair",  [(CDN + "images/Works/Mr-Pops/MrPopsKV3.jpeg"),
+                                   CDN + "images/Works/Mr-Pops/MrPopsKV4.jpeg"]),
+                        ("bleed", (CDN + "images/Works/Mr-Pops/MrPopsMockupSupermercadoCartel.jpeg")),
+                        ("full",  CDN + "images/Works/Mr-Pops/MrPopsKV5.jpeg"),
+                        ("full",  CDN + "images/Works/Mr-Pops/MrPopsMockupSupermercadoCaja.jpeg"),
+                        ("bleed", (CDN + "images/Works/Mr-Pops/MrPopsMockupSupermercadoVentana.jpeg")),
                   
                     ],
                     "credits": [("Creative direction", "Supermarket"),
@@ -1818,18 +1818,18 @@ PROJECTS = {
                     "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                     "and Carnival — each with its own graphic identity and tone, driving visibility, "
                     "downloads, and fan engagement through festive, high-impact content."),
-                "thumb": CDN + "images/Works/Levite Limonada/LeviteLimonadaBanner.jpeg", # <- nueva línea
-                "hero": CDN + "images/Works/Levite Limonada/LeviteLimonadaBanner.jpeg",
+                "thumb": CDN + "images/Works/Levite-Limonada/LeviteLimonadaBanner.jpeg", # <- nueva línea
+                "hero": CDN + "images/Works/Levite-Limonada/LeviteLimonadaBanner.jpeg",
                 "media": [
-                    ("full",  CDN + "images/Works/Levite Limonada/LeviteLimonadaKV.png"),
+                    ("full",  CDN + "images/Works/Levite-Limonada/LeviteLimonadaKV.png"),
                     ("quote", "One app, three seasons, three graphic identities."),
-                    ("full",  CDN + "images/Works/Levite Limonada/LeviteLimonadaMockupCartel.jpeg"),
-                    ("pair",  [(CDN + "images/Works/Levite Limonada/LeviteLimonadaMockupCartelPlaya.jpeg"),
-                               CDN + "images/Works/Levite Limonada/LeviteLimonadaMockupCartelPlaya2.jpeg"]),
-                    ("bleed", (CDN + "images/Works/Levite Limonada/LeviteLimonadaYoga.jpeg")),
-                    ("full",  CDN + "images/Works/Levite Limonada/LeviteLimonadaMockupCartel2.jpeg"),
-                    ("full",  CDN + "images/Works/Levite Limonada/LeviteLimonadaMockupCartel3.jpeg"),
-                    ("bleed", (CDN + "images/Works/Levite Limonada/LeviteLimonadaKV2.jpeg")),
+                    ("full",  CDN + "images/Works/Levite-Limonada/LeviteLimonadaMockupCartel.jpeg"),
+                    ("pair",  [(CDN + "images/Works/Levite-Limonada/LeviteLimonadaMockupCartelPlaya.jpeg"),
+                               CDN + "images/Works/Levite-Limonada/LeviteLimonadaMockupCartelPlaya2.jpeg"]),
+                    ("bleed", (CDN + "images/Works/Levite-Limonada/LeviteLimonadaYoga.jpeg")),
+                    ("full",  CDN + "images/Works/Levite-Limonada/LeviteLimonadaMockupCartel2.jpeg"),
+                    ("full",  CDN + "images/Works/Levite-Limonada/LeviteLimonadaMockupCartel3.jpeg"),
+                    ("bleed", (CDN + "images/Works/Levite-Limonada/LeviteLimonadaKV2.jpeg")),
               
                 ],
                 "credits": [("Creative direction", "Supermarket"),
@@ -1849,16 +1849,16 @@ PROJECTS = {
                             "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                             "and Carnival — each with its own graphic identity and tone, driving visibility, "
                             "downloads, and fan engagement through festive, high-impact content."),
-                        "thumb": CDN + "images/Works/Natural One/NaturalOneBanner.png", # <- nueva línea
-                        "hero": CDN + "images/Works/Natural One/NaturalOneBanner.png",
+                        "thumb": CDN + "images/Works/Natural-One/NaturalOneBanner.png", # <- nueva línea
+                        "hero": CDN + "images/Works/Natural-One/NaturalOneBanner.png",
                         "media": [
-                            ("full",  CDN + "images/Works/Natural One/NaturalOneTote.png"),
+                            ("full",  CDN + "images/Works/Natural-One/NaturalOneTote.png"),
                             ("quote", "One app, three seasons, three graphic identities."),
-                            ("full",  CDN + "images/Works/Natural One/NaturalOneKV.png"),
-                            ("pair",  [(CDN + "images/Works/Natural One/NaturalOneCarrusel.png"),
-                                       CDN + "images/Works/Natural One/NaturalOneMockupCartel.png"]),
-                            ("bleed", (CDN + "images/Works/Natural One/NaturalOneKV2.png")),
-                            ("full",  CDN + "images/Works/Natural One/NaturalOneLogo.png"),
+                            ("full",  CDN + "images/Works/Natural-One/NaturalOneKV.png"),
+                            ("pair",  [(CDN + "images/Works/Natural-One/NaturalOneCarrusel.png"),
+                                       CDN + "images/Works/Natural-One/NaturalOneMockupCartel.png"]),
+                            ("bleed", (CDN + "images/Works/Natural-One/NaturalOneKV2.png")),
+                            ("full",  CDN + "images/Works/Natural-One/NaturalOneLogo.png"),
 
                         ],
                         "credits": [("Creative direction", "Supermarket"),
@@ -1878,15 +1878,15 @@ PROJECTS = {
                         "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                         "and Carnival — each with its own graphic identity and tone, driving visibility, "
                         "downloads, and fan engagement through festive, high-impact content."),
-                    "thumb": CDN + "images/Works/Swift Grasa/SwiftGrasaBanner.jpeg", # <- nueva línea
-                    "hero": CDN + "images/Works/Swift Grasa/SwiftGrasaBanner.jpeg",
+                    "thumb": CDN + "images/Works/Swift-Grasa/SwiftGrasaBanner.jpeg", # <- nueva línea
+                    "hero": CDN + "images/Works/Swift-Grasa/SwiftGrasaBanner.jpeg",
                     "media": [
-                        ("full",  CDN + "images/Works/Swift Grasa/SwiftGrasaMockup.jpeg"),
+                        ("full",  CDN + "images/Works/Swift-Grasa/SwiftGrasaMockup.jpeg"),
                         ("quote", "One app, three seasons, three graphic identities."),
-                        ("full",  CDN + "images/Works/Swift Grasa/SwiftGrasaMockupSupermercado.jpeg"),
-                        ("pair",  [(CDN + "images/Works/Swift Grasa/SwiftGrasaMockupDelantal.jpeg"),
-                                   CDN + "images/Works/Swift Grasa/SwiftGrasaMockupFacturas.jpeg"]),
-                        ("bleed", (CDN + "images/Works/Swift Grasa/SwiftGrasaBanner.jpeg")),                  
+                        ("full",  CDN + "images/Works/Swift-Grasa/SwiftGrasaMockupSupermercado.jpeg"),
+                        ("pair",  [(CDN + "images/Works/Swift-Grasa/SwiftGrasaMockupDelantal.jpeg"),
+                                   CDN + "images/Works/Swift-Grasa/SwiftGrasaMockupFacturas.jpeg"]),
+                        ("bleed", (CDN + "images/Works/Swift-Grasa/SwiftGrasaBanner.jpeg")),                  
                     ],
                     "credits": [("Creative direction", "Supermarket"),
                                 ("Art direction &amp; design", "Supermarket"),
@@ -2119,18 +2119,18 @@ PROJECTS = {
                                                     "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                                                     "and Carnival — each with its own graphic identity and tone, driving visibility, "
                                                     "downloads, and fan engagement through festive, high-impact content."),
-                                                "thumb": CDN + "images/Works/Arcor Frutas/ArcorFrutasBanner.png", # <- nueva línea
-                                                "hero": CDN + "images/Works/Arcor Frutas/ArcorFrutasBanner.png",
+                                                "thumb": CDN + "images/Works/Arcor-Frutas/ArcorFrutasBanner.png", # <- nueva línea
+                                                "hero": CDN + "images/Works/Arcor-Frutas/ArcorFrutasBanner.png",
                                                 "media": [
-                                                    ("full",  CDN + "images/Works/Arcor Frutas/ArcorFrutasKV.png"),
+                                                    ("full",  CDN + "images/Works/Arcor-Frutas/ArcorFrutasKV.png"),
                                                     ("quote", "One app, three seasons, three graphic identities."),
-                                                    ("bleed",  CDN + "images/Works/Arcor Frutas/ArcorFrutasManzanaDurazno.png"),
-                                                    ("pair",  [(CDN + "images/Works/Arcor Frutas/ArcorFrutasMockupCompotas.png"),
-                                                               CDN + "images/Works/Arcor Frutas/ArcorFrutasMockupBebe.jpeg"]),
+                                                    ("bleed",  CDN + "images/Works/Arcor-Frutas/ArcorFrutasManzanaDurazno.png"),
+                                                    ("pair",  [(CDN + "images/Works/Arcor-Frutas/ArcorFrutasMockupCompotas.png"),
+                                                               CDN + "images/Works/Arcor-Frutas/ArcorFrutasMockupBebe.jpeg"]),
                                                     
-                                                    ("full",  CDN + "images/Works/Arcor Frutas/ArcorFrutasCompotaMix.jpeg"),
-                                                    ("full", (CDN + "images/Works/Arcor Frutas/ArcorFrutasKVDurazno.png")),
-                                                    ("full", (CDN + "images/Works/Arcor Frutas/ArcorFrutasGlobos.png")),
+                                                    ("full",  CDN + "images/Works/Arcor-Frutas/ArcorFrutasCompotaMix.jpeg"),
+                                                    ("full", (CDN + "images/Works/Arcor-Frutas/ArcorFrutasKVDurazno.png")),
+                                                    ("full", (CDN + "images/Works/Arcor-Frutas/ArcorFrutasGlobos.png")),
                                                 ],
                                                 "credits": [("Creative direction", "Supermarket"),
                                                             ("Art direction &amp; design", "Supermarket"),
