@@ -335,6 +335,157 @@ PROJECTS = {
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },
+    "arcor-patria": {
+                                    "client": "Arcor",
+                                    "year": "2017",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                                        " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Arcor Patria/ArcorPatriaBanner.jpeg", # <- nueva línea
+                                    "hero": CDN + "images/Works/Arcor Patria/ArcorPatriaBanner.jpeg",
+                                    "media": [
+                                        ("sheet",  CDN + "images/Works/Arcor Patria/ArcorPatriaSheet1.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Arcor Patria/ArcorPatriaSheet2.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Arcor Patria/ArcorPatriaSheet3.jpeg"),
+                                        ("sheet",  CDN + "images/Works/Arcor Patria/ArcorPatriaSheet4.jpeg"),
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },
+    "quilmes-pumas": {
+                                        "client": "Quilmes",
+                                        "year": "2017",
+                                        "segment": "",
+                                        "services": "Social media strategy, art direction, design, content production",
+                                        "intro": (
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                                            " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                                            "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                            "build an engaging and playful presence for the app across platforms. We developed "
+                                            "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                            "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                            "downloads, and fan engagement through festive, high-impact content."),
+                                        "thumb": CDN + "images/Works/Quilmes Pumas/QuilmesPumasCartelBanner.png", # <- nueva línea
+                                        "hero": CDN + "images/Works/Quilmes Pumas/QuilmesPumasCartelBanner.png",
+                                        "media": [
+                                            ("full",  CDN + "images/Works/Quilmes Pumas/QuilmesPumasKV.png"),
+                                            ("full",  CDN + "images/Works/Quilmes Pumas/QuilmesPumasMockupCartelBondi.png"),
+                                            ("full",  CDN + "images/Works/Quilmes Pumas/QuilmesPumasKV2.png"),
+                                            ("full",  CDN + "images/Works/Quilmes Pumas/QuilmesPumasMockupCancha.png"),
+                                        ],
+                                        "credits": [("Creative direction", "Supermarket"),
+                                                    ("Art direction &amp; design", "Supermarket"),
+                                                    ("Content production", "Supermarket")],
+                                    },
+    "prestix": {
+                                        "client": "Prestix",
+                                        "year": "2017",
+                                        "segment": "",
+                                        "services": "Social media strategy, art direction, design, content production",
+                                        "intro": (
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                                            " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                                            "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                            "build an engaging and playful presence for the app across platforms. We developed "
+                                            "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                            "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                            "downloads, and fan engagement through festive, high-impact content."),
+                                        "thumb": CDN + "images/Works/Prestix/PrestixBanner.jpeg", # <- nueva línea
+                                        "hero": CDN + "images/Works/Prestix/PrestixBanner.jpeg",
+                                        "media": [
+                                            ("full",  CDN + "images/Works/Prestix/PrestixLogo.png"),
+                                            ("quote", "One app, three seasons, three graphic identities."),
+                                            ("full",  CDN + "images/Works/Prestix/PrestixLogoColor.png"),
+                                            ("bleed",  CDN + "images/Works/Prestix/PrestixIconography.jpeg"),
+                                            ("pair",  [(CDN + "images/Works/Prestix/PrestixIconography2.jpeg"),
+                                                       CDN + "images/Works/Prestix/PrestixKV.png"]),
+                                            ("full",  CDN + "images/Works/Prestix/PrestixMockupCartelVertical.jpeg"),
+                                            ("full", (CDN + "images/Works/Prestix/PrestixBannerCartel.jpeg")),
+                                            ("full", (CDN + "images/Works/Prestix/PrestixMockupPhone.jpeg")),
+                                            ("bleed", (CDN + "images/Works/Wing/WingKVFoto2.jpg")),
+                                            ("full", (CDN + "images/Works/Wing/WingMockupPhone.jpeg")),
+                                            ("full", (CDN + "images/Works/Wing/WingComputer.jpeg")),
+                                            ("pair",  [(CDN + "images/Works/Wing/WingKVFoto.jpg"),
+                                                        CDN + "images/Works/Wing/WingMockupPhone2.jpeg"]),
+                                            ("sheet",  CDN + "images/Works/Wing/WingIconography.jpeg"),
+                                            ("sheet",  CDN + "images/Works/Wing/WingEmbajador.jpeg"),
+                                            ("sheet",  CDN + "images/Works/Wing/WingEmbajador2.jpeg"),
+                                      
+                                        ],
+                                        "credits": [("Creative direction", "Supermarket"),
+                                                    ("Art direction &amp; design", "Supermarket"),
+                                                    ("Content production", "Supermarket")],
+                                    },
+    "natural-break-arcor": {
+                "client": "Arcor",
+                "year": "2017",
+                "segment": "",
+                "services": "Social media strategy, art direction, design, content production",
+                "intro": (
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                    " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                    "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                    "build an engaging and playful presence for the app across platforms. We developed "
+                    "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                    "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                    "downloads, and fan engagement through festive, high-impact content."),
+                "thumb": CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakBanner.png", # <- nueva línea
+                "hero": CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakBanner.png",
+                "media": [
+                    ("full",  CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakKV.png"),
+                    ("quote", "One app, three seasons, three graphic identities."),
+                    ("full",  CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakKV2.png"),
+                    ("pair",  [(CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakKV3.png"),
+                               CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakKV4.png"]),
+                    ("bleed", (CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakMockupCartelCalle.png")),
+                    ("full",  CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakMockupSachetSupermercado.png"),
+                    ("full",  CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakGif.gif"),
+                    ("bleed", (CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakKV5.png")),
+              
+                ],
+                "credits": [("Creative direction", "Supermarket"),
+                            ("Art direction &amp; design", "Supermarket"),
+                            ("Content production", "Supermarket")],
+            },
+    "mr-pops": {
+                    "client": "Arcor",
+                    "year": "2017",
+                    "segment": "",
+                    "services": "Social media strategy, art direction, design, content production",
+                    "intro": (
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                        " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                        "build an engaging and playful presence for the app across platforms. We developed "
+                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                        "downloads, and fan engagement through festive, high-impact content."),
+                    "thumb": CDN + "images/Works/Mr Pops/MrPopsBanner.jpeg", # <- nueva línea
+                    "hero": CDN + "images/Works/Mr Pops/MrPopsBanner.jpeg",
+                    "media": [
+                        ("full",  CDN + "images/Works/Mr Pops/MrPopsKV.jpeg"),
+                        ("quote", "One app, three seasons, three graphic identities."),
+                        ("full",  CDN + "images/Works/Mr Pops/MrPopsKV2.jpeg"),
+                        ("pair",  [(CDN + "images/Works/Mr Pops/MrPopsKV3.jpeg"),
+                                   CDN + "images/Works/Mr Pops/MrPopsKV4.jpeg"]),
+                        ("bleed", (CDN + "images/Works/Mr Pops/MrPopsMockupSupermercadoCartel.jpeg")),
+                        ("full",  CDN + "images/Works/Mr Pops/MrPopsKV5.jpeg"),
+                        ("full",  CDN + "images/Works/Mr Pops/MrPopsMockupSupermercadoCaja.jpeg"),
+                        ("bleed", (CDN + "images/Works/MR Pops/MrPopsMockupSupermercadoVentana.jpeg")),
+                  
+                    ],
+                    "credits": [("Creative direction", "Supermarket"),
+                                ("Art direction &amp; design", "Supermarket"),
+                                ("Content production", "Supermarket")],
+                },
 }
 
 # ------------------------------------------------------------------ HOME
