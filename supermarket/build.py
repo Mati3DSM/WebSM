@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Builds the six static pages of the Supermarket site."""
+import re
 import html
 import pathlib
 
@@ -42,7 +43,7 @@ WORKS = [
     ("Ficohsa Mastercard AA", "ficohsa-tarjeta-mastercard"),
     ("OKY Digital", "oky-digital"), ("Swift Veggies", "swift-veggies"),
     ("Swift Categorías", "swift-categorias"), ("Tienda La Virginia", "tienda-la-virginia"),
-    ("Método UCEMA", "metodo-ucema"), ("P!CKERS by McCain", "p-ckers-by-mccain"),
+    ("Método UCEMA", "metodo-ucema"), ("P!CKERS by McCain", "pickers-by-mccain"),
     ("Aero Assist Handling", "aero-assist-handling"),
     ("Brand Character — Rob", "brand-character-rob"),
     ("Revlon Love is On", "revlon-love-is-on"), ("Revlon Naté", "revlon-nate"),
@@ -157,6 +158,1265 @@ def page(title, current, body, description="", pre=""):
 
 
 PROJECTS = {
+    "swift-picante": {
+                "client": "Swift",
+                "year": "",
+                "segment": "",
+                "services": "Social media strategy, art direction, design, content production",
+                "intro": (
+                    "Creamos una campaña para presentar las nuevas versiones picantes de los untables SWIFT, aportando una mirada fresca, divertida y llamativa al producto original. El foco estuvo en comunicar la innovación desde un tono lúdico, invitando a descubrir el picante de una forma descontracturada y atractiva. Con una estética vibrante y dinámica, buscamos que la campaña se sienta moderna, atractiva y fácil de identificar en cualquier formato."),
+                "thumb": CDN + "images/Works/Swift/swift-picantes-portada.png",
+                "hero": CDN + "images/Works/Swift/swift-picantes-portada.png",
+                "media": [
+                    ("pair",  [(CDN + "images/Works/Swift/swift-picantes-Artboard1.png"),
+                              CDN + "images/Works/Swift/swift-picantes-Artboard2.png"]),
+                    ("quote", "One app, three seasons, three graphic identities."),
+                    ("bleed",  CDN + "images/Works/Swift/swift-GIFUntables.gif"),
+                    ("full",  CDN + "images/Works/Swift/swift-picantes-Artboard3.png"),
+                    ("full",  CDN + "images/Works/Swift/swift-picantes-Artboard4.png"),
+                    ("full",  CDN + "images/Works/Swift/swift-picantes-words.gif"),
+                    ("full",  CDN + "images/Works/Swift/swift-picantes-billboard.png"),
+                    ("bleed", (CDN + "images/Works/Swift/swift-GIFSabrosos.gif")),
+                    ("pair",  [(CDN + "images/Works/Swift/swift-picantes-Artboard8.png"),
+                               CDN + "images/Works/Swift/swift-picantes-Artboard9.png"]),
+                    ("full",  CDN + "images/Works/Swift/swift-picantes-Artboard10.png"),
+                ],
+                "credits": [("Creative direction", "Supermarket"),
+                            ("Art direction &amp; design", "Supermarket"),
+                            ("Content production", "Supermarket")],
+            },
+
+    "swift-verano": {
+        "client": "Swift",
+        "year": "",
+        "segment": "",
+        "services": "Social media strategy, art direction, design, content production",
+        "intro": (
+            "We led the social media campaign for Barça Games, a mobile app offering a wide "
+            "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+            "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+            "build an engaging and playful presence for the app across platforms. We developed "
+            "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+            "and Carnival — each with its own graphic identity and tone, driving visibility, "
+            "downloads, and fan engagement through festive, high-impact content."),
+        "thumb": CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-hero.jpg",
+        "hero": CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-hero.jpg",
+        "media": [
+            ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-01.jpg"),
+            ("quote", "One app, three seasons, three graphic identities."),
+            ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-02.jpg"),
+            ("full",   CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-03.jpg"),
+            ("full", (CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-04.jpg")),
+            ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-05.jpg"),
+            ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-06.jpg"),
+            ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-07.jpg"),
+            ("full", CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-08.jpg"),
+            ("full", CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-09.jpg"),
+        ],
+        "credits": [("Creative direction", "Supermarket"),
+                    ("Art direction &amp; design", "Supermarket"),
+                    ("Content production", "Supermarket")],
+    },
+
+ "ficohsa-gana-un-carro-por-mes": {
+        "client": "Ficohsa",
+        "year": "",
+        "segment": "",
+        "services": "Social media strategy, art direction, design, content production",
+        "intro": (
+            "We led the social media campaign for Barça Games, a mobile app offering a wide "
+            "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+            "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+            "build an engaging and playful presence for the app across platforms. We developed "
+            "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+            "and Carnival — each with its own graphic identity and tone, driving visibility, "
+            "downloads, and fan engagement through festive, high-impact content."),
+        "thumb": CDN + "images/Works/Ficohsa/ficohsa-carro-hero.jpg",
+        "hero": CDN + "images/Works/Ficohsa/ficohsa-carro-hero.jpg",
+        "media": [
+            ("pair",  [(CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard1.jpg"),
+                      CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard3.jpg"]),
+            ("quote", "One app, three seasons, three graphic identities."),
+            ("full",  CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard2.jpg"),
+            ("full",  CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard4.jpg"),
+            ("full",   CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard5.jpg"),
+            ("full", CDN + "images/Works/Ficohsa/ficohsa-carro-autoFINAL.gif"),
+            ("full", (CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard6.jpg")),
+            ("full",  CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard8.jpg"),
+            ("full",  CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard9.jpg"),
+            ("full",  CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard10.jpg"),
+        ],
+        "credits": [("Creative direction", "Supermarket"),
+                    ("Art direction &amp; design", "Supermarket"),
+                    ("Content production", "Supermarket")],
+    },
+
+    "barca-games-social-media": {
+            "client": "Barça Games",
+            "year": "",
+            "segment": "",
+            "services": "Social media strategy, art direction, design, content production",
+            "intro": (
+                "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                "build an engaging and playful presence for the app across platforms. We developed "
+                "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                "downloads, and fan engagement through festive, high-impact content."),
+            "thumb": CDN + "images/Works/Barca-Games/barca-games-social-hero.jpg",
+            "hero": CDN + "images/Works/Barca-Games/barca-games-social-hero.jpg",
+            "media": [
+                ("full",  CDN + "images/Works/Barca-Games/CasoBG-Redes-artboard1.jpg"),
+                ("quote", "One app, three seasons, three graphic identities."),
+                ("pair",  [(CDN + "images/Works/Barca-Games/PORTADA-CHRISTMAS.gif"),
+                           CDN + "images/Works/Barca-Games/CasoBG-Redes-05.jpg"]),
+                ("full",  CDN + "images/Works/Barca-Games/CasoBG-Redes-04.jpg"),
+                ("full",   CDN + "images/Works/Barca-Games/CasoBG-Redes-Artboard3.jpg"),
+                ("bleed", (CDN + "images/Works/Barca-Games/PORTADA-KINGS.gif")),
+                ("full",  CDN + "images/Works/Barca-Games/CasoBG-Redes-06.jpg"),
+                ("full",  CDN + "images/Works/Barca-Games/POSTEOS.gif"),
+                ("full",  CDN + "images/Works/Barca-Games/CasoBG-Redes-08.jpg"),
+                ("full", (CDN + "images/Works/Barca-Games/PORTADA-CARNAVAL.gif")),
+                ("pair",  [CDN + "images/Works/Barca-Games/CasoBG-Redes-11.jpg",
+                           CDN + "images/Works/Barca-Games/SALTO.gif"]),
+            ],
+            "credits": [("Creative direction", "Supermarket"),
+                        ("Art direction &amp; design", "Supermarket"),
+                        ("Content production", "Supermarket")],
+        },
+
+         "ficohsa-tarjeta-mastercard": {
+                    "client": "Ficohsa",
+                    "year": "",
+                    "segment": "",
+                    "services": "Social media strategy, art direction, design, content production",
+                    "intro": (
+                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                        "build an engaging and playful presence for the app across platforms. We developed "
+                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                        "downloads, and fan engagement through festive, high-impact content."),
+                    "thumb": CDN + "images/Works/Ficohsa/FICOHSA-card-hero.jpg",
+                    "hero": CDN + "images/Works/Ficohsa/FICOHSA-card-hero.jpg",
+                    "media": [
+                        ("quote", "One app, three seasons, three graphic identities."),
+                        ("full",  CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-01.jpg"),
+                        ("full",  CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-02.jpg"),
+                        ("full",   CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-03.jpg"),
+                        ("full", (CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-04.jpg")),
+                        ("full",  CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-05.jpg"),
+                        ("full",  CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-06.jpg"),
+                        ("full",  CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-07.jpg"),
+                        ("full", (CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-08.jpg")),
+                       
+                    ],
+                    "credits": [("Creative direction", "Supermarket"),
+                                ("Art direction &amp; design", "Supermarket"),
+                                ("Content production", "Supermarket")],
+                },
+
+                 "oky-digital": {
+                                    "client": "OKY",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Oky/oky-digital-hero.jpg",
+                                    "hero": CDN + "images/Works/Oky/oky-digital-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("video",  CDN + "videos/OKY/oky-digital-01.mp4"),
+                                        ("full",  CDN + "images/Works/Oky/oky-digital-02.jpg"),
+                                        ("full",   CDN + "images/Works/Oky/oky-digital-03.gif"),
+                                        ("full", (CDN + "images/Works/Oky/oky-digital-04.jpg")),
+                                        ("full",  CDN + "images/Works/Oky/oky-digital-05.gif"),
+                                        ("full",  CDN + "images/Works/Oky/oky-digital-06.jpg"),
+                                        ("full",  CDN + "images/Works/Oky/oky-digital-07.jpg"),
+                                        ("full", (CDN + "images/Works/Oky/oky-digital-08.gif")),
+                                        ("full",  CDN + "images/Works/Oky/oky-digital-09.jpg"),
+                                        ("full",  CDN + "images/Works/Oky/oky-digital-10.jpg"),
+                                        ("full", (CDN + "images/Works/Oky/oky-digital-11.jpg")),
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },
+
+                  "swift-veggies": {
+                                    "client": "Swift",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Swift/SWIFT-Veggie-hero.jpg",
+                                    "hero": CDN + "images/Works/Swift/SWIFT-Veggie-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Swift/SWIFT-Veggie-CasoSM-01.jpg"),
+                                        ("full",  CDN + "images/Works/Swift/SWIFT-Veggie-logo.gif"),
+                                        ("full",   CDN + "images/Works/Swift/SWIFT-Veggie-CasoSM-02.jpg"),
+                                        ("full", (CDN + "images/Works/Swift/SWIFT-Veggie-CasoSM-03.jpg")),
+                                        ("full",  CDN + "images/Works/Swift/SWIFT-Veggie-BusinessCard.gif"),
+                                        ("full",  CDN + "images/Works/Swift/SWIFT-Veggie-CasoSM-04.jpg"),
+                                        ("full",  CDN + "images/Works/Swift/SWIFT-Veggie-CasoSM-05.jpg"),
+                                        ("full",  CDN + "images/Works/Swift/SWIFT-Veggie-CasoSM-06.jpg"),
+                                        ("full", (CDN + "images/Works/Swift/SWIFT-Veggie-logo.gif")),
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },
+
+                  "swift-categorias": {
+                                    "client": "Swift",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Swift/swift-categorias-hero.jpg",
+                                    "hero": CDN + "images/Works/Swift/swift-categorias-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Swift/swift-categorias-CasoSM-01.jpg"),
+                                        ("full",  CDN + "images/Works/Swift/swift-categorias-grupo-foto2.gif"),
+                                        ("full",   CDN + "images/Works/Swift/swift-categorias-CasoSM-02.jpg"),
+                                        ("full",  CDN + "images/Works/Swift/swift-categorias-CasoSM_Portada.gif"),
+                                        ("full", (CDN + "images/Works/Swift/swift-categorias-CasoSM-03.jpg")),
+                                        ("full",  CDN + "images/Works/Swift/swift-categorias-grupo-foto1.gif"),
+                                        ("full",  CDN + "images/Works/Swift/swift-categorias-CasoSM-04.jpg"),
+                                        ("full",  CDN + "images/Works/Swift/swift-categorias-CasoSM-05.jpg"),
+                                        ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-06.jpg"),
+                                        ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-07.jpg"),
+                                        ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-09.jpg"),
+                                        ("full", (CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-10.jpg")),
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },    
+                                
+                  "tienda-la-virginia": {
+                                    "client": "La Virginia",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/La_Virginia/LV-tienda-hero.gif",
+                                    "hero": CDN + "images/Works/La_Virginia/LV-tienda-hero.gif",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/La_Virginia/LV-tienda-gif1.gif"),
+                                        ("full",  CDN + "images/Works/La_Virginia/LV-tienda-img1.jpg"),
+                                        ("full",   CDN + "images/Works/La_Virginia/LV-tienda-gif2.gif"),
+                                        ("full",  CDN + "images/Works/La_Virginia/LV-tienda-gif3.gif"),
+                                        ("full", (CDN + "images/Works/La_Virginia/LV-tienda-img2.jpg")),
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },         
+                                
+                  "metodo-ucema": {
+                                    "client": "UCEMA",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/UCEMA/UCEMA-Metodo_01.jpg",
+                                    "hero": CDN + "images/Works/UCEMA/UCEMA-Metodo_01.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/UCEMA/UCEMA-Metodo_02.gif"),
+                                        ("full",  CDN + "images/Works/UCEMA/UCEMA-Metodo_03.jpg"),
+                                        ("full",   CDN + "images/Works/UCEMA/UCEMA-Metodo_04.jpg"),
+                                        ("full",  CDN + "images/Works/UCEMA/UCEMA-Metodo_05.jpg"),
+                                        ("full", (CDN + "images/Works/UCEMA/UCEMA-Metodo_06.jpg")),
+                                        ("full",  CDN + "images/Works/UCEMA/UCEMA-Metodo_07.gif"),
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                                                                                        
+
+                  "pickers-by-mccain": {
+                                    "client": "McCain",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/McCain/mccain-pickers-hero.jpg",
+                                    "hero": CDN + "images/Works/McCain/mccain-pickers-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/McCain/mccain-pickers-01.gif"),
+                                        ("full",  CDN + "images/Works/McCain/mccain-pickers-02.jpg"),
+                                        ("full",   CDN + "images/Works/McCain/mccain-pickers-03.jpg"),
+                                        ("full",  CDN + "images/Works/McCain/mccain-pickers-04.jpg"),
+                                        ("full", (CDN + "images/Works/McCain/mccain-pickers-05.gif")),
+                                        ("full",  CDN + "images/Works/McCain/mccain-pickers-06.jpg"),
+                                        ("pair",  [(CDN + "images/Works/McCain/mccain-pickers-07.gif"),
+                                                    CDN + "images/Works/McCain/mccain-pickers-08.gif"]),
+                                        ("pair",  [(CDN + "images/Works/McCain/mccain-pickers-09.gif"),
+                                                  CDN + "images/Works/McCain/mccain-pickers-10.gif"]),
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },     
+
+                  "aero-assist-handling": {
+                                    "client": "Aero Assist",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Aeroassist/AA-handling-hero.jpg",
+                                    "hero": CDN + "images/Works/Aeroassist/AA-handling-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Aeroassist/AA-handling-01.jpg"),
+                                        ("full",  CDN + "images/Works/Aeroassist/AA-handling-02.jpg"),
+                                        ("full",   CDN + "images/Works/Aeroassist/AA-handling-03.jpg"),
+                                        ("full",  CDN + "images/Works/Aeroassist/AA-handling-04.jpg"),
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                }, 
+
+                  "brand-character-rob": {
+                                    "client": "Barça Games",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Barca-Games/bg-rob-hero.webp",
+                                    "hero": CDN + "images/Works/Barca-Games/bg-rob-hero.webp",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Barca-Games/bg-rob-01.png"),
+                                        ("full",  CDN + "images/Works/Barca-Games/bg-rob-02.png"),
+                                        ("full",   CDN + "images/Works/Barca-Games/bg-rob-03.png"),
+                                        ("full",  CDN + "images/Works/Barca-Games/bg-rob-04.png"),
+                                        ("pair",  [(CDN + "images/Works/Barca-Games/bg-rob-08.png"),
+                                                   CDN + "images/Works/Barca-Games/bg-rob-09.png"]),
+                                        ("pair",  [(CDN + "images/Works/Barca-Games/bg-rob-10.png"),
+                                                 CDN + "images/Works/Barca-Games/bg-rob-11.png"]),
+                                        ("vimeo_full",  ("https://vimeo.com/1077970839?fl=pl&fe=cm", "9:16")),
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                }, 
+
+                  "revlon-love-is-on": {
+                                    "client": "Revlon",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Revlon/revlon-love-hero.jpg",
+                                    "hero": CDN + "images/Works/Revlon/revlon-love-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-love-01.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-love-02.jpg"),
+                                                  CDN + "images/Works/Revlon/revlon-love-03.jpg"]),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-love-04.jpg"),
+                                        ("full",   CDN + "images/Works/Revlon/revlon-love-05.jpg"),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-love-06.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-love-07.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-love-08.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-love-09.jpg"),
+                                                  CDN + "images/Works/Revlon/revlon-love-10.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-love-11.jpg"),
+                                                  CDN + "images/Works/Revlon/revlon-love-12.jpg"]),
+                                        ("full", (CDN + "images/Works/Revlon/revlon-love-13.jpg")),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-love-14.jpg"),
+                                        
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },
+
+                  "revlon-nate": {
+                                    "client": "Revlon",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Revlon/revlon-nate-hero.jpg",
+                                    "hero": CDN + "images/Works/Revlon/revlon-nate-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-nate-01.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-nate-02.jpg"),
+                                                  CDN + "images/Works/Revlon/revlon-nate-03.jpg"]),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-nate-04.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-nate-05.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-nate-06.jpg"]),     
+                                        ("full",  CDN + "images/Works/Revlon/revlon-nate-07.jpg"),
+                                        
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                                
+
+                 "barca-games": {
+                                    "client": "Barça Games",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Barca-Games/barca-games-hero.png",
+                                    "hero": CDN + "images/Works/Barca-Games/barca-games-hero.png",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Barca-Games/barca-games-01.jpg"),
+                                        ("full",  CDN + "images/Works/Barca-Games/barca-games-02.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Barca-Games/barca-games-03.jpg"),
+                                                  CDN + "images/Works/Barca-Games/barca-games-04.jpg"]),
+                                        ("full",  CDN + "images/Works/Barca-Games/barca-games-05.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Barca-Games/barca-games-06.jpg"),
+                                                   CDN + "images/Works/Barca-Games/barca-games-07.jpg"]),     
+                                        ("full",  CDN + "images/Works/Barca-Games/barca-games-08.jpg"),
+                                        ("full",  CDN + "images/Works/Barca-Games/barca-games-09.jpg"),
+                                        ("full",  CDN + "images/Works/Barca-Games/barca-games-10.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Barca-Games/barca-games-11.jpg"),
+                                                   CDN + "images/Works/Barca-Games/barca-games-12.jpg"]),
+                                        ("full",  CDN + "images/Works/Barca-Games/barca-games-13.jpg"),                     
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                                
+
+                  "revlon-butter": {
+                                    "client": "Revlon",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Revlon/revlon-colorburst-hero.jpg",
+                                    "hero": CDN + "images/Works/Revlon/revlon-colorburst-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-colorburst-01.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-colorburst-02.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-colorburst-03.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-colorburst-04.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-colorburst-05.jpg"]),     
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-colorburst-06.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-colorburst-07.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-colorburst-08.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-colorburst-09.jpg"]),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-colorburst-10.jpg"),                     
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },      
+
+                  "revlon": {
+                                    "client": "Revlon",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Revlon/revlon-campaigns-hero.jpg",
+                                    "hero": CDN + "images/Works/Revlon/revlon-campaigns-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-campaigns-01.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-campaigns-02.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-campaigns-03.jpg"]),
+                                         ("full",  CDN + "images/Works/Revlon/revlon-campaigns-04.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-campaigns-05.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-campaigns-06.jpg"]),     
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-campaigns-07.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-campaigns-08.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-campaigns-09.jpg"),
+                                                   CDN + "images/Works/Revlon/revlon-campaigns-10.jpg"]),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-campaigns-11.jpg"),     
+                                        ("pair",  [(CDN + "images/Works/Revlon/revlon-campaigns-12.jpg"),
+                                                  CDN + "images/Works/Revlon/revlon-campaigns-13.jpg"]),
+                                        ("full",  CDN + "images/Works/Revlon/revlon-campaigns-14.jpg"),                      
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },        
+
+                  "coca-cola": {
+                                    "client": "Coca Cola",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Cocacola/coca-cola-hero.jpg",
+                                    "hero": CDN + "images/Works/Cocacola/coca-cola-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("embed", "-XQAwHtUfhY"),
+                                        ("embed", "J8A5fD8K4Ns"),                
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                     
+
+                  "izzi": {
+                                    "client": "Izzi",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Izzi/izzi-hero.png",
+                                    "hero": CDN + "images/Works/Izzi/izzi-hero.png",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Izzi/izzi-01.jpeg"),
+                                        ("pair",  [(CDN + "images/Works/Izzi/izzi-02.jpeg"),
+                                                   CDN + "images/Works/Izzi/izzi-03.jpeg"]),
+                                        ("pair",  [(CDN + "images/Works/Izzi/izzi-04.jpeg"),
+                                                   CDN + "images/Works/Izzi/izzi-05.jpeg"]),
+                                        ("pair",  [(CDN + "images/Works/Izzi/izzi-06.jpeg"),
+                                                   CDN + "images/Works/Izzi/izzi-07.jpeg"]),
+                                        ("full",  CDN + "images/Works/Izzi/izzi-08.jpeg"),                       
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },        
+
+                  "tigo-rebranding": {
+                                    "client": "Tigo",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Tigo/tigo-rebrand-hero.jpg",
+                                    "hero": CDN + "images/Works/Tigo/tigo-rebrand-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-rebrand-01.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-02.jpg"),
+                                                   CDN + "images/Works/Tigo/tigo-rebrand-03.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-04.jpg"),
+                                                   CDN + "images/Works/Tigo/tigo-rebrand-05.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-06.jpg"),
+                                                   CDN + "images/Works/Tigo/tigo-rebrand-07.jpg"]),          
+                                        ("full",  CDN + "images/Works/Tigo/tigo-rebrand-08.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-09.jpg"),
+                                                 CDN + "images/Works/Tigo/tigo-rebrand-10.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-11.jpg"),
+                                                  CDN + "images/Works/Tigo/tigo-rebrand-12.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-13.jpg"),
+                                                  CDN + "images/Works/Tigo/tigo-rebrand-14.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-15.jpg"),
+                                                CDN + "images/Works/Tigo/tigo-rebrand-16.jpg"]),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-rebrand-17.jpg"),    
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-18.jpg"),
+                                                  CDN + "images/Works/Tigo/tigo-rebrand-19.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-20.jpg"),
+                                                  CDN + "images/Works/Tigo/tigo-rebrand-21.jpg"]),
+                                       ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-22.jpg"),
+                                                 CDN + "images/Works/Tigo/tigo-rebrand-23.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-24.jpg"),
+                                                  CDN + "images/Works/Tigo/tigo-rebrand-25.jpg"]),                 
+                                  
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                                       
+
+                    "sodastream": {
+                                    "client": "Sodastream",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Sodastream/sodastream-hero.jpg",
+                                    "hero": CDN + "images/Works/Sodastream/sodastream-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Sodastream/sodastream-01.png"),
+                                        ("pair",  [(CDN + "images/Works/Sodastream/sodastream-02.png"),
+                                                   CDN + "images/Works/Sodastream/sodastream-03.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Sodastream/sodastream-04.jpg"),
+                                                   CDN + "images/Works/Sodastream/sodastream-05.jpg"]),
+                                        ("pair",  [(CDN + "images/Works/Sodastream/sodastream-06.jpg"),
+                                                   CDN + "images/Works/Sodastream/sodastream-07.jpg"]),          
+                                        ("pair",  [(CDN + "images/Works/Sodastream/sodastream-08.jpg"),
+                                                 CDN + "images/Works/Sodastream/sodastream-09.png"]),
+                                                                         
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                              
+
+                    "nubceo": {
+                                    "client": "Nubceo",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Nubceo/nubceo-hero.jpeg",
+                                    "hero": CDN + "images/Works/Nubceo/nubceo-hero.jpeg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-01.jpeg"),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-02.jpeg"),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-03.jpeg"),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-04.jpeg"),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-05.jpeg"),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-06.jpeg"),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-07.jpeg"),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-08.jpeg"),
+                                        ("bleed",  CDN + "images/Works/Nubceo/nubceo-09.jpeg"),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-10.jpeg"),
+                                        ("pair",  [(CDN + "images/Works/Nubceo/nubceo-11.jpeg"),
+                                                   CDN + "images/Works/Nubceo/nubceo-12.jpeg"]),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-13.jpeg"),
+                                        ("pair",  [(CDN + "images/Works/Nubceo/nubceo-14.jpeg"),
+                                                   CDN + "images/Works/Nubceo/nubceo-15.jpeg"]),
+                                        ("full",  CDN + "images/Works/Nubceo/nubceo-16.jpeg"),
+                                                                         
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },     
+
+                    "tigo-money": {
+                                    "client": "Tigo",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Tigo/tigo-money-hero.jpeg",
+                                    "hero": CDN + "images/Works/Tigo/tigo-money-hero.jpeg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("video",  CDN + "videos/tigo-money-01.mp4"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-02.png"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-03.jpeg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-04.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-05.png"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-06.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-07.png"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-08.png"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-09.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-10.png"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-11.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-12.png"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-13.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-14.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-15.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-16.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-17.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-18.jpeg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-19.png"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-20.jpg"),
+                                        ("full",  CDN + "images/Works/Tigo/tigo-money-21.jpg"),
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                                     
+
+                    "prester": {
+                                    "client": "Prester",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Prester/prester-hero.jpg",
+                                    "hero": CDN + "images/Works/Prester/prester-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Prester/prester-01.jpg"),
+                                        ("full",  CDN + "images/Works/Prester/prester-02.jpg"),
+                                        ("full",  CDN + "images/Works/Prester/prester-03.jpg"),
+                                        ("full",  CDN + "images/Works/Prester/prester-04.jpg"),
+                                        ("full",  CDN + "images/Works/Prester/prester-05.jpg"),
+                                        ("full",  CDN + "images/Works/Prester/prester-06.jpg"),
+                                        ("full",  CDN + "images/Works/Prester/prester-07.jpg"),
+                                        ("full",  CDN + "images/Works/Prester/prester-08.jpg"),
+                                        ("full",  CDN + "images/Works/Prester/prester-09.jpg"),
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                               
+
+                      "facebank": {
+                                    "client": "Facebank",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Facebank/facebank-hero.jpeg",
+                                    "hero": CDN + "images/Works/Facebank/facebank-hero.jpeg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Facebank/facebank-01.jpeg"),
+                                        ("full",  CDN + "images/Works/Facebank/facebank-02.jpeg"),
+                                        ("full",  CDN + "images/Works/Facebank/facebank-03.jpeg"),
+                                        ("full",  CDN + "images/Works/Facebank/facebank-04.jpg"),
+                                        ("full",  CDN + "images/Works/Facebank/facebank-05.jpeg"),
+                                        ("full",  CDN + "images/Works/Facebank/facebank-06.jpeg"),
+                                        ("full",  CDN + "images/Works/Facebank/facebank-07.jpeg"),
+                                        ("full",  CDN + "images/Works/Facebank/facebank-08.jpg"),
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                               
+
+                      "ucema": {
+                                    "client": "UCEMA",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/UCEMA/ucema-brand-hero.jpg",
+                                    "hero": CDN + "images/Works/UCEMA/ucema-brand-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-01.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-02.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-03.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-04.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-05.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-06.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-07.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-08.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-09.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-10.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-11.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-12.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-13.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-14.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-15.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-16.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-18.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-19.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-20.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-21.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-22.jpeg"),
+                                        ("full",  CDN + "images/Works/UCEMA/ucema-brand-23.jpeg"),                                     
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                          
+
+                      "peisa": {
+                                    "client": "Peisa",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Peisa/peisa-hero.jpeg",
+                                    "hero": CDN + "images/Works/Peisa/peisa-hero.jpeg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Peisa/peisa-01.jpg"),
+                                        ("full",  CDN + "images/Works/Peisa/peisa-02.jpeg"),
+                                        ("full",  CDN + "images/Works/Peisa/peisa-03.jpg"),
+                                        ("full",  CDN + "images/Works/Peisa/peisa-04.jpg"),
+                                        ("full",  CDN + "images/Works/Peisa/peisa-05.jpeg"),
+                                        ("full",  CDN + "images/Works/Peisa/peisa-06.jpg"),
+                                        ("full",  CDN + "images/Works/Peisa/peisa-07.jpeg"),
+                                        ("full",  CDN + "images/Works/Peisa/peisa-08.jpeg"),                       
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                          
+
+                      "vireyes": {
+                                    "client": "Vireyes",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Vireyes/vireyes-hero.jpeg",
+                                    "hero": CDN + "images/Works/Vireyes/vireyes-hero.jpeg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Vireyes/vireyes-01.jpg"),
+                                        ("full",  CDN + "images/Works/Vireyes/vireyes-02.jpeg"),
+                                        ("full",  CDN + "images/Works/Vireyes/vireyes-03.jpg"),
+                                        ("full",  CDN + "images/Works/Vireyes/vireyes-04.jpg"),
+                                        ("full",  CDN + "images/Works/Vireyes/vireyes-05.jpeg"),
+                                        ("full",  CDN + "images/Works/Vireyes/vireyes-06.jpg"),
+                                        ("full",  CDN + "images/Works/Vireyes/vireyes-07.jpeg"),
+                                        ("full",  CDN + "images/Works/Vireyes/vireyes-08.jpeg"), 
+                                        ("full",  CDN + "images/Works/Vireyes/vireyes-09.jpeg"),                                                                 
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                          
+
+                      "lati": {
+                                    "client": "Lati",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Lati/lati-hero.jpg",
+                                    "hero": CDN + "images/Works/Lati/lati-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Lati/lati-01.jpg"),
+                                        ("full",  CDN + "images/Works/Lati/lati-02.jpg"),
+                                        ("full",  CDN + "images/Works/Lati/lati-03.jpg"),
+                                        ("full",  CDN + "images/Works/Lati/lati-04.jpg"),
+                                        ("full",  CDN + "images/Works/Lati/lati-05.jpg"),
+                                        ("full",  CDN + "images/Works/Lati/lati-06.jpg"),
+                                        ("full",  CDN + "images/Works/Lati/lati-07.jpg"),
+                                        ("full",  CDN + "images/Works/Lati/lati-08.jpg"), 
+                                        ("full",  CDN + "images/Works/Lati/lati-09.jpg"),                                                                 
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                          
+
+                      "chocolates-arcor": {
+                                    "client": "Arcor",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Arcor/chocolates-arcor-hero.jpeg",
+                                    "hero": CDN + "images/Works/Arcor/chocolates-arcor-hero.jpeg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Arcor/chocolates-arcor-01.jpg"),
+                                        ("full",  CDN + "images/Works/Arcor/chocolates-arcor-02.jpg"),
+                                        ("full",  CDN + "images/Works/Arcor/chocolates-arcor-03.jpeg"),
+                                        ("full",  CDN + "images/Works/Arcor/chocolates-arcor-04.jpeg"),
+                                        ("full",  CDN + "images/Works/Arcor/chocolates-arcor-05.jpg"),
+                                        ("full",  CDN + "images/Works/Arcor/chocolates-arcor-06.jpg"),
+                                        ("full",  CDN + "images/Works/Arcor/chocolates-arcor-07.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Arcor/chocolates-arcor-08.jpg"),
+                                                   CDN + "images/Works/Arcor/chocolates-arcor-09.jpg"]),                                      
+                                        ("full",  CDN + "images/Works/Arcor/chocolates-arcor-10.jpeg"), 
+                                        ("full",  CDN + "images/Works/Arcor/chocolates-arcor-11.jpeg"),                                                                 
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },                          
+
+                      "serenito": {
+                                    "client": "Serenito",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Serenito/serenito-hero.jpg",
+                                    "hero": CDN + "images/Works/Serenito/serenito-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Serenito/serenito-01.jpg"),
+                                        ("full",  CDN + "images/Works/Serenito/serenito-02.jpg"),
+                                        ("full",  CDN + "images/Works/Serenito/serenito-03.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Serenito/serenito-04.jpg"),
+                                                   CDN + "images/Works/Serenito/serenito-05.jpg"]),   
+                                        ("pair",  [(CDN + "images/Works/Serenito/serenito-06.jpg"),
+                                                   CDN + "images/Works/Serenito/serenito-07.jpg"]),                                                                                                                                                  
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },      
+
+                      "oky": {
+                                    "client": "Oky",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Oky/oky-hero.jpg",
+                                    "hero": CDN + "images/Works/Oky/oky-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Oky/oky-01.jpg"),
+                                        ("full",  CDN + "images/Works/Oky/oky-02.jpg"),
+                                        
+                                        ("full",  CDN + "images/Works/Oky/oky-03.jpg"),
+                                        ("full",  CDN + "images/Works/Oky/oky-04.jpg"), 
+                                        ("full",  CDN + "images/Works/Oky/oky-05.jpg"),
+                                        ("full",  CDN + "images/Works/Oky/oky-06.jpg"),
+                                        ("full",  CDN + "images/Works/Oky/oky-07.jpg"),
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],
+                                },      
+
+                      "felaban": {
+                                    "client": "Felaban",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Felaban/felaban-hero.jpg",
+                                    "hero": CDN + "images/Works/Felaban/felaban-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Felaban/felaban-01.jpg"),
+                                        ("full",  CDN + "images/Works/Felaban/felaban-02.jpg"),
+                                        ("full",  CDN + "images/Works/Felaban/felaban-03.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Felaban/felaban-04.jpg"),
+                                                   CDN + "images/Works/Felaban/felaban-05.jpg"]),                                         
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],                                              
+                                },      
+
+                      "stanley": {
+                                    "client": "Stanley",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Stanley/stanley-hero.jpg",
+                                    "hero": CDN + "images/Works/Stanley/stanley-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Stanley/stanley-01.jpg"),
+                                        ("full",  CDN + "images/Works/Stanley/stanley-02.jpg"),
+                                        ("full",  CDN + "images/Works/Stanley/stanley-03.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Stanley/stanley-04.jpg"),
+                                                   CDN + "images/Works/Stanley/stanley-05.jpg"]),  
+                                        ("full",  CDN + "images/Works/Stanley/stanley-06.jpg"),
+                                        ("full",  CDN + "images/Works/Stanley/stanley-07.jpg"),
+                                        ("full",  CDN + "images/Works/Stanley/stanley-08.jpg"), 
+                                        ("full",  CDN + "images/Works/Stanley/stanley-09.jpg"),                                                                                             
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],                                              
+                                },      
+
+                      "eron": {
+                                    "client": "Eron",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Eron/eron-hero.jpg",
+                                    "hero": CDN + "images/Works/Eron/eron-hero.jpg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Eron/eron-01.jpg"),
+                                        ("full",  CDN + "images/Works/Eron/eron-02.jpg"),
+                                        ("full",  CDN + "images/Works/Eron/eron-03.jpg"),
+                                        ("full",  CDN + "images/Works/Eron/eron-04.jpg"),
+                                        ("pair",  [(CDN + "images/Works/Eron/eron-05.jpg"),
+                                                   CDN + "images/Works/Eron/eron-06.jpg"]),  
+                                        ("full",  CDN + "images/Works/Eron/eron-07.jpg"),
+                                        ("full",  CDN + "images/Works/Eron/eron-08.jpg"),                                                                                          
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],                                              
+                                },      
+
+                      "glenhaven": {
+                                    "client": "Glenhaven",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Glenhaven/glenhaven-hero.jpeg",
+                                    "hero": CDN + "images/Works/Glenhaven/glenhaven-hero.jpeg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Glenhaven/glenhaven-01.jpeg"),
+                                        ("full",  CDN + "images/Works/Glenhaven/glenhaven-02.jpeg"),
+                                        ("full",  CDN + "images/Works/Glenhaven/glenhaven-03.jpeg"),
+                                        ("full",  CDN + "images/Works/Glenhaven/glenhaven-04.jpeg"),
+                                        ("full",  CDN + "images/Works/Glenhaven/glenhaven-05.jpeg"),                                                                                      
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],                                              
+                                },      
+
+                      "delicia": {
+                                    "client": "Delicia",
+                                    "year": "",
+                                    "segment": "",
+                                    "services": "Social media strategy, art direction, design, content production",
+                                    "intro": (
+                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
+                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
+                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                        "build an engaging and playful presence for the app across platforms. We developed "
+                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                        "downloads, and fan engagement through festive, high-impact content."),
+                                    "thumb": CDN + "images/Works/Delicia/delicia-hero.jpeg",
+                                    "hero": CDN + "images/Works/Delicia/delicia-hero.jpeg",
+                                    "media": [
+                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("full",  CDN + "images/Works/Delicia/delicia-01.jpeg"),
+                                        ("full",  CDN + "images/Works/Delicia/delicia-02.jpeg"),
+                                        ("full",  CDN + "images/Works/Delicia/delicia-03.jpeg"),
+                                        ("full",  CDN + "images/Works/Delicia/delicia-04.jpeg"),  
+                                        ("full",  CDN + "images/Works/Delicia/delicia-05.jpeg"),
+                                        ("full",  CDN + "images/Works/Delicia/delicia-06.jpeg"),  
+                                        ("full",  CDN + "images/Works/Delicia/delicia-07.jpeg"),
+                                        ("full",  CDN + "images/Works/Delicia/delicia-08.jpeg"),                                          
+                                        ("pair",  [(CDN + "images/Works/Delicia/delicia-09.jpeg"),
+                                                   CDN + "images/Works/Delicia/delicia-10.jpeg"]), 
+                                        ("pair",  [(CDN + "images/Works/Delicia/delicia-11.jpeg"),
+                                                     CDN + "images/Works/Delicia/delicia-12.jpeg"]),                                                                                                                                                                                 
+                                     
+                                                ("Art direction &amp; design", "Supermarket"),
+                                                ("Content production", "Supermarket")],                                              
+                                },      
+
+    # --- proyectos incorporados desde la rama de Mati ---
     "alicante": {
         "client": "La Virginia",
         "year": "2021",
@@ -787,6 +2047,65 @@ PROJECTS = {
                                                     ("Art direction &amp; design", "Supermarket"),
                                                     ("Content production", "Supermarket")],
                                     },
+    "gogym": {
+                                            "client": "Go Gym",
+                                            "year": "2017",
+                                            "segment": "",
+                                            "services": "Social media strategy, art direction, design, content production",
+                                            "intro": (
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                                                " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                                                "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                                "build an engaging and playful presence for the app across platforms. We developed "
+                                                "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                                "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                                "downloads, and fan engagement through festive, high-impact content."),
+                                            "thumb": CDN + "images/Works/GoGym/GoGymBanner.jpeg", # <- nueva línea
+                                            "hero": CDN + "images/Works/GoGym/GoGymBanner.jpeg",
+                                            "media": [
+                                                ("full",  CDN + "images/Works/GoGym/GoGymKV.jpeg"),
+                                                ("quote", "One app, three seasons, three graphic identities."),
+                                                ("full",  CDN + "images/Works/GoGym/GoGymKV2.jpeg"),
+                                                ("pair",  [(CDN + "images/Works/GoGym/GoGymKV3.jpeg"),
+                                                           CDN + "images/Works/GoGym/GoGymKV4.jpeg"]),
+                                                ("bleed",  CDN + "images/Works/GoGym/GoGymVarios.jpeg"),
+                                                ("full",  CDN + "images/Works/GoGym/GoGymMockupVertical.jpeg"),
+                                                ("full", (CDN + "images/Works/GoGym/GoGymKV5.jpeg")),
+                                            ],
+                                            "credits": [("Creative direction", "Supermarket"),
+                                                        ("Art direction &amp; design", "Supermarket"),
+                                                        ("Content production", "Supermarket")],
+                                        },
+    "arcor-frutas": {
+                                                "client": "Go Gym",
+                                                "year": "2017",
+                                                "segment": "",
+                                                "services": "Social media strategy, art direction, design, content production",
+                                                "intro": (
+                                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                                                    " quis nostrud exercitation ullamco laboris nisi ut aliqui "
+                                                    "strategy to design and production of Instagram posts, Stories, and Reels, helping "
+                                                    "build an engaging and playful presence for the app across platforms. We developed "
+                                                    "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
+                                                    "and Carnival — each with its own graphic identity and tone, driving visibility, "
+                                                    "downloads, and fan engagement through festive, high-impact content."),
+                                                "thumb": CDN + "images/Works/Arcor Frutas/ArcorFrutasBanner.png", # <- nueva línea
+                                                "hero": CDN + "images/Works/Arcor Frutas/ArcorFrutasBanner.png",
+                                                "media": [
+                                                    ("full",  CDN + "images/Works/Arcor Frutas/ArcorFrutasKV.png"),
+                                                    ("quote", "One app, three seasons, three graphic identities."),
+                                                    ("bleed",  CDN + "images/Works/Arcor Frutas/ArcorFrutasManzanaDurazno.png"),
+                                                    ("pair",  [(CDN + "images/Works/Arcor Frutas/ArcorFrutasMockupCompotas.png"),
+                                                               CDN + "images/Works/Arcor Frutas/ArcorFrutasMockupBebe.jpeg"]),
+                                                    
+                                                    ("full",  CDN + "images/Works/Arcor Frutas/ArcorFrutasCompotaMix.jpeg"),
+                                                    ("full", (CDN + "images/Works/Arcor Frutas/ArcorFrutasKVDurazno.png")),
+                                                    ("full", (CDN + "images/Works/Arcor Frutas/ArcorFrutasGlobos.png")),
+                                                ],
+                                                "credits": [("Creative direction", "Supermarket"),
+                                                            ("Art direction &amp; design", "Supermarket"),
+                                                            ("Content production", "Supermarket")],
+                                            },    
 }
 
 # ------------------------------------------------------------------ HOME
@@ -1080,6 +2399,8 @@ for filename, title, current, body, desc in PAGES:
 #                                  lean como una sola imagen continua
 #    ("video",  url)              mp4 propio, autoplay muteado en loop
 #    ("embed",  youtube_id)       reproductor de YouTube
+#    ("vimeo",  url_o_id)         reproductor de Vimeo
+#    ("vimeo",  (url_o_id, "9:16"))  Vimeo con otra proporción (vertical, 1:1, 4:5)
 #    ("quote",  texto)            una frase grande: la idea del caso
 #  Cualquier módulo de imagen acepta pie: ("full", (url, "pie de foto"))
 # =====================================================================
@@ -1109,6 +2430,31 @@ def _path(url, pre=""):
         return url
     return pre + url
 
+def _vimeo_src(payload, background=False):
+    """Accepts a Vimeo URL or an id ("123456789", "123456789/abc123def4")
+    and returns the player URL, keeping the privacy hash of unlisted videos."""
+    m = re.search(r"(\d{6,})(?:/([0-9a-f]+)|\?h=([0-9a-f]+))?", payload)
+    if not m:
+        raise ValueError(f"Vimeo: no encuentro el ID en {payload!r}")
+    vid, h = m.group(1), m.group(2) or m.group(3)
+    return (f"https://player.vimeo.com/video/{vid}?" + (f"h={h}&" if h else "") + "dnt=1"
+            + ("&background=1" if background else ""))
+
+
+def _frame_style(ratio, center=False):
+    """Inline style for a player frame with a custom ratio such as "9:16".
+    Vertical frames are capped at ~85% of the screen height so they fit."""
+    try:
+        w, h = (float(n) for n in str(ratio).replace("/", ":").split(":"))
+    except ValueError:
+        raise ValueError(f'Proporción no válida: {ratio!r} (usa por ejemplo "9:16")')
+    w, h = f"{w:g}", f"{h:g}"
+    style = f"aspect-ratio:{w}/{h}"
+    if float(h) > float(w):
+        style += f";width:min(100%,calc(85vh*{w}/{h}))"
+        if center:
+            style += ";margin-inline:auto"
+    return f' style="{style}"'
 
 def _fig(item, cls="shot", pre=""):
     url, cap = _split(item)
@@ -1136,6 +2482,20 @@ def module_html(kind, payload, pre=""):
                 f'<iframe src="https://www.youtube.com/embed/{payload}?rel=0" title="Project video" '
                 f'allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy">'
                 f'</iframe></div></div>')
+    if kind == "vimeo":
+        url, ratio = payload if isinstance(payload, (tuple, list)) else (payload, None)
+        style = _frame_style(ratio) if ratio else ""
+        return (f'  <div class="wrap"><div class="reel__frame"{style}>'
+                f'<iframe src="{_vimeo_src(url)}" title="Project video" '
+                f'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy">'
+                f'</iframe></div></div>')
+    if kind == "vimeo_full":
+        url, ratio = payload if isinstance(payload, (tuple, list)) else (payload, None)
+        style = _frame_style(ratio, center=True) if ratio else ""
+        return (f'  <div class="reel__frame"{style}>'
+                f'<iframe src="{_vimeo_src(url, background=True)}" title="Project video" '
+                f'allow="autoplay; fullscreen; picture-in-picture" loading="lazy">'
+                f'</iframe></div>')
     if kind == "quote":
         return f'  <div class="wrap"><p class="work__quote">{payload}</p></div>'
     return ""
@@ -1165,7 +2525,7 @@ def project_page(i):
         media = "\n".join(module_html(k, v, pre) for k, v in d["media"])
     else:
         media = ("  <!-- Placeholder gallery: add \"media\" in PROJECTS. Módulos:\n"
-                 "       bleed · full · pair · trio · video · embed · quote -->\n"
+                 "       bleed · full · pair · trio · sheet · video · embed · vimeo · quote -->\n"
                  + "\n".join(module_html(k, v, pre) for k, v in [
                      ("full", POOL[(i + 1) % len(POOL)]),
                      ("pair", [POOL[(i + 2) % len(POOL)], POOL[(i + 3) % len(POOL)]]),
