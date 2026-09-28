@@ -76,6 +76,8 @@ proyecto es elegir el ritmo. En `build.py`, dentro de `PROJECTS[slug]["media"]`:
 | `trio`   | tres piezas en fila                              | familias de posts, sistema de packaging |
 | `video`  | mp4 propio, autoplay muteado en loop             | loops cortos, motion |
 | `embed`  | reproductor de YouTube                           | el film completo, con audio |
+| `vimeo`  | reproductor de Vimeo (URL o ID)                  | el film completo, si lo alojan en Vimeo |
+| `vimeo` con proporción | `(url, "9:16")`: reproductor vertical u otra proporción | videos verticales (reels, stories) |
 | `quote`  | una frase grande, sin imagen                     | la idea del caso, una sola vez |
 
 Cualquier módulo de imagen acepta pie de foto pasando una tupla en lugar de la URL:
@@ -120,10 +122,10 @@ ficha — una agencia no debería cropear su propio trabajo para que entre en un
 
 ## Para poner en producción
 
-1. **Imágenes de trabajos.** Los thumbnails de Home y los previews del índice usan
-   imágenes tuyas ya existentes como placeholder. En `build.py`, la lista `POOL`
-   y las tuplas de `WORKS` son el único lugar a tocar; en el HTML, cada fila del
-   índice lleva su `data-img`.
+1. **Imágenes de trabajos.** Cada proyecto necesita su `thumb`, `hero` y `media`
+   en `PROJECTS` (`build.py`). Mientras falten, se usa una sola imagen de respaldo
+   (`PLACEHOLDER`, un gris neutro en `assets/images/placeholder.webp`). En el HTML,
+   cada fila del índice lleva su `data-img`.
 2. **Links de proyecto.** Van a `work/<slug>.html`; el slug de cada uno se define
    en `WORKS` dentro de `build.py`. El contenido de cada ficha se carga en el
    diccionario `PROJECTS`.
