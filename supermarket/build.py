@@ -974,6 +974,8 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Tigo/tigo-money-20.jpg"),
                                         ("full",  CDN + "images/Works/Tigo/tigo-money-21.jpg"),
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },                                     
@@ -1005,6 +1007,8 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Prester/prester-08.jpg"),
                                         ("full",  CDN + "images/Works/Prester/prester-09.jpg"),
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },                               
@@ -1035,6 +1039,8 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Facebank/facebank-07.jpeg"),
                                         ("full",  CDN + "images/Works/Facebank/facebank-08.jpg"),
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },                               
@@ -1079,6 +1085,8 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/UCEMA/ucema-brand-22.jpeg"),
                                         ("full",  CDN + "images/Works/UCEMA/ucema-brand-23.jpeg"),                                     
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },                          
@@ -1109,6 +1117,8 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Peisa/peisa-07.jpeg"),
                                         ("full",  CDN + "images/Works/Peisa/peisa-08.jpeg"),                       
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },                          
@@ -1140,6 +1150,8 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Vireyes/vireyes-08.jpeg"), 
                                         ("full",  CDN + "images/Works/Vireyes/vireyes-09.jpeg"),                                                                 
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },                          
@@ -1171,6 +1183,8 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Lati/lati-08.jpg"), 
                                         ("full",  CDN + "images/Works/Lati/lati-09.jpg"),                                                                 
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },                          
@@ -1204,6 +1218,8 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Arcor/chocolates-arcor-10.jpeg"), 
                                         ("full",  CDN + "images/Works/Arcor/chocolates-arcor-11.jpeg"),                                                                 
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },                          
@@ -1233,6 +1249,8 @@ PROJECTS = {
                                         ("pair",  [(CDN + "images/Works/Serenito/serenito-06.jpg"),
                                                    CDN + "images/Works/Serenito/serenito-07.jpg"]),                                                                                                                                                  
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },      
@@ -1263,6 +1281,8 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Oky/oky-06.jpg"),
                                         ("full",  CDN + "images/Works/Oky/oky-07.jpg"),
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
                                                 ("Content production", "Supermarket")],
                                 },      
@@ -1290,8 +1310,10 @@ PROJECTS = {
                                         ("pair",  [(CDN + "images/Works/Felaban/felaban-04.jpg"),
                                                    CDN + "images/Works/Felaban/felaban-05.jpg"]),                                         
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
-                                                ("Content production", "Supermarket")],                                              
+                                                ("Content production", "Supermarket")],                                         
                                 },      
 
                       "stanley": {
@@ -1321,8 +1343,10 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Stanley/stanley-08.jpg"), 
                                         ("full",  CDN + "images/Works/Stanley/stanley-09.jpg"),                                                                                             
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
-                                                ("Content production", "Supermarket")],                                              
+                                                ("Content production", "Supermarket")],                                           
                                 },      
 
                       "eron": {
@@ -1351,8 +1375,10 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Eron/eron-07.jpg"),
                                         ("full",  CDN + "images/Works/Eron/eron-08.jpg"),                                                                                          
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
-                                                ("Content production", "Supermarket")],                                              
+                                                ("Content production", "Supermarket")],                                          
                                 },      
 
                       "glenhaven": {
@@ -1378,8 +1404,10 @@ PROJECTS = {
                                         ("full",  CDN + "images/Works/Glenhaven/glenhaven-04.jpeg"),
                                         ("full",  CDN + "images/Works/Glenhaven/glenhaven-05.jpeg"),                                                                                      
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
-                                                ("Content production", "Supermarket")],                                              
+                                                ("Content production", "Supermarket")],                                          
                                 },      
 
                       "delicia": {
@@ -1412,8 +1440,10 @@ PROJECTS = {
                                         ("pair",  [(CDN + "images/Works/Delicia/delicia-11.jpeg"),
                                                      CDN + "images/Works/Delicia/delicia-12.jpeg"]),                                                                                                                                                                                 
                                      
+                                    ],
+                                    "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
-                                                ("Content production", "Supermarket")],                                              
+                                                ("Content production", "Supermarket")],                                         
                                 },      
 
     # --- proyectos incorporados desde la rama de Mati ---
