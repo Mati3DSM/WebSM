@@ -277,7 +277,7 @@ a { color: inherit; text-decoration: none; }
   padding: 7px 0; border-bottom: 1px solid var(--line);
   break-inside: avoid; font-size: 0.9375rem;
 }
-.service__media { background: var(--line); aspect-ratio: 4 / 3; overflow: hidden; }
+.service__media { background: transparent; aspect-ratio: 1 / 1; overflow: hidden; }
 .service__media img { width: 100%; height: 100%; object-fit: cover; }
 
 /* ---------- Stats ---------- */
