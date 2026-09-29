@@ -238,19 +238,13 @@ PROJECTS = {
         "segment": "",
         "services": "Social media strategy, art direction, design, content production",
         "intro": (
-            "We led the social media campaign for Barça Games, a mobile app offering a wide "
-            "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-            "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-            "build an engaging and playful presence for the app across platforms. We developed "
-            "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-            "and Carnival — each with its own graphic identity and tone, driving visibility, "
-            "downloads, and fan engagement through festive, high-impact content."),
+            "We developed the visual identity and branding system for a promotional campaign by Ficohsa, centered around a car giveaway. The campaign featured the raffle of six cars, one per month, and was open to all customers who deposited a qualifying amount of money with the bank. The identity was designed to be dynamic, trustworthy, and engaging, supporting the campaign across multiple touchpoints and reinforcing the bank’s brand presence throughout the promotion."),
         "thumb": CDN + "images/Works/Ficohsa/ficohsa-carro-hero.jpg",
         "hero": CDN + "images/Works/Ficohsa/ficohsa-carro-hero.jpg",
         "media": [
             ("pair",  [(CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard1.jpg"),
                       CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard3.jpg"]),
-            ("quote", "One app, three seasons, three graphic identities."),
+            ("quote", "Promotional campaign identity to drive customer engagement across every touchpoint."),
             ("full",  CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard2.jpg"),
             ("full",  CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard4.jpg"),
             ("full",   CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard5.jpg"),
