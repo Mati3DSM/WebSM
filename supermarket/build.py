@@ -876,7 +876,11 @@ PROJECTS = {
                                     "intro": (
                                         "We love to be aligned with our customers and with Prester we are united by two fundamental virtues: we are both fast and safe. \n"
                                         "\n"   
-                                        "These are some of our projects. In a world where Fintechs are experiencing rapid growth, it is essential to maintain a strong identity and a secure presence to meet customer demands. In this regard, Prester stands out with its new branding and communications, which reflect our commitment to speed, safety and reliability. We worked on the development of this identity under the firm understanding that customer trust is paramount and must be conveyed clearly and unreservedly. Every element of our branding and communications has been conceived with these values and missions in mind, ensuring that every interaction with Prester inspires security and peace of mind in our customers."
+                                        "These are some of our projects.\n" 
+                                        "\n"   
+                                        "In a world where Fintechs are experiencing rapid growth, it is essential to maintain a strong identity and a secure presence to meet customer demands. In this regard, Prester stands out with its new branding and communications, which reflect our commitment to speed, safety and reliability.\n"
+                                        "\n"   
+                                        "We worked on the development of this identity under the firm understanding that customer trust is paramount and must be conveyed clearly and unreservedly. Every element of our branding and communications has been conceived with these values and missions in mind, ensuring that every interaction with Prester inspires security and peace of mind in our customers."
                                         ),
                                     "thumb": CDN + "images/Works/Prester/prester-hero.jpg",
                                     "hero": CDN + "images/Works/Prester/prester-hero.jpg",
@@ -904,11 +908,17 @@ PROJECTS = {
                                     "segment": "",
                                     "services": "Institutional rebranding, Social media campaign",
                                     "intro": (
-                                        "FACEBANK has emerged as one of the most reliable options for the Latin community in the growing market of digital wallets in dollars. We embarked on a rebranding project aimed at creating a new visual identity that not only reflected the essence of the brand but also laid the groundwork for future comprehensive campaigns. We accompanied FACEBANK in this corporate image renewal with the goal of launching a pioneering regional campaign targeted at entrepreneurs and independent workers. These individuals, with a pressing need to receive payment for their services in the United States and other parts of the world, represented the central focus of our launch strategy. Simultaneously, we developed a visual identity system for social media, which would complement and reinforce these campaigns. Additionally, we implemented email marketing tactics, sponsored relevant events, and executed specific campaigns in various countries in Latin America. In summary, our work with FACEBANK not only involved creating a new corporate image but also entailed the design and implementation of comprehensive marketing strategies aimed at positioning the brand as the preferred choice for the Latin community in the digital world of finance."),
+                                        "FACEBANK has emerged as one of the most reliable options for the Latin community in the growing market of digital wallets in dollars.\n" 
+                                        "\n"
+                                        "We embarked on a rebranding project aimed at creating a new visual identity that not only reflected the essence of the brand but also laid the groundwork for future comprehensive campaigns. We accompanied FACEBANK in this corporate image renewal with the goal of launching a pioneering regional campaign targeted at entrepreneurs and independent workers. These individuals, with a pressing need to receive payment for their services in the United States and other parts of the world, represented the central focus of our launch strategy.\n" 
+                                        "\n"
+                                        "Simultaneously, we developed a visual identity system for social media, which would complement and reinforce these campaigns. Additionally, we implemented email marketing tactics, sponsored relevant events, and executed specific campaigns in various countries in Latin America.\n" 
+                                        "\n"
+                                        "In summary, our work with FACEBANK not only involved creating a new corporate image but also entailed the design and implementation of comprehensive marketing strategies aimed at positioning the brand as the preferred choice for the Latin community in the digital world of finance."),
                                     "thumb": CDN + "images/Works/Facebank/facebank-hero.jpeg",
                                     "hero": CDN + "images/Works/Facebank/facebank-hero.jpeg",
                                     "media": [
-                                        ("quote", ""),
+                                       
                                         ("full",  CDN + "images/Works/Facebank/facebank-01.jpeg"),
                                         ("full",  CDN + "images/Works/Facebank/facebank-02.jpeg"),
                                         ("full",  CDN + "images/Works/Facebank/facebank-03.jpeg"),
@@ -926,21 +936,24 @@ PROJECTS = {
 
                       "ucema": {
                                     "client": "UCEMA",
-                                    "year": "",
+                                    "year": "2021",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Institutional rebranding",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "In 2021, the management team of the Universidad del CEMA (UCEMA) challenged us with a monumental task: to revive and revitalize their educational brand through a rebranding that would reflect their evolution and relevance in the current context.\n"
+                                        "\n"
+                                        "We embarked on this rebranding project for UCEMA with a meticulous approach, which included a thorough analysis of the institution's legacy and trajectory. In collaboration with their Marketing, Management, and Educational teams, we delved into the fundamental pillars of the university to conceive a renewed identity, appealing to students and strong in business terms.\n"
+                                        "\n"
+                                        "Our first step was the transformation of the logo and corporate image, symbolized by a phoenix, a clear metaphor for rebirth and progress. This symbol encapsulates the value of knowledge in constant evolution and renewal. Next came the logo, which transformed into the minimal unit responsible for the visual construction of the rest of the pillars. This is how the logo finds its way and connection with the university's sub-areas in a puzzle path: unity and formation.\n"
+                                        "\n"
+                                        "Through the redefinition of the institution's core concept, we developed a visual identity system that encompasses all aspects of the educational experience at UCEMA, from undergraduate and graduate programs to the student department, master's degrees, online courses, and more. Each component of the system had its own identity, yet it all formed part of a coherent and unified whole.\n"
+                                        "\n"
+                                        "This work was recognized with the EIKON 2022 award, winning the Gold award in the 'Corporate Identity Communication' category. This achievement was made possible through joint work with the Marketing team and associated digital teams, who significantly contributed to the successful implementation of this new representative image of UCEMA.\n"
+                                        ),
                                     "thumb": CDN + "images/Works/UCEMA/ucema-brand-hero.jpg",
                                     "hero": CDN + "images/Works/UCEMA/ucema-brand-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                    
                                         ("full",  CDN + "images/Works/UCEMA/ucema-brand-01.jpeg"),
                                         ("full",  CDN + "images/Works/UCEMA/ucema-brand-02.jpeg"),
                                         ("full",  CDN + "images/Works/UCEMA/ucema-brand-03.jpeg"),
@@ -972,21 +985,22 @@ PROJECTS = {
 
                       "peisa": {
                                     "client": "Peisa",
-                                    "year": "",
+                                    "year": "2019",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Campaign, Strategy, Creativity",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "Peisa, the leading company in the heating and hot water market in Argentina, entrusted us with the challenge of carrying out the relaunching campaign of its portfolio.\n"
+                                        "\n"
+                                        "For this task, we immersed ourselves in the development of the 'Más Peisa' campaign, a brand positioning and consolidation strategy that sought to highlight the company's trajectory and excellence. We implemented our creativity and design to create a graphic and communication system that was deployed on billboards, digital media and strategic points of sale.\n"
+                                        "\n"
+                                        "The main objective was to reinforce Peisa's image as an indisputable reference in the market, highlighting its expertise in consulting and the superior quality of its products.\n"
+                                        "\n"
+                                        "Through a solid and coherent message, we communicate that Peisa is more in every aspect: more quality at the best price, more convenience, more style, more technology and more practicality for home environments. This campaign encapsulated the essence of Peisa and reaffirmed its commitment to excellence and customer satisfaction in every aspect of its offering.\n"
+                                       ),
                                     "thumb": CDN + "images/Works/Peisa/peisa-hero.jpeg",
                                     "hero": CDN + "images/Works/Peisa/peisa-hero.jpeg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Design and Creativity for PEISA's Leading Heating Brand Campaign for Antarctica."),
                                         ("full",  CDN + "images/Works/Peisa/peisa-01.jpg"),
                                         ("full",  CDN + "images/Works/Peisa/peisa-02.jpeg"),
                                         ("full",  CDN + "images/Works/Peisa/peisa-03.jpg"),
@@ -1004,21 +1018,20 @@ PROJECTS = {
 
                       "vireyes": {
                                     "client": "Vireyes",
-                                    "year": "",
+                                    "year": "2022",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Packaging",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "Id. That which differentiates a brand and makes it unique. Our challenge with Vireyes was to create its institutional image and packaging to enhance all the quality of a special meat.\n"
+                                        "\n"
+                                        "When exporting quality products, identity should not be put on the back burner.\n"
+                                        "\n"
+                                        "We created for Vireyes an institutional image with premium style, with a design that can be adapted to a demanding packaging with the best material and suitable to withstand food preservation conditions without damaging the packaging and that the customer or distributor receives a package to match the product.\n"
+                                        ),
                                     "thumb": CDN + "images/Works/Vireyes/vireyes-hero.jpeg",
                                     "hero": CDN + "images/Works/Vireyes/vireyes-hero.jpeg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Creativity, Rebranding, and Packaging for Vireyes Export Meat."),
                                         ("full",  CDN + "images/Works/Vireyes/vireyes-01.jpg"),
                                         ("full",  CDN + "images/Works/Vireyes/vireyes-02.jpg"),
                                         ("full",  CDN + "images/Works/Vireyes/vireyes-03.jpg"),
@@ -1037,21 +1050,15 @@ PROJECTS = {
 
                       "lati": {
                                     "client": "Lati",
-                                    "year": "",
+                                    "year": "2022",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Naming, Web",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""
+                                        ),
                                     "thumb": CDN + "images/Works/Lati/lati-hero.jpg",
                                     "hero": CDN + "images/Works/Lati/lati-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
                                         ("full",  CDN + "images/Works/Lati/lati-01.jpg"),
                                         ("full",  CDN + "images/Works/Lati/lati-02.jpg"),
                                         ("full",  CDN + "images/Works/Lati/lati-03.jpg"),
@@ -1070,21 +1077,22 @@ PROJECTS = {
 
                       "chocolates-arcor": {
                                     "client": "Arcor",
-                                    "year": "",
+                                    "year": "2018",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Design, Creativity, Packaging",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "When speaking of Cofler, one speaks of excellence and quality. It is a brand whose products already hold a prominent place in the market, supported by a loyal audience that expects updates across all touchpoints.\n"
+                                        "\n"
+                                        "We are proud to have led the design and creative work for Cofler’s filled chocolate bars packaging. We breathed new life into this classic portfolio staple, refreshing its visual image and highlighting the delicious recipe that the brand has to offer.\n"
+                                        "\n"
+                                        "As art directors, we oversaw the design and modeling of the product illustrations, working in close collaboration to ensure a faithful representation that stands out on the wrapper.\n"
+                                        "\n"
+                                        "In addition to the brand and packaging redesign, we developed all necessary materials for point-of-sale actions and retail displays. Our goal was to guarantee that the consumer experience with Cofler chocolates is exceptional from the moment they spot them on the shelf to the very last bite."
+                                        ),
                                     "thumb": CDN + "images/Works/Arcor/chocolates-arcor-hero.jpeg",
                                     "hero": CDN + "images/Works/Arcor/chocolates-arcor-hero.jpeg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Design and Creativity for Primary Packaging and Branding"),
                                         ("full",  CDN + "images/Works/Arcor/chocolates-arcor-01.jpg"),
                                         ("full",  CDN + "images/Works/Arcor/chocolates-arcor-02.jpg"),
                                         ("sheet",  CDN + "images/Works/Arcor/chocolates-arcor-03.jpeg"),
@@ -1105,21 +1113,16 @@ PROJECTS = {
 
                       "serenito": {
                                     "client": "Serenito",
-                                    "year": "",
+                                    "year": "2018",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Packaging",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""
+                                        ),
                                     "thumb": CDN + "images/Works/Serenito/serenito-hero.jpg",
                                     "hero": CDN + "images/Works/Serenito/serenito-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+
                                         ("full",  CDN + "images/Works/Serenito/serenito-01.jpg"),
                                         ("full",  CDN + "images/Works/Serenito/serenito-02.jpg"),
                                         ("full",  CDN + "images/Works/Serenito/serenito-03.jpg"),
@@ -1136,21 +1139,22 @@ PROJECTS = {
 
                       "oky": {
                                     "client": "Oky",
-                                    "year": "",
+                                    "year": "2020",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Campaign, Strategy, Design",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "OKY is more than just a service for sending shopping vouchers from the United States to Latin America; it is a platform that conveys happiness and emotional connection.\n"
+                                        "\n"
+                                        "Our mission is to provide migrants with the opportunity to send more than just a financial remittance to their loved ones in their home countries. We want to offer them the possibility to send love, support and joy through our vouchers, and not only the necessary financial help.\n"
+                                        "\n"
+                                        "We set out to create a comprehensive communication strategy that captured the essence of what users feel when they receive these vouchers. We worked closely with the benefits offered by OKY, ensuring that the user experience was smooth and satisfying at every step of the process.\n"
+                                        "\n"
+                                        "But most importantly, we focus on conveying the happiness and excitement of those who receive these benefits in their local countries. For them, these vouchers are not just purchases, they are gestures of love and care that strengthen family ties and keep the connection between loved ones alive despite the distance.\n"
+                                        ),
                                     "thumb": CDN + "images/Works/Oky/oky-hero.jpg",
                                     "hero": CDN + "images/Works/Oky/oky-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Oky/oky-01.jpg"),
                                         ("full",  CDN + "images/Works/Oky/oky-02.jpg"),
                                         
@@ -1167,22 +1171,21 @@ PROJECTS = {
                                 },      
 
                       "felaban": {
-                                    "client": "Felaban",
-                                    "year": "",
+                                    "client": "Facebank",
+                                    "year": "2022",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Web",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "FACEBANK, recognized as the leading bank for the Latino community in the United States, participated in the prestigious Felaban event, the most prominent international fair in the Latin American banking sector.\n"
+                                        "\n"
+                                        "We were responsible for creating an impactful experience for this event. We designed the layout of the stand and developed all materials supporting the exhibitors, from stationery to an immersive audiovisual experience.\n"
+                                        "\n"
+                                        "Our goal was to highlight FACEBANK's presence in such a significant environment and offer attendees a memorable experience that reflected the brand's innovation and commitment to the Latino community in the banking sector.\n"
+                                      ),
                                     "thumb": CDN + "images/Works/Felaban/felaban-hero.jpg",
                                     "hero": CDN + "images/Works/Felaban/felaban-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "FELABAN / Design and Creativity for a Special FACEBANK Event."),
                                         ("full",  CDN + "images/Works/Felaban/felaban-01.jpg"),
                                         ("full",  CDN + "images/Works/Felaban/felaban-02.jpg"),
                                         ("full",  CDN + "images/Works/Felaban/felaban-03.jpg"),
