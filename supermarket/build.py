@@ -874,7 +874,9 @@ PROJECTS = {
                                     "segment": "",
                                     "services": "Branding, Identity, UX/UI",
                                     "intro": (
-                                        "We love to be aligned with our customers and with Prester we are united by two fundamental virtues: we are both fast and safe. These are some of our projects. In a world where Fintechs are experiencing rapid growth, it is essential to maintain a strong identity and a secure presence to meet customer demands. In this regard, Prester stands out with its new branding and communications, which reflect our commitment to speed, safety and reliability. We worked on the development of this identity under the firm understanding that customer trust is paramount and must be conveyed clearly and unreservedly. Every element of our branding and communications has been conceived with these values and missions in mind, ensuring that every interaction with Prester inspires security and peace of mind in our customers."),
+                                        "We love to be aligned with our customers and with Prester we are united by two fundamental virtues: we are both fast and safe.\n" 
+                                        "\n"
+                                        "These are some of our projects. In a world where Fintechs are experiencing rapid growth, it is essential to maintain a strong identity and a secure presence to meet customer demands. In this regard, Prester stands out with its new branding and communications, which reflect our commitment to speed, safety and reliability. We worked on the development of this identity under the firm understanding that customer trust is paramount and must be conveyed clearly and unreservedly. Every element of our branding and communications has been conceived with these values and missions in mind, ensuring that every interaction with Prester inspires security and peace of mind in our customers."),
                                     "thumb": CDN + "images/Works/Prester/prester-hero.jpg",
                                     "hero": CDN + "images/Works/Prester/prester-hero.jpg",
                                     "media": [
@@ -2332,6 +2334,14 @@ def _split(item):
     return item, ""
 
 
+def _paragraphs(text):
+    """Splits an intro on blank lines and wraps each part in its own <p>.
+    A blank line in the source string ("\n\n") marks a new paragraph;
+    single line breaks inside a paragraph are treated as normal spaces."""
+    parts = [" ".join(part.split()) for part in text.split("\n\n")]
+    return "".join(f"<p>{part}</p>" for part in parts if part)
+
+
 def _path(url, pre=""):
     """Prefixes local asset paths so they resolve from work/<slug>.html."""
     if url.startswith(("http://", "https://", "//", "/", "data:", "#")):
@@ -2423,7 +2433,7 @@ def project_page(i):
     rail = "".join(f'<div class="rail__row"><dt>{k}</dt><dd>{v}</dd></div>'
                    for k, v in fields if v)
 
-    intro = (f'<div class="work__intro"><p>{d["intro"]}</p></div>'
+    intro = (f'<div class="work__intro">{_paragraphs(d["intro"])}</div>'
              if d.get("intro") else
              '<!-- Intro pending: add "intro" in PROJECTS -->')
 
