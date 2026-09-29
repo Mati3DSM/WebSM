@@ -182,9 +182,9 @@ PROJECTS = {
                 "client": "Swift",
                 "year": "",
                 "segment": "",
-                "services": "Social media strategy, art direction, design, content production",
+                "services": "Advertising, Creativity, Design, POP",
                 "intro": (
-                    "Creamos una campaña para presentar las nuevas versiones picantes de los untables SWIFT, aportando una mirada fresca, divertida y llamativa al producto original. El foco estuvo en comunicar la innovación desde un tono lúdico, invitando a descubrir el picante de una forma descontracturada y atractiva. Con una estética vibrante y dinámica, buscamos que la campaña se sienta moderna, atractiva y fácil de identificar en cualquier formato."),
+                    "We created a campaign to introduce the new spicy versions of SWIFT spreads, bringing a fresh, fun, and eye-catching spin to the original product. The focus was on communicating innovation through a playful tone, inviting consumers to discover the spice in a relaxed and engaging way. With a vibrant and dynamic aesthetic, we aimed for the campaign to feel modern, attractive, and easily recognizable across any format."),
                 "thumb": CDN + "images/Works/Swift/swift-picantes-portada.png",
                 "hero": CDN + "images/Works/Swift/swift-picantes-portada.png",
                 "media": [
