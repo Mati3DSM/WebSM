@@ -533,19 +533,13 @@ PROJECTS = {
                                     "client": "Revlon",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Revlon/revlon-love-hero.jpg",
                                     "hero": CDN + "images/Works/Revlon/revlon-love-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Revlon/revlon-love-01.jpg"),
                                         ("pair",  [(CDN + "images/Works/Revlon/revlon-love-02.jpg"),
                                                   CDN + "images/Works/Revlon/revlon-love-03.jpg"]),
@@ -572,19 +566,13 @@ PROJECTS = {
                                     "client": "Revlon",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Revlon/revlon-nate-hero.jpg",
                                     "hero": CDN + "images/Works/Revlon/revlon-nate-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Revlon/revlon-nate-01.jpg"),
                                         ("pair",  [(CDN + "images/Works/Revlon/revlon-nate-02.jpg"),
                                                   CDN + "images/Works/Revlon/revlon-nate-03.jpg"]),
@@ -604,19 +592,13 @@ PROJECTS = {
                                     "client": "Barça Games",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Strategy, Social media strategy, Motion graphics",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Barca-Games/barca-games-hero.png",
                                     "hero": CDN + "images/Works/Barca-Games/barca-games-hero.png",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Barca-Games/barca-games-01.jpg"),
                                         ("full",  CDN + "images/Works/Barca-Games/barca-games-02.jpg"),
                                         ("pair",  [(CDN + "images/Works/Barca-Games/barca-games-03.jpg"),
@@ -641,19 +623,13 @@ PROJECTS = {
                                     "client": "Revlon",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Revlon/revlon-colorburst-hero.jpg",
                                     "hero": CDN + "images/Works/Revlon/revlon-colorburst-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Revlon/revlon-colorburst-01.jpg"),
                                         ("pair",  [(CDN + "images/Works/Revlon/revlon-colorburst-02.jpg"),
                                                    CDN + "images/Works/Revlon/revlon-colorburst-03.jpg"]),
@@ -675,19 +651,13 @@ PROJECTS = {
                                     "client": "Revlon",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Revlon/revlon-campaigns-hero.jpg",
                                     "hero": CDN + "images/Works/Revlon/revlon-campaigns-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Revlon/revlon-campaigns-01.jpg"),
                                         ("pair",  [(CDN + "images/Works/Revlon/revlon-campaigns-02.jpg"),
                                                    CDN + "images/Works/Revlon/revlon-campaigns-03.jpg"]),
@@ -713,19 +683,13 @@ PROJECTS = {
                                     "client": "Coca Cola",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Cocacola/coca-cola-hero.jpg",
                                     "hero": CDN + "images/Works/Cocacola/coca-cola-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("embed", "-XQAwHtUfhY"),
                                         ("embed", "J8A5fD8K4Ns"),                
                                   
@@ -739,19 +703,13 @@ PROJECTS = {
                                     "client": "Izzi",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Izzi/izzi-hero.png",
                                     "hero": CDN + "images/Works/Izzi/izzi-hero.png",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Izzi/izzi-01.jpeg"),
                                         ("pair",  [(CDN + "images/Works/Izzi/izzi-02.jpeg"),
                                                    CDN + "images/Works/Izzi/izzi-03.jpeg"]),
@@ -771,19 +729,13 @@ PROJECTS = {
                                     "client": "Tigo",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Tigo/tigo-rebrand-hero.jpg",
                                     "hero": CDN + "images/Works/Tigo/tigo-rebrand-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Tigo/tigo-rebrand-01.jpg"),
                                         ("pair",  [(CDN + "images/Works/Tigo/tigo-rebrand-02.jpg"),
                                                    CDN + "images/Works/Tigo/tigo-rebrand-03.jpg"]),
@@ -820,19 +772,13 @@ PROJECTS = {
                                     "client": "Sodastream",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Sodastream/sodastream-hero.jpg",
                                     "hero": CDN + "images/Works/Sodastream/sodastream-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Sodastream/sodastream-01.png"),
                                         ("pair",  [(CDN + "images/Works/Sodastream/sodastream-02.png"),
                                                    CDN + "images/Works/Sodastream/sodastream-03.jpg"]),
@@ -851,21 +797,15 @@ PROJECTS = {
 
                     "nubceo": {
                                     "client": "Nubceo",
-                                    "year": "",
+                                    "year": "2019",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Identity, Design",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "Brand creation, complete identity design, branding, and application across all brand elements and communications."),
                                     "thumb": CDN + "images/Works/Nubceo/nubceo-hero.jpeg",
                                     "hero": CDN + "images/Works/Nubceo/nubceo-hero.jpeg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Nubceo/nubceo-01.jpeg"),
                                         ("full",  CDN + "images/Works/Nubceo/nubceo-02.jpeg"),
                                         ("full",  CDN + "images/Works/Nubceo/nubceo-03.jpeg"),
@@ -891,21 +831,15 @@ PROJECTS = {
 
                     "tigo-money": {
                                     "client": "Tigo",
-                                    "year": "",
+                                    "year": "2022",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Advertising, Strategy, Filming, Production, Media",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "Among the wide range of services and products offered by Tigo, Tigo Money has stood out as a highly valued option for users in the Digital Wallet market. To successfully enter such a competitive industry, the launch of Tigo Money needed to live up to expectations. Therefore, we devised and executed a comprehensive cross-platform campaign for Tigo Money. We take care of the entire production process, from filming and photo shoots to post-production, special effects and motion graphics. Once production was completed, we deployed the campaign in digital and mass media, adopting a 360 approach that ensured wide coverage and an effective connection with the target audience in all relevant channels."),
                                     "thumb": CDN + "images/Works/Tigo/tigo-money-hero.jpeg",
                                     "hero": CDN + "images/Works/Tigo/tigo-money-hero.jpeg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Tigo Money 360° Launch Campaign / full-scale production and a 360° cross-platform campaign for maximum market impact."),
                                         ("video",  CDN + "videos/tigo-money-01.mp4"),
                                         ("full",  CDN + "images/Works/Tigo/tigo-money-02.png"),
                                         ("full",  CDN + "images/Works/Tigo/tigo-money-03.jpeg"),
