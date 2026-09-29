@@ -188,7 +188,7 @@ PROJECTS = {
                 "thumb": CDN + "images/Works/Swift/swift-picantes-portada.png",
                 "hero": CDN + "images/Works/Swift/swift-picantes-portada.png",
                 "media": [
-                    ("quote", "One app, three seasons, three graphic identities."),
+                    ("quote", "Crafting a vibrant, playful campaign with a modern, spicy twist."),
                     ("pair",  [(CDN + "images/Works/Swift/swift-picantes-Artboard1.png"),
                               CDN + "images/Works/Swift/swift-picantes-Artboard2.png"]),
                     ("bleed",  CDN + "images/Works/Swift/swift-GIFUntables.gif"),
