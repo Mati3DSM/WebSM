@@ -193,9 +193,9 @@ PROJECTS = {
                               CDN + "images/Works/Swift/swift-picantes-Artboard2.png"]),
                     ("quote", "One app, three seasons, three graphic identities."),
                     ("bleed",  CDN + "images/Works/Swift/swift-GIFUntables.gif"),
-                    ("sheet",  CDN + "images/Works/Swift/swift-picantes-Artboard3.png"),
-                    ("sheet",  CDN + "images/Works/Swift/swift-picantes-Artboard4.png"),
-                    ("sheet",  CDN + "images/Works/Swift/swift-picantes-words.gif"),
+                    ("full",  CDN + "images/Works/Swift/swift-picantes-Artboard3.png"),
+                    ("full",  CDN + "images/Works/Swift/swift-picantes-Artboard4.png"),
+                    ("full",  CDN + "images/Works/Swift/swift-picantes-words.gif"),
                     ("full",  CDN + "images/Works/Swift/swift-picantes-billboard.png"),
                     ("bleed", (CDN + "images/Works/Swift/swift-GIFSabrosos.gif")),
                     ("pair",  [(CDN + "images/Works/Swift/swift-picantes-Artboard8.png"),
@@ -2175,10 +2175,12 @@ for i, (name, slug) in enumerate(featured):
 home_body = f"""<section class="hero">
   <video class="hero__media" src="{REEL_MP4}" autoplay muted loop playsinline preload="metadata"
          poster="{IMG['board']}"></video>
-  <div class="hero__overlay reveal">
+  <div class="hero__overlay">
+  <div class="hero__overlay-inner">
     <h1 class="hero__line">We are Supermarket. A global force of creativity.</h1>
     <p class="hero__side">Effective, no excuses.<br>Independent since 2009</p>
   </div>
+</div>
 </section>
 
 <section class="section wrap">
