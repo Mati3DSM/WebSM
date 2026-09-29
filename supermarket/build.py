@@ -506,19 +506,13 @@ PROJECTS = {
                                     "client": "Barça Games",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Strategy, Motion graphics",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        ""),
                                     "thumb": CDN + "images/Works/Barca-Games/bg-rob-hero.webp",
                                     "hero": CDN + "images/Works/Barca-Games/bg-rob-hero.webp",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Barca-Games/bg-rob-01.png"),
                                         ("full",  CDN + "images/Works/Barca-Games/bg-rob-02.png"),
                                         ("full",   CDN + "images/Works/Barca-Games/bg-rob-03.png"),
