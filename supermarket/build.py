@@ -92,7 +92,6 @@ def header(current, pre=""):
   <div class="header__inner">
     <a class="brand" href="{pre}index.html" aria-label="Supermarket, home">
       <span class="brand__mark">Supermarket</span>
-      <span class="brand__dot" aria-hidden="true"></span>
     </a>
     <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" data-open="false" aria-label="Main">{links}</nav>
@@ -1616,7 +1615,7 @@ PROJECTS = {
                                         "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                                         "and Carnival — each with its own graphic identity and tone, driving visibility, "
                                         "downloads, and fan engagement through festive, high-impact content."),
-                                    "thumb": CDN + "images/Works/Cutex/CutexPortadaCartel.jpeg", # <- nueva línea
+                                    "thumb": CDN + "images/Works/Cutex/CutexBanner.jpeg", # <- nueva línea
                                     "hero": CDN + "images/Works/Cutex/CutexBanner.jpeg",
                                     "media": [
                                         ("full",  CDN + "images/Works/Cutex/CutexPortadaCartel.jpeg"),
