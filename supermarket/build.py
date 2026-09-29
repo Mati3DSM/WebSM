@@ -870,21 +870,15 @@ PROJECTS = {
 
                     "prester": {
                                     "client": "Prester",
-                                    "year": "",
+                                    "year": "2019",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Identity, UX/UI",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "We love to be aligned with our customers and with Prester we are united by two fundamental virtues: we are both fast and safe. These are some of our projects. In a world where Fintechs are experiencing rapid growth, it is essential to maintain a strong identity and a secure presence to meet customer demands. In this regard, Prester stands out with its new branding and communications, which reflect our commitment to speed, safety and reliability. We worked on the development of this identity under the firm understanding that customer trust is paramount and must be conveyed clearly and unreservedly. Every element of our branding and communications has been conceived with these values and missions in mind, ensuring that every interaction with Prester inspires security and peace of mind in our customers."),
                                     "thumb": CDN + "images/Works/Prester/prester-hero.jpg",
                                     "hero": CDN + "images/Works/Prester/prester-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Complete Identity Creation, Institutional Launch Branding and Prester App Branding."),
                                         ("full",  CDN + "images/Works/Prester/prester-01.jpg"),
                                         ("full",  CDN + "images/Works/Prester/prester-02.jpg"),
                                         ("sheet",  CDN + "images/Works/Prester/prester-03.jpg"),
@@ -903,21 +897,15 @@ PROJECTS = {
 
                       "facebank": {
                                     "client": "Facebank",
-                                    "year": "",
+                                    "year": "2022",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Institutional rebranding, Social media campaign",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "FACEBANK has emerged as one of the most reliable options for the Latin community in the growing market of digital wallets in dollars. We embarked on a rebranding project aimed at creating a new visual identity that not only reflected the essence of the brand but also laid the groundwork for future comprehensive campaigns. We accompanied FACEBANK in this corporate image renewal with the goal of launching a pioneering regional campaign targeted at entrepreneurs and independent workers. These individuals, with a pressing need to receive payment for their services in the United States and other parts of the world, represented the central focus of our launch strategy. Simultaneously, we developed a visual identity system for social media, which would complement and reinforce these campaigns. Additionally, we implemented email marketing tactics, sponsored relevant events, and executed specific campaigns in various countries in Latin America. In summary, our work with FACEBANK not only involved creating a new corporate image but also entailed the design and implementation of comprehensive marketing strategies aimed at positioning the brand as the preferred choice for the Latin community in the digital world of finance."),
                                     "thumb": CDN + "images/Works/Facebank/facebank-hero.jpeg",
                                     "hero": CDN + "images/Works/Facebank/facebank-hero.jpeg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/Facebank/facebank-01.jpeg"),
                                         ("full",  CDN + "images/Works/Facebank/facebank-02.jpeg"),
                                         ("full",  CDN + "images/Works/Facebank/facebank-03.jpeg"),
