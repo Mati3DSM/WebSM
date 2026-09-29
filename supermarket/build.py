@@ -351,20 +351,14 @@ PROJECTS = {
                   "swift-veggies": {
                                     "client": "Swift",
                                     "year": "",
-                                    "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "segment": "Branding",
+                                    "services": "Branding, Communication, POP",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "We supported the launch of Swift Veggies, Swift’s new line of frozen plant-based products — including veggie nuggets and patties — by developing its visual identity from the ground up. We created the graphic universe, branding, and full communication strategy to position this new category within the Swift portfolio. We also designed and produced materials for retail spaces and sales commercials, ensuring a strong, consistent, and appealing presence across all consumer touchpoints."),
                                     "thumb": CDN + "images/Works/Swift/SWIFT-Veggie-hero.jpg",
                                     "hero": CDN + "images/Works/Swift/SWIFT-Veggie-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Building the brand universe and communication strategy to launch Swift Veggies."),
                                         ("full",  CDN + "images/Works/Swift/SWIFT-Veggie-CasoSM-01.jpg"),
                                         ("full",  CDN + "images/Works/Swift/SWIFT-Veggie-logo.gif"),
                                         ("sheet",   CDN + "images/Works/Swift/SWIFT-Veggie-CasoSM-02.jpg"),
@@ -383,21 +377,15 @@ PROJECTS = {
 
                   "swift-categorias": {
                                     "client": "Swift",
-                                    "year": "",
-                                    "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "year": "2024",
+                                    "segment": "Branding",
+                                    "services": "Branding, Communication, Creativity",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "We designed the visual identity and communication strategy for SWIFT’s new product categorization as part of its brand relaunch. The objective: reorganize the portfolio and boost the visibility of each product family across points of sale and communication channels. From naming to photography production, we developed a simple, cohesive, and memorable visual system tailored to simplify consumer decision-making and reinforce brand positioning. A comprehensive proposal combining strategy, design, and creativity to power this new chapter for SWIFT."),
                                     "thumb": CDN + "images/Works/Swift/swift-categorias-hero.jpg",
                                     "hero": CDN + "images/Works/Swift/swift-categorias-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Product portfolio relaunch from naming to shelf."),
                                         ("full",  CDN + "images/Works/Swift/swift-categorias-CasoSM-01.jpg"),
                                         ("full",  CDN + "images/Works/Swift/swift-categorias-grupo-foto2.gif"),
                                         ("full",   CDN + "images/Works/Swift/swift-categorias-CasoSM-02.jpg"),
@@ -421,19 +409,13 @@ PROJECTS = {
                                     "client": "La Virginia",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Strategy, Identity, UX/UI",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "A full redesign of La Virginia’s e-commerce site, focused on improving navigation, visual clarity, and the overall shopping experience. The project involved restructuring the site’s information architecture and developing a visual design system aligned with the brand’s warm and traditional identity. With a user-centered approach, we optimized the journey from product exploration to checkout. UX principles were applied to streamline navigation, build user trust, and improve conversion. The result is a functional and visually appealing online store, ready to scale and strengthen the brand’s digital presence while enhancing user engagement."),
                                     "thumb": CDN + "images/Works/La_Virginia/LV-tienda-hero.gif",
                                     "hero": CDN + "images/Works/La_Virginia/LV-tienda-hero.gif",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "User-centered UX and a refined design system."),
                                         ("full",  CDN + "images/Works/La_Virginia/LV-tienda-gif1.gif"),
                                         ("full",  CDN + "images/Works/La_Virginia/LV-tienda-img1.jpg"),
                                         ("sheet",   CDN + "images/Works/La_Virginia/LV-tienda-gif2.gif"),
