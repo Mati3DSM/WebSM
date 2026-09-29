@@ -10,7 +10,7 @@ REEL_MP4 = ("assets/videos/Web-Reel-Sin-Logo-Al-Final-transcode.mp4")
 
 # CAMBIAR antes de publicar: dominio final, sin barra al final.
 # Se usa para <link rel="canonical">, Open Graph, robots.txt y sitemap.xml.
-DOMAIN = "https://www.wearesupermarket.com/"
+DOMAIN = "https://www.wearesupermarket.com"
 DEFAULT_OG_IMAGE = CDN + "images/logo.png"  # imagen de respaldo para compartir en redes
 
 IMG = {
@@ -295,9 +295,9 @@ PROJECTS = {
                 ("full",  CDN + "images/Works/Barca-Games/CasoBG-Redes-04.jpg"),
                 ("full",   CDN + "images/Works/Barca-Games/CasoBG-Redes-Artboard3.jpg"),
                 ("bleed", (CDN + "images/Works/Barca-Games/PORTADA-KINGS.gif")),
-                ("full",  CDN + "images/Works/Barca-Games/CasoBG-Redes-06.jpg"),
-                ("full",  CDN + "images/Works/Barca-Games/POSTEOS.gif"),
-                ("full",  CDN + "images/Works/Barca-Games/CasoBG-Redes-08.jpg"),
+                ("sheet",  CDN + "images/Works/Barca-Games/CasoBG-Redes-06.jpg"),
+                ("sheet",  CDN + "images/Works/Barca-Games/POSTEOS.gif"),
+                ("sheet",  CDN + "images/Works/Barca-Games/CasoBG-Redes-08.jpg"),
                 ("full", (CDN + "images/Works/Barca-Games/PORTADA-CARNAVAL.gif")),
                 ("pair",  [CDN + "images/Works/Barca-Games/CasoBG-Redes-11.jpg",
                            CDN + "images/Works/Barca-Games/SALTO.gif"]),
@@ -1487,9 +1487,9 @@ PROJECTS = {
             ("full",  CDN + "images/Works/Alicante/AlicanteBanner.jpeg"),
             ("quote", "One app, three seasons, three graphic identities."),
             ("full",  CDN + "images/Works/Alicante/AlicanteMockupSopaLista.jpeg"),
-            ("trio",  [(CDN + "images/Works/Alicante/AlicanteSopaListaEsparragos.png"),
-                       (CDN + "images/Works/Alicante/AlicanteSopaListaZapallo.png"),
-                       CDN + "images/Works/Alicante/AlicanteSopaListaVegetales.png"]),
+            ("pair",  [(CDN + "images/Works/Alicante/AlicanteMockupSopaListaSupermercado.jpeg"),
+                       CDN + "images/Works/Alicante/AlicanteMockupSopaListaSupermercado2.jpeg"]),
+            ("bleed", (CDN + "images/Works/Alicante/AlicanteSopaListaArte.jpeg")),
             ("full",  CDN + "images/Works/Alicante/AlicanteMockupSopaListaSupermercado.jpeg"),
             ("bleed", (CDN + "images/Works/Alicante/AlicanteMockupCartel.jpeg")),
         ],
@@ -1548,16 +1548,15 @@ PROJECTS = {
                                     ("pair",  [(CDN + "images/Works/Cutex-Pro/CutexProA4.jpeg"),
                                                CDN + "images/Works/Cutex-Pro/CutexProRevista2.jpeg"]),
                                     ("full",  CDN + "images/Works/Cutex-Pro/CutexProStand.jpeg"),
-                                    ("full", (CDN + "images/Works/Cutex-Pro/CutexProMockupsVarios.png")),
+                                    ("full", (CDN + "images/Works/Cutex-Pro/CutexProMockupsVarios.jpeg")),
                                     ("bleed",  CDN + "images/Works/Cutex-Pro/CutexProRevista.jpeg"),
                                     ("full", (CDN + "images/Works/Cutex-Pro/CutexProMockupsVarios2.jpeg")),
                                     ("full", (CDN + "images/Works/Cutex-Pro/CutexProCatalogo.jpeg")),
                                     ("pair",  [(CDN + "images/Works/Cutex-Pro/CutexProCartelSalientes.jpeg"),
                                                 CDN + "images/Works/Cutex-Pro/CutexProRevista3.jpeg"]),
-                                    ("pair",  [(CDN + "images/Works/Cutex-Pro/CutexProCarteles1.png"),
-                                                CDN + "images/Works/Cutex-Pro/CutexProCarteles2.png"]),
                                     ("full",  CDN + "images/Works/Cutex-Pro/CutexProExibidores.jpeg"),
-                                    ("bleed",  CDN + "images/Works/Cutex-Pro/CutexProTablet.jpeg"),
+                                    ("bleed", (CDN + "images/Works/Cutex-Pro/CutexProCarteles.jpeg")),
+                                    ("full",  CDN + "images/Works/Cutex-Pro/CutexProTablet.jpeg"),
                               
                                 ],
                                 "credits": [("Creative direction", "Supermarket"),
