@@ -91,7 +91,7 @@ def header(current, pre=""):
 <header class="header">
   <div class="header__inner">
     <a class="brand" href="{pre}index.html" aria-label="Supermarket, home">
-      <span class="brand__mark">Supermarket</span>
+      <img class="brand__mark" src="assets/images/logo.svg" alt="Supermarket">
     </a>
     <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" data-open="false" aria-label="Main">{links}</nav>
