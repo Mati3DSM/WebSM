@@ -1728,7 +1728,7 @@ PROJECTS = {
                             "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                             "and Carnival — each with its own graphic identity and tone, driving visibility, "
                             "downloads, and fan engagement through festive, high-impact content."),
-                        "thumb": CDN + "images/Works/Natural-One/NaturalOneLogo.png", # <- nueva línea
+                        "thumb": CDN + "images/Works/Natural-One/NaturalOneThumb.png", # <- nueva línea
                         "hero": CDN + "images/Works/Natural-One/NaturalOneBanner.png",
                         "media": [
                             ("full",  CDN + "images/Works/Natural-One/NaturalOneTote.png"),
