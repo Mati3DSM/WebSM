@@ -430,21 +430,15 @@ PROJECTS = {
                                 
                   "metodo-ucema": {
                                     "client": "UCEMA",
-                                    "year": "",
+                                    "year": "2025",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Creativity, Visual Communication",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "We developed the visual identity and communication campaign for a special program at UCEMA University. Designed to support first-year students in mastering applied mathematics—a crucial foundation for their academic path across various degree programs—the project spanned branding, creative development, and communication assets. Our goal was to convey approachability, clarity, and the essential value of a strong academic foundation right from the start."),
                                     "thumb": CDN + "images/Works/UCEMA/UCEMA-Metodo_01.jpg",
                                     "hero": CDN + "images/Works/UCEMA/UCEMA-Metodo_01.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Shaping the visual identity and communication for UCEMA."),
                                         ("full",  CDN + "images/Works/UCEMA/UCEMA-Metodo_02.gif"),
                                         ("full",  CDN + "images/Works/UCEMA/UCEMA-Metodo_03.jpg"),
                                         ("full",   CDN + "images/Works/UCEMA/UCEMA-Metodo_04.jpg"),
@@ -462,19 +456,13 @@ PROJECTS = {
                                     "client": "McCain",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Creativity, Content production, Advertising",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "Bold bites deserve bold branding. For McCain’s playful, flavor-packed food segment P!CKERS, we cooked up a full spread of in-store and commercial materials for vendors and gastronomic shops. From sizzling catalogues and crave-worthy brochures to flyers, sell sheets, napkins, tablemats, and tabletents—we made sure every touchpoint served the vibe just right."),
                                     "thumb": CDN + "images/Works/McCain/mccain-pickers-hero.jpg",
                                     "hero": CDN + "images/Works/McCain/mccain-pickers-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", ""),
                                         ("full",  CDN + "images/Works/McCain/mccain-pickers-01.gif"),
                                         ("full",  CDN + "images/Works/McCain/mccain-pickers-02.jpg"),
                                         ("full",   CDN + "images/Works/McCain/mccain-pickers-03.jpg"),
@@ -496,19 +484,13 @@ PROJECTS = {
                                     "client": "Aero Assist",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Identity, Logos, Art direction, Strategy",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "We took off with Aero Assist Handling to build a bold, modern brand ready to move at airport speed. From logo lift-off to smooth landings across stationery, brand guidelines, ads, and a sleek web presence—we designed every touchpoint to feel sharp, functional, and confidently global. This is airport handling, reimagined with altitude."),
                                     "thumb": CDN + "images/Works/Aeroassist/AA-handling-hero.jpg",
                                     "hero": CDN + "images/Works/Aeroassist/AA-handling-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "A sharp global identity built to move at airport speed."),
                                         ("full",  CDN + "images/Works/Aeroassist/AA-handling-01.jpg"),
                                         ("full",  CDN + "images/Works/Aeroassist/AA-handling-02.jpg"),
                                         ("full",   CDN + "images/Works/Aeroassist/AA-handling-03.jpg"),
