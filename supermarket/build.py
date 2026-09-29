@@ -210,20 +210,14 @@ PROJECTS = {
         "client": "Swift",
         "year": "",
         "segment": "",
-        "services": "Social media strategy, art direction, design, content production",
+        "services": "Advertising, art direction, design, POP",
         "intro": (
-            "We led the social media campaign for Barça Games, a mobile app offering a wide "
-            "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-            "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-            "build an engaging and playful presence for the app across platforms. We developed "
-            "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-            "and Carnival — each with its own graphic identity and tone, driving visibility, "
-            "downloads, and fan engagement through festive, high-impact content."),
+            "We created a summer campaign for Swift that combined the World Cup spirit with pop activations across beaches, points of sale, and dining venues. Through a fresh, summer-inspired visual system, the brand established a strong presence in seaside resorts and key venues, connecting everyday consumption with moments of enjoyment and celebration."),
         "thumb": CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-hero.jpg",
         "hero": CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-hero.jpg",
         "media": [
             ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-01.jpg"),
-            ("quote", "One app, three seasons, three graphic identities."),
+            ("quote", "Vibrant summer campaign and multi-touchpoint activations that merged matchday excitement with seasonal fun."),
             ("full",  CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-02.jpg"),
             ("full",   CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-03.jpg"),
             ("full", (CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-04.jpg")),
