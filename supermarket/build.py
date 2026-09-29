@@ -210,7 +210,7 @@ PROJECTS = {
         "client": "Swift",
         "year": "",
         "segment": "",
-        "services": "Advertising, art direction, design, POP",
+        "services": "Advertising, Art direction, Design, POP",
         "intro": (
             "We created a summer campaign for Swift that combined the World Cup spirit with pop activations across beaches, points of sale, and dining venues. Through a fresh, summer-inspired visual system, the brand established a strong presence in seaside resorts and key venues, connecting everyday consumption with moments of enjoyment and celebration."),
         "thumb": CDN + "images/Works/Swift/SWIFT_VeranoMundial_2526_CasoSM-hero.jpg",
@@ -236,15 +236,15 @@ PROJECTS = {
         "client": "Ficohsa",
         "year": "",
         "segment": "",
-        "services": "Social media strategy, art direction, design, content production",
+        "services": "Identity, Strategy, Art direction",
         "intro": (
             "We developed the visual identity and branding system for a promotional campaign by Ficohsa, centered around a car giveaway. The campaign featured the raffle of six cars, one per month, and was open to all customers who deposited a qualifying amount of money with the bank. The identity was designed to be dynamic, trustworthy, and engaging, supporting the campaign across multiple touchpoints and reinforcing the bank’s brand presence throughout the promotion."),
         "thumb": CDN + "images/Works/Ficohsa/ficohsa-carro-hero.jpg",
         "hero": CDN + "images/Works/Ficohsa/ficohsa-carro-hero.jpg",
         "media": [
+            ("quote", "Promotional campaign identity to drive customer engagement across every touchpoint."),
             ("pair",  [(CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard1.jpg"),
                       CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard3.jpg"]),
-            ("quote", "Promotional campaign identity to drive customer engagement across every touchpoint."),
             ("full",  CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard2.jpg"),
             ("full",  CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard4.jpg"),
             ("full",   CDN + "images/Works/Ficohsa/ficohsa-carro-Artboard5.jpg"),
@@ -300,17 +300,11 @@ PROJECTS = {
                     "segment": "",
                     "services": "Social media strategy, art direction, design, content production",
                     "intro": (
-                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                        "build an engaging and playful presence for the app across platforms. We developed "
-                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                        "downloads, and fan engagement through festive, high-impact content."),
+                        "We developed the creative concept and full rollout for the launch campaign of the new Ficohsa Mastercard American Airlines AAdvantage® card. A concept inspired by the universal dream of travel, connecting everyday purchases with the excitement of planning the next journey. Built around the central idea 'Your new boarding pass', we created a visual and narrative system that links card usage with access to exclusive travel benefits: miles accumulation, upgrades, lounge access, and more. The campaign came to life through multiple touchpoints: point-of-sale materials, key urban placements, digital assets, and in-branch signage. An integrated experience designed to remind users that every purchase brings them one step closer to their next destination. "),
                     "thumb": CDN + "images/Works/Ficohsa/FICOHSA-card-hero.jpg",
                     "hero": CDN + "images/Works/Ficohsa/FICOHSA-card-hero.jpg",
                     "media": [
-                        ("quote", "One app, three seasons, three graphic identities."),
+                        ("quote", "Ficohsa Mastercard AAdvantage® Launch / 360° Campaign for Frequent Travelers"),
                         ("full",  CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-01.jpg"),
                         ("full",  CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-02.jpg"),
                         ("full",   CDN + "images/Works/Ficohsa/FICOHSA-card-CasoSM-03.jpg"),
@@ -330,19 +324,13 @@ PROJECTS = {
                                     "client": "OKY",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Identity, Strategy, Design, UX/UI",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "Design and development of the digital experience for Oky, a platform offering personalized financial services for migrant communities, and its B2B counterpart, Oky Business. The challenge was to create a cohesive visual identity for both audiences, integrating clarity, trust, and scalability across the experience. We worked on information architecture, navigation, and brand tone to reflect Oky’s values of inclusion and accessible technology. The user-facing site focuses on a clean, modern, and friendly interface, while Oky Business strengthens institutional messaging and highlights benefits for corporate partners. "),
                                     "thumb": CDN + "images/Works/Oky/oky-digital-hero.jpg",
                                     "hero": CDN + "images/Works/Oky/oky-digital-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Designing a seamless, high-trust digital experience for Oky"),
                                         ("video",  CDN + "videos/OKY/oky-digital-01.mp4"),
                                         ("full",  CDN + "images/Works/Oky/oky-digital-02.jpg"),
                                         ("full",   CDN + "images/Works/Oky/oky-digital-03.gif"),
