@@ -1514,7 +1514,7 @@ PROJECTS = {
                                         "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                                         "and Carnival — each with its own graphic identity and tone, driving visibility, "
                                         "downloads, and fan engagement through festive, high-impact content."),
-                                    "thumb": CDN + "images/Works/Arcor-Patria/ArcorPatriaBanner.jpeg", # <- nueva línea
+                                    "thumb": CDN + "images/Works/Arcor-Patria/ArcorPatriaThumb.png", # <- nueva línea
                                     "hero": CDN + "images/Works/Arcor-Patria/ArcorPatriaBanner.jpeg",
                                     "media": [
                                         ("sheet",  CDN + "images/Works/Arcor-Patria/ArcorPatriaSheet1.jpeg"),
@@ -1603,7 +1603,7 @@ PROJECTS = {
                     "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                     "and Carnival — each with its own graphic identity and tone, driving visibility, "
                     "downloads, and fan engagement through festive, high-impact content."),
-                "thumb": CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakBanner.png", # <- nueva línea
+                "thumb": CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakThumb.png", # <- nueva línea
                 "hero": CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakBanner.png",
                 "media": [
                     ("full",  CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakKV.png"),
@@ -1634,7 +1634,7 @@ PROJECTS = {
                         "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                         "and Carnival — each with its own graphic identity and tone, driving visibility, "
                         "downloads, and fan engagement through festive, high-impact content."),
-                    "thumb": CDN + "images/Works/Mr-Pops/MrPopsBanner.jpeg", # <- nueva línea
+                    "thumb": CDN + "images/Works/Mr-Pops/MrPopsKV.jpeg", # <- nueva línea
                     "hero": CDN + "images/Works/Mr-Pops/MrPopsBanner.jpeg",
                     "media": [
                         ("full",  CDN + "images/Works/Mr-Pops/MrPopsKV.jpeg"),
@@ -1694,7 +1694,7 @@ PROJECTS = {
                     "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                     "and Carnival — each with its own graphic identity and tone, driving visibility, "
                     "downloads, and fan engagement through festive, high-impact content."),
-                "thumb": CDN + "images/Works/Levite-Limonada/LeviteLimonadaBanner.jpeg", # <- nueva línea
+                "thumb": CDN + "images/Works/Levite-Limonada/LeviteLimonadaKV.png", # <- nueva línea
                 "hero": CDN + "images/Works/Levite-Limonada/LeviteLimonadaBanner.jpeg",
                 "media": [
                     ("full",  CDN + "images/Works/Levite-Limonada/LeviteLimonadaKV.png"),
@@ -1725,7 +1725,7 @@ PROJECTS = {
                             "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                             "and Carnival — each with its own graphic identity and tone, driving visibility, "
                             "downloads, and fan engagement through festive, high-impact content."),
-                        "thumb": CDN + "images/Works/Natural-One/NaturalOneBanner.png", # <- nueva línea
+                        "thumb": CDN + "images/Works/Natural-One/NaturalOneLogo.png", # <- nueva línea
                         "hero": CDN + "images/Works/Natural-One/NaturalOneBanner.png",
                         "media": [
                             ("full",  CDN + "images/Works/Natural-One/NaturalOneTote.png"),
