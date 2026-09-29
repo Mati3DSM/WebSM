@@ -10,7 +10,7 @@ REEL_MP4 = ("assets/videos/Web-Reel-Sin-Logo-Al-Final-transcode.mp4")
 
 # CAMBIAR antes de publicar: dominio final, sin barra al final.
 # Se usa para <link rel="canonical">, Open Graph, robots.txt y sitemap.xml.
-DOMAIN = "https://www.wearesupermarket.com/"
+DOMAIN = "https://www.wearesupermarket.com"
 DEFAULT_OG_IMAGE = CDN + "images/logo.png"  # imagen de respaldo para compartir en redes
 
 IMG = {
