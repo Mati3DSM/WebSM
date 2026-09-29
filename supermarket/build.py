@@ -874,9 +874,10 @@ PROJECTS = {
                                     "segment": "",
                                     "services": "Branding, Identity, UX/UI",
                                     "intro": (
-                                        "We love to be aligned with our customers and with Prester we are united by two fundamental virtues: we are both fast and safe.\n" 
-                                        "\n"
-                                        "These are some of our projects. In a world where Fintechs are experiencing rapid growth, it is essential to maintain a strong identity and a secure presence to meet customer demands. In this regard, Prester stands out with its new branding and communications, which reflect our commitment to speed, safety and reliability. We worked on the development of this identity under the firm understanding that customer trust is paramount and must be conveyed clearly and unreservedly. Every element of our branding and communications has been conceived with these values and missions in mind, ensuring that every interaction with Prester inspires security and peace of mind in our customers."),
+                                        "We love to be aligned with our customers and with Prester we are united by two fundamental virtues: we are both fast and safe. \n"
+                                        "\n"   
+                                        "These are some of our projects. In a world where Fintechs are experiencing rapid growth, it is essential to maintain a strong identity and a secure presence to meet customer demands. In this regard, Prester stands out with its new branding and communications, which reflect our commitment to speed, safety and reliability. We worked on the development of this identity under the firm understanding that customer trust is paramount and must be conveyed clearly and unreservedly. Every element of our branding and communications has been conceived with these values and missions in mind, ensuring that every interaction with Prester inspires security and peace of mind in our customers."
+                                        ),
                                     "thumb": CDN + "images/Works/Prester/prester-hero.jpg",
                                     "hero": CDN + "images/Works/Prester/prester-hero.jpg",
                                     "media": [

@@ -447,6 +447,7 @@ a { color: inherit; text-decoration: none; }
 
 .work__body { padding-block: clamp(40px, 6vw, 88px); }
 .work__intro { font-size: var(--fs-md); line-height: 1.5; max-width: 58ch; }
+.work__intro p + p { margin-top: 1em; }
 
 .work__media { display: grid; gap: var(--gutter); padding-bottom: clamp(48px, 7vw, 96px); }
 .shots { display: grid; gap: var(--gutter); grid-template-columns: repeat(2, 1fr); }
