@@ -1202,19 +1202,18 @@ PROJECTS = {
                                     "client": "Stanley",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Campaign, Strategy, Design, Creativity",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "Stanley is synonymous with robustness and durability in the world of products. This reputation is reflected in our 'More' campaign, which communicates the distinctive characteristics of our products in a strong and enduring way.\n"
+                                        "\n"
+                                        "Our main challenge was to convey the qualities of each product in an elegant and sophisticated way. Using metaphors and powerful visual rhetoric, we create a play of meanings that generate strong and memorable concepts in the minds of our clients.\n"
+                                        "\n"
+                                        "We implemented the campaign in a comprehensive manner, both offline and online. From physical points of sale to digital channels and audiovisual media, we made sure that the 'More' message reached every corner. This 360 strategy ensured that the campaign had a full and lasting impact on our audience."
+                                        ),
                                     "thumb": CDN + "images/Works/Stanley/stanley-hero.jpg",
                                     "hero": CDN + "images/Works/Stanley/stanley-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Design and Creativity for a Global Communication MAS Campaign."),
                                         ("full",  CDN + "images/Works/Stanley/stanley-01.jpg"),
                                         ("full",  CDN + "images/Works/Stanley/stanley-02.jpg"),
                                         ("full",  CDN + "images/Works/Stanley/stanley-03.jpg"),
@@ -1235,19 +1234,18 @@ PROJECTS = {
                                     "client": "Eron",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Creativity, Naming, Design, Branding",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "Eron is a company committed to excellence, with the vision of becoming the undisputed leader in the provision of specialized services in both the financial sector and the technology industry.\n"
+                                        "\n"
+                                        "We are proud to have collaborated in the creation of the D24 brand, an initiative that emerged with the clear mission of positioning itself as the leading provider of expert services in the financial and technological fields.\n"
+                                        "\n"
+                                        "With a strategic approach and a deep knowledge of the market, we have worked hard on the conceptualization and development of D24's identity. This new brand reflects our shared commitment to excellence and innovation, and we are confident that it will set a milestone in the business landscape, offering cutting-edge solutions and exceptional quality service in both sectors."
+                                        ),
                                     "thumb": CDN + "images/Works/Eron/eron-hero.jpg",
                                     "hero": CDN + "images/Works/Eron/eron-hero.jpg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Creativity for Naming, Design, and Full Branding Development."),
                                         ("full",  CDN + "images/Works/Eron/eron-01.jpg"),
                                         ("full",  CDN + "images/Works/Eron/eron-02.jpg"),
                                         ("full",  CDN + "images/Works/Eron/eron-03.jpg"),
@@ -1267,19 +1265,16 @@ PROJECTS = {
                                     "client": "Glenhaven",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Branding, Packaging, Design",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "Scotch whisky has a uniqueness that captivates the most demanding palates, making it an unmistakable choice. In that sense, Glenhaven stands out for its high standards of quality, refinement and elegance. However, we recognize that true excellence goes beyond the sensory; it requires a visual identity that accompanies each moment of tasting.\n"
+                                        "\n"
+                                        "That's why at Glenhaven we are dedicated to creating a complete experience, taking care of every detail. From the design of the identity to the development of the logo and the primary and secondary packs, we ensure that every aspect reflects the uniqueness and distinctiveness of our Scotch whisky. We strive to provide customers with a unique experience, from the moment they see the distinctive packaging to the last sip of its exquisite contents."
+                                        ),
                                     "thumb": CDN + "images/Works/Glenhaven/glenhaven-hero.jpeg",
                                     "hero": CDN + "images/Works/Glenhaven/glenhaven-hero.jpeg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+                                        ("quote", "Design and Creativity for Branding and Primary and Secondary Packaging."),
                                         ("full",  CDN + "images/Works/Glenhaven/glenhaven-01.jpeg"),
                                         ("full",  CDN + "images/Works/Glenhaven/glenhaven-02.jpeg"),
                                         ("full",  CDN + "images/Works/Glenhaven/glenhaven-03.jpeg"),
@@ -1296,19 +1291,16 @@ PROJECTS = {
                                     "client": "Delicia",
                                     "year": "",
                                     "segment": "",
-                                    "services": "Social media strategy, art direction, design, content production",
+                                    "services": "Naming, Branding, Identity",
                                     "intro": (
-                                        "We led the social media campaign for Barça Games, a mobile app offering a wide "
-                                        "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
-                                        "strategy to design and production of Instagram posts, Stories, and Reels, helping "
-                                        "build an engaging and playful presence for the app across platforms. We developed "
-                                        "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
-                                        "and Carnival — each with its own graphic identity and tone, driving visibility, "
-                                        "downloads, and fan engagement through festive, high-impact content."),
+                                        "At Delicia, we are not satisfied with the conventional; we have given life to a concept that overflows with flavors and Latin warmth. We create a name, a brand and an identity that trace a unique path to a world full of delights. Every moment we share becomes a promise: the promise that everyone can immerse themselves in the pleasure of our delicacies day after day.\n"
+                                        "\n"
+                                        "This involved not only finding a new name, but also creating a brand and visual identity that would become pillars of the company's image in the marketplace."
+                                        ),
                                     "thumb": CDN + "images/Works/Delicia/delicia-hero.jpeg",
                                     "hero": CDN + "images/Works/Delicia/delicia-hero.jpeg",
                                     "media": [
-                                        ("quote", "One app, three seasons, three graphic identities."),
+
                                         ("full",  CDN + "images/Works/Delicia/delicia-01.jpeg"),
                                         ("full",  CDN + "images/Works/Delicia/delicia-02.jpeg"),
                                         ("full",  CDN + "images/Works/Delicia/delicia-03.jpeg"),
