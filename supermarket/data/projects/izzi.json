@@ -1,0 +1,58 @@
+{
+  "client": "Izzi",
+  "year": "",
+  "segment": "",
+  "services": "",
+  "intro": "",
+  "thumb": "assets/images/Works/Izzi/izzi-hero.png",
+  "hero": "assets/images/Works/Izzi/izzi-hero.png",
+  "media": [
+    [
+      "quote",
+      ""
+    ],
+    [
+      "full",
+      "assets/images/Works/Izzi/izzi-01.jpeg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Izzi/izzi-02.jpeg",
+        "assets/images/Works/Izzi/izzi-03.jpeg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Izzi/izzi-04.jpeg",
+        "assets/images/Works/Izzi/izzi-05.jpeg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Izzi/izzi-06.jpeg",
+        "assets/images/Works/Izzi/izzi-07.jpeg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Izzi/izzi-08.jpeg"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

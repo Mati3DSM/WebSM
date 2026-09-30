@@ -1,0 +1,95 @@
+{
+  "client": "Wing",
+  "year": "2017",
+  "segment": "",
+  "services": "Social media strategy, art direction, design, content production",
+  "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
+  "thumb": "assets/images/Works/Wing/WingBanner.jpeg",
+  "hero": "assets/images/Works/Wing/WingVentana.jpeg",
+  "media": [
+    [
+      "full",
+      "assets/images/Works/Wing/WingBanner.jpeg"
+    ],
+    [
+      "quote",
+      "One app, three seasons, three graphic identities."
+    ],
+    [
+      "full",
+      "assets/images/Works/Wing/WingLogo.jpeg"
+    ],
+    [
+      "bleed",
+      "assets/images/Works/Wing/WingMockupVertical.jpeg"
+    ],
+    [
+      "bleed",
+      "assets/images/Works/Wing/WingGrid.jpeg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Wing/WingMockupCartel.jpeg",
+        "assets/images/Works/Wing/WingMockupCamion.jpeg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Wing/WingArtesVarios.png"
+    ],
+    [
+      "full",
+      "assets/images/Works/Wing/WingOficina.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Wing/WingMockupPhone.jpeg"
+    ],
+    [
+      "bleed",
+      "assets/images/Works/Wing/WingKVFoto2.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Wing/WingMockupPhone.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Wing/WingComputer.jpeg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Wing/WingKVFoto.jpg",
+        "assets/images/Works/Wing/WingMockupPhone2.jpeg"
+      ]
+    ],
+    [
+      "sheet",
+      "assets/images/Works/Wing/WingIconography.jpeg"
+    ],
+    [
+      "sheet",
+      "assets/images/Works/Wing/WingEmbajador.jpeg"
+    ],
+    [
+      "sheet",
+      "assets/images/Works/Wing/WingEmbajador2.jpeg"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

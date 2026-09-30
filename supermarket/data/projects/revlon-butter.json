@@ -1,0 +1,65 @@
+{
+  "client": "Revlon",
+  "year": "",
+  "segment": "",
+  "services": "",
+  "intro": "",
+  "thumb": "assets/images/Works/Revlon/revlon-colorburst-hero.jpg",
+  "hero": "assets/images/Works/Revlon/revlon-colorburst-hero.jpg",
+  "media": [
+    [
+      "quote",
+      ""
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-colorburst-01.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-colorburst-02.jpg",
+        "assets/images/Works/Revlon/revlon-colorburst-03.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-colorburst-04.jpg",
+        "assets/images/Works/Revlon/revlon-colorburst-05.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-colorburst-06.jpg",
+        "assets/images/Works/Revlon/revlon-colorburst-07.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-colorburst-08.jpg",
+        "assets/images/Works/Revlon/revlon-colorburst-09.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-colorburst-10.jpg"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "client": "Delicia",
+  "year": "",
+  "segment": "",
+  "services": "Naming, Branding, Identity",
+  "intro": "At Delicia, we are not satisfied with the conventional; we have given life to a concept that overflows with flavors and Latin warmth. We create a name, a brand and an identity that trace a unique path to a world full of delights. Every moment we share becomes a promise: the promise that everyone can immerse themselves in the pleasure of our delicacies day after day.\n\nThis involved not only finding a new name, but also creating a brand and visual identity that would become pillars of the company's image in the marketplace.",
+  "thumb": "assets/images/Works/Delicia/delicia-hero.jpeg",
+  "hero": "assets/images/Works/Delicia/delicia-hero.jpeg",
+  "media": [
+    [
+      "full",
+      "assets/images/Works/Delicia/delicia-01.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Delicia/delicia-02.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Delicia/delicia-03.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Delicia/delicia-04.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Delicia/delicia-05.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Delicia/delicia-06.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Delicia/delicia-07.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Delicia/delicia-08.jpeg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Delicia/delicia-09.jpeg",
+        "assets/images/Works/Delicia/delicia-10.jpeg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Delicia/delicia-11.jpeg",
+        "assets/images/Works/Delicia/delicia-12.jpeg"
+      ]
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

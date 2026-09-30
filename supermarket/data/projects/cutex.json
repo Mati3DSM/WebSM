@@ -1,0 +1,109 @@
+{
+  "client": "Cutex",
+  "year": "2017",
+  "segment": "",
+  "services": "Social media strategy, art direction, design, content production",
+  "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
+  "thumb": "assets/images/Works/Cutex/CutexBanner.jpeg",
+  "hero": "assets/images/Works/Cutex/CutexBanner.jpeg",
+  "media": [
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexPortadaCartel.jpeg"
+    ],
+    [
+      "quote",
+      "One app, three seasons, three graphic identities."
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexBotellas.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexEsmaltes.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexPapel.png"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Cutex/CutexCartelesVerticales.jpeg",
+        "assets/images/Works/Cutex/CutexMockupPuesto.jpeg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexMockupsRevista.jpeg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Cutex/CutexBannersVerticales.jpeg",
+        "assets/images/Works/Cutex/CutexExibidores.jpeg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexExibidores2.jpeg"
+    ],
+    [
+      "bleed",
+      "assets/images/Works/Cutex/CutexBannerCalle.jpeg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Cutex/CutexMockupDiario2.jpeg",
+        "assets/images/Works/Cutex/CutexGrid.jpeg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexPapel2.png"
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexStickers.png"
+    ],
+    [
+      "bleed",
+      "assets/images/Works/Cutex/CutexGrid2.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexBotellas2.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexMockupsShopping.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Cutex/CutexMockupDiario.jpeg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Cutex/CutexMockupCartelCalle.jpeg",
+        "assets/images/Works/Cutex/CutexMockupCartelesGondolas.png"
+      ]
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

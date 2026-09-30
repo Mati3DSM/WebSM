@@ -1,0 +1,52 @@
+{
+  "client": "Serenito",
+  "year": "2018",
+  "segment": "",
+  "services": "Branding, Packaging",
+  "intro": "",
+  "thumb": "assets/images/Works/Serenito/serenito-hero.jpg",
+  "hero": "assets/images/Works/Serenito/serenito-hero.jpg",
+  "media": [
+    [
+      "full",
+      "assets/images/Works/Serenito/serenito-01.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Serenito/serenito-02.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Serenito/serenito-03.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Serenito/serenito-04.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Serenito/serenito-05.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Serenito/serenito-06.jpg",
+        "assets/images/Works/Serenito/serenito-07.jpg"
+      ]
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

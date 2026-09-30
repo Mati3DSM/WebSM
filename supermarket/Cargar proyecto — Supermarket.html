@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cargar proyecto — Supermarket</title>
+<style>
+  :root{ --bg:#EFEFED; --ink:#111; --soft:#6b6b66; --line:#C7C7C1; --panel:#fff; --accent:#E0122B; }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){ --bg:#161615; --ink:#EFEFED; --soft:#9a9a95; --line:#333331; --panel:#1e1e1c; }
+  }
+  :root[data-theme="dark"]{ --bg:#161615; --ink:#EFEFED; --soft:#9a9a95; --line:#333331; --panel:#1e1e1c; }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:15px/1.5 -apple-system,Segoe UI,Roboto,Archivo,sans-serif;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
+  h1{font-size:22px;margin:0 0 4px}
+  p.lead{color:var(--soft);margin:0 0 28px}
+  fieldset{border:1px solid var(--line);border-radius:8px;padding:16px;margin:0 0 20px}
+  legend{padding:0 6px;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--soft)}
+  label{display:block;font-size:12px;color:var(--soft);margin:10px 0 4px}
+  input[type=text],textarea,select{
+    width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:5px;
+    background:var(--panel);color:var(--ink);font:inherit;
+  }
+  textarea{min-height:70px;resize:vertical}
+  .row{display:flex;gap:8px;flex-wrap:wrap}
+  .row > div{flex:1;min-width:140px}
+  .media-row, .credit-row{
+    border:1px solid var(--line);border-radius:6px;padding:10px 10px 10px 30px;margin-top:8px;
+    display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end;position:relative;
+    background:var(--panel);
+  }
+  .media-row.dragging{ opacity:.35 }
+  .handle{
+    position:absolute;left:6px;top:50%;transform:translateY(-50%);
+    color:var(--soft);font-size:14px;line-height:1;user-select:none;cursor:grab;
+  }
+  .drop-line{ height:2px;background:var(--accent);margin:4px 0;border-radius:1px }
+  .media-row select{max-width:130px}
+  .media-row .paths{flex:2;min-width:220px;display:flex;flex-direction:column;gap:6px}
+  .pathpick{display:flex;gap:4px}
+  .pathpick input[type=text]{flex:1;min-width:120px}
+  .pickbtn{
+    flex:0 0 auto;padding:8px 9px;font-size:13px;cursor:pointer;
+    border:1px solid var(--line);border-radius:5px;background:var(--panel);color:var(--soft);
+  }
+  .pickbtn:hover{color:var(--ink)}
+  button{
+    font:inherit;cursor:pointer;border-radius:5px;padding:8px 14px;border:1px solid var(--line);
+    background:var(--panel);color:var(--ink);
+  }
+  button.add{font-size:13px}
+  button.del{position:absolute;top:6px;right:6px;border:none;background:none;color:var(--soft);font-size:16px;line-height:1;padding:2px 6px}
+  button.del:hover{color:var(--accent)}
+  button.primary{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+  .hint{font-size:11px;color:var(--soft);margin-top:4px}
+  pre{
+    background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px;
+    overflow-x:auto;font-size:12.5px;line-height:1.5;white-space:pre-wrap;word-break:break-word;
+  }
+  .out-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px}
+  .msg{color:var(--accent);font-size:12px;margin-left:8px;opacity:0;transition:opacity .2s}
+  .msg.show{opacity:1}
+  .filename-box{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:8px 10px;font-size:13px;margin-bottom:10px}
+  .filename-box b{font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Cargar proyecto</h1>
+  <p class="lead">Completá los datos y abajo se arma el archivo <code>.json</code> del proyecto, listo para <code>data/projects/</code>.</p>
+
+  <fieldset>
+    <legend>Datos generales</legend>
+    <label>Nombre del proyecto</label>
+    <input type="text" id="f-name" placeholder="Pickers by McCain">
+    <label>Slug (dirección web) <span class="hint" style="margin:0">— se sugiere solo, se puede editar</span></label>
+    <input type="text" id="f-slug" placeholder="pickers-by-mccain">
+
+    <div class="row">
+      <div><label>Cliente</label><input type="text" id="f-client"></div>
+      <div><label>Año</label><input type="text" id="f-year" placeholder="2026"></div>
+    </div>
+    <div class="row">
+      <div><label>Segmento</label><input type="text" id="f-segment"></div>
+      <div><label>Servicios</label><input type="text" id="f-services" placeholder="Branding, packaging"></div>
+    </div>
+
+    <label>Intro (dejá una línea en blanco entre párrafos)</label>
+    <textarea id="f-intro" placeholder="Primer párrafo del caso.&#10;&#10;Segundo párrafo, si hace falta."></textarea>
+
+    <label>Carpeta de imágenes del proyecto <span class="hint" style="margin:0">— se arma sola con el slug, se puede cambiar</span></label>
+    <input type="text" id="f-folder" placeholder="Works/Pickers">
+    <p class="hint">Es solo una carpeta <b>por defecto</b>: en cada imagen alcanza con el nombre del
+      archivo, y esta carpeta se agrega sola adelante. Si una imagen puntual (o el video) está en
+      otro lugar — pasa seguido con los videos, que no siempre siguen la misma carpeta que las
+      fotos — escribí ahí la ruta completa empezando con <code>assets/</code>, por ejemplo
+      <code>assets/videos/tigo-money-01.mp4</code>, y esa carpeta por defecto se ignora solo para
+      ese campo.</p>
+
+    <div class="row">
+      <div>
+        <label>Thumb (miniatura)</label>
+        <div class="pathpick">
+          <input type="text" id="f-thumb" placeholder="pickers-portada.jpg  (o assets/images/… completo)">
+          <button type="button" class="pickbtn" onclick="pickFile('f-thumb')">Elegir…</button>
+        </div>
+      </div>
+      <div>
+        <label>Hero (imagen de portada)</label>
+        <div class="pathpick">
+          <input type="text" id="f-hero" placeholder="pickers-portada.jpg  (o assets/images/… completo)">
+          <button type="button" class="pickbtn" onclick="pickFile('f-hero')">Elegir…</button>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Galería (media)</legend>
+    <p class="hint" style="margin-top:0">El orden de estas piezas es el orden en que se ven en la
+      página. Arrastrá desde el <span class="handle" style="position:static">⠿</span> de cada una
+      para reordenar.</p>
+    <div id="media-list"></div>
+    <button class="add" onclick="addMedia()" style="margin-top:10px">+ Agregar pieza</button>
+  </fieldset>
+
+  <fieldset>
+    <legend>Créditos</legend>
+    <div id="credits-list"></div>
+    <button class="add" onclick="addCredit()" style="margin-top:10px">+ Agregar crédito</button>
+  </fieldset>
+
+  <div class="out-head">
+    <strong>Archivo generado — <span id="out-filename">proyecto.json</span></strong>
+    <span>
+      <button onclick="copyOut()">Copiar</button>
+      <button class="primary" onclick="downloadOut()">Descargar .json</button>
+      <span class="msg" id="msg">listo</span>
+    </span>
+  </div>
+  <pre id="output">…</pre>
+  <p class="hint">
+    Guardá el archivo descargado en <code>data/projects/&lt;slug&gt;.json</code>, sumá esta línea
+    dentro de <code>WORKS</code> en <code>build.py</code>, y después corré <code>python3 build.py</code>.
+  </p>
+
+  <div class="out-head">
+    <strong>Línea para WORKS</strong>
+    <span><button onclick="copyWorks()">Copiar</button><span class="msg" id="msg-works">listo</span></span>
+  </div>
+  <pre id="works-line">…</pre>
+  <p class="hint">
+    El botón "Elegir…" solo toma el <b>nombre</b> del archivo de tu compu para evitar errores de tipeo
+    (mayúsculas, espacios, extensión) — no sube la imagen ni sabe en qué carpeta del sitio va a
+    terminar esa imagen. Si el archivo va en la carpeta por defecto, alcanza con "Elegir…". Si va en
+    otra carpeta, después de elegirlo completá la ruta a mano poniendo <code>assets/…</code> adelante
+    del nombre. En los dos casos, igual tenés que copiar el archivo real a esa carpeta del sitio,
+    aparte — esta herramienta no sube nada.
+  </p>
+</div>
+
+<script>
+function slugify(s){
+  return (s || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')     // Remueve acentos
+    .replace(/[^a-z0-9\s-]/g, '')        // Remueve caracteres especiales
+    .replace(/[\s_]+/g, '-')             // Reemplaza espacios por guiones
+    .replace(/-+/g, '-')                 // Evita múltiples guiones seguidos
+    .replace(/^-+|-+$/g, '');            // Limpia guiones en los bordes
+}
+
+function esc(s){ return (s||'').trim(); }
+function paragraphs(text){
+  return (text||'').split(/\n\s*\n/).map(p => p.trim().replace(/\s+/g,' ')).filter(Boolean).join('\n\n');
+}
+function folder(){
+  return document.getElementById('f-folder').value.trim().replace(/^\/+|\/+$/g,'');
+}
+
+function imgPath(v){
+  v = (v||'').trim();
+  if (!v) return '';
+  if (v.startsWith('assets/')) return v;
+  const f = folder();
+  return 'assets/images/' + (f ? f + '/' : '') + v;
+}
+function videoPath(v){
+  v = (v||'').trim();
+  if (!v) return '';
+  if (v.startsWith('assets/')) return v;
+  const f = folder();
+  return 'assets/videos/' + (f ? f + '/' : '') + v;
+}
+function pickFile(inputId){
+  const picker = document.createElement('input');
+  picker.type = 'file';
+  picker.accept = 'image/*';
+  picker.onchange = () => {
+    if (picker.files[0]) {
+      document.getElementById(inputId).value = picker.files[0].name;
+      renderOut();
+    }
+  };
+  picker.click();
+}
+
+let mediaId = 0, creditId = 0;
+let userEditedSlug = false;
+
+function mediaRowHTML(id){
+  return `
+  <div class="media-row" data-id="${id}" draggable="true">
+    <span class="handle" title="Arrastrar para reordenar">⠿</span>
+    <button class="del" onclick="removeRow(this)" title="Quitar">&times;</button>
+    <select onchange="renderOut()" data-role="kind">
+      <option value="full">full</option>
+      <option value="bleed">bleed</option>
+      <option value="sheet">sheet</option>
+      <option value="pair">pair</option>
+      <option value="trio">trio</option>
+      <option value="video">video (mp4)</option>
+      <option value="embed">embed (YouTube)</option>
+      <option value="vimeo">vimeo</option>
+      <option value="vimeo_full">vimeo_full</option>
+      <option value="quote">quote</option>
+    </select>
+    <div class="paths" data-role="paths"></div>
+  </div>`;
+}
+function addMedia(){
+  mediaId++;
+  document.getElementById('media-list').insertAdjacentHTML('beforeend', mediaRowHTML(mediaId));
+  const row = document.querySelector(`.media-row[data-id="${mediaId}"]`);
+  row.querySelector('select').addEventListener('change', () => buildMediaInputs(row));
+  attachDrag(row);
+  buildMediaInputs(row);
+}
+
+function attachDrag(row){
+  row.addEventListener('dragstart', () => {
+    row.classList.add('dragging');
+  });
+  row.addEventListener('dragend', () => {
+    row.classList.remove('dragging');
+    renderOut();
+  });
+}
+function rowAfter(container, y){
+  const rows = [...container.querySelectorAll('.media-row:not(.dragging)')];
+  return rows.reduce((closest, el) => {
+    const box = el.getBoundingClientRect();
+    const offset = y - box.top - box.height / 2;
+    return (offset < 0 && offset > closest.offset) ? { offset, el } : closest;
+  }, { offset: -Infinity, el: null }).el;
+}
+document.getElementById('media-list').addEventListener('dragover', e => {
+  e.preventDefault();
+  const dragging = document.querySelector('.media-row.dragging');
+  if (!dragging) return;
+  const after = rowAfter(e.currentTarget, e.clientY);
+  if (after == null) e.currentTarget.appendChild(dragging);
+  else e.currentTarget.insertBefore(dragging, after);
+});
+
+function buildMediaInputs(row){
+  const kind = row.querySelector('[data-role=kind]').value;
+  const box = row.querySelector('[data-role=paths]');
+  box.innerHTML = '';
+  const isImage = ['full','bleed','sheet'].includes(kind);
+  const n = kind === 'pair' ? 2 : kind === 'trio' ? 3 : 1;
+
+  if (isImage || kind === 'pair' || kind === 'trio') {
+    for (let i = 0; i < n; i++) {
+      const id = `m${mediaId}-p${i}`;
+      box.insertAdjacentHTML('beforeend', `
+        <div class="pathpick">
+          <input type="text" id="${id}" placeholder="archivo.jpg  (o assets/images/otra-carpeta/…)" oninput="renderOut()">
+          <button type="button" class="pickbtn" onclick="pickFile('${id}')">Elegir…</button>
+        </div>`);
+    }
+  } else if (kind === 'video') {
+    const id = `m${mediaId}-p0`;
+    box.insertAdjacentHTML('beforeend', `
+      <div class="pathpick">
+        <input type="text" id="${id}" placeholder="video.mp4  (o assets/videos/otra-carpeta/…)" oninput="renderOut()">
+        <button type="button" class="pickbtn" onclick="pickFile('${id}')">Elegir…</button>
+      </div>`);
+  } else if (kind === 'quote') {
+    box.insertAdjacentHTML('beforeend', `<input type="text" placeholder="frase del proyecto" oninput="renderOut()" id="m${mediaId}-p0">`);
+  } else if (kind === 'embed') {
+    box.insertAdjacentHTML('beforeend', `<input type="text" placeholder="ID de YouTube (ej: -XQAwHtUfhY)" oninput="renderOut()" id="m${mediaId}-p0">`);
+  } else if (kind === 'vimeo' || kind === 'vimeo_full') {
+    box.insertAdjacentHTML('beforeend', `<input type="text" placeholder="URL de Vimeo" oninput="renderOut()" id="m${mediaId}-p0">`);
+    box.insertAdjacentHTML('beforeend', `<input type="text" placeholder="proporción, opcional (ej: 9:16)" oninput="renderOut()" id="m${mediaId}-p1">`);
+  }
+  renderOut();
+}
+
+function creditRowHTML(id, role = '', name = ''){
+  return `
+  <div class="credit-row" data-id="${id}">
+    <button class="del" onclick="removeRow(this)" title="Quitar">&times;</button>
+    <div style="flex:1;min-width:160px"><input type="text" placeholder="Rol (ej: Creative direction)" value="${role}" oninput="renderOut()" data-role="role"></div>
+    <div style="flex:1;min-width:160px"><input type="text" placeholder="Nombre" value="${name}" oninput="renderOut()" data-role="name"></div>
+  </div>`;
+}
+
+function addCredit(role = '', name = ''){
+  creditId++;
+  document.getElementById('credits-list').insertAdjacentHTML('beforeend', creditRowHTML(creditId, role, name));
+  renderOut();
+}
+function removeRow(btn){ btn.parentElement.remove(); renderOut(); }
+
+function mediaValue(row){
+  const id = row.dataset.id;
+  const kind = row.querySelector('[data-role=kind]').value;
+  const get = i => (document.getElementById(`m${id}-p${i}`) || {}).value || '';
+
+  if (kind === 'quote' || kind === 'embed') return [kind, esc(get(0))];
+  if (kind === 'video') return [kind, videoPath(get(0))];
+  if (kind === 'vimeo' || kind === 'vimeo_full'){
+    const url = esc(get(0)), ratio = esc(get(1));
+    return [kind, ratio ? [url, ratio] : url];
+  }
+  if (kind === 'pair') return [kind, [imgPath(get(0)), imgPath(get(1))]];
+  if (kind === 'trio') return [kind, [imgPath(get(0)), imgPath(get(1)), imgPath(get(2))]];
+  return [kind, imgPath(get(0))];
+}
+
+function autoSlugAndFolder(){
+  const name = document.getElementById('f-name').value;
+  const slugEl = document.getElementById('f-slug');
+  const folderEl = document.getElementById('f-folder');
+
+  if (!userEditedSlug) {
+    slugEl.value = slugify(name);
+    if (name.trim()) {
+      folderEl.value = 'Works/' + slugify(name).split('-').slice(0, 2).join('-');
+    } else {
+      folderEl.value = '';
+    }
+  }
+  renderOut();
+}
+
+function renderOut(){
+  const name = document.getElementById('f-name').value.trim();
+  const slugEl = document.getElementById('f-slug');
+  const slug = slugEl.value.trim() || 'proyecto';
+
+  const data = {
+    client: esc(document.getElementById('f-client').value),
+    year: esc(document.getElementById('f-year').value),
+    segment: esc(document.getElementById('f-segment').value),
+    services: esc(document.getElementById('f-services').value),
+    intro: paragraphs(document.getElementById('f-intro').value),
+    thumb: imgPath(document.getElementById('f-thumb').value),
+    hero: imgPath(document.getElementById('f-hero').value),
+    media: [...document.querySelectorAll('.media-row')].map(mediaValue),
+    credits: [...document.querySelectorAll('.credit-row')].map(row => {
+      const role = row.querySelector('[data-role=role]').value.trim();
+      const cname = row.querySelector('[data-role=name]').value.trim();
+      return (role || cname) ? [role, cname] : null;
+    }).filter(Boolean),
+  };
+
+  const json = JSON.stringify(data, null, 2);
+  document.getElementById('output').textContent = json;
+  document.getElementById('out-filename').textContent = slug + '.json';
+  document.getElementById('works-line').textContent = `("${name}", "${slug}"),`;
+}
+
+function copyOut(){
+  navigator.clipboard.writeText(document.getElementById('output').textContent).then(() => flash('Copiado'));
+}
+function copyWorks(){
+  navigator.clipboard.writeText(document.getElementById('works-line').textContent).then(() => flash('Copiado', 'msg-works'));
+}
+
+async function downloadOut(){
+  const slug = (document.getElementById('f-slug').value.trim() || 'proyecto') + '.json';
+  const text = document.getElementById('output').textContent;
+  try {
+    const downloads = await claude.use('downloads');
+    if (downloads) {
+      await downloads.save({ filename: slug, data: text });
+      flash('Descargado');
+      return;
+    }
+  } catch (e) { }
+  
+  const blob = new Blob([text], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = slug;
+  a.click();
+  URL.revokeObjectURL(a.href);
+  flash('Descargado');
+}
+
+function flash(text, elId){
+  const m = document.getElementById(elId || 'msg');
+  m.textContent = text;
+  m.classList.add('show');
+  setTimeout(() => m.classList.remove('show'), 1400);
+}
+
+document.getElementById('f-name').addEventListener('input', autoSlugAndFolder);
+document.getElementById('f-slug').addEventListener('input', (e) => {
+  userEditedSlug = e.target.value.trim().length > 0;
+  if (!userEditedSlug) autoSlugAndFolder();
+  else renderOut();
+});
+
+['f-client','f-year','f-segment','f-services','f-intro','f-folder','f-thumb','f-hero']
+  .forEach(id => document.getElementById(id).addEventListener('input', renderOut));
+
+// Inicialización
+addMedia();
+
+// Créditos cargados por defecto
+addCredit('Creative direction', 'Supermarket');
+addCredit('Art direction &amp; design', 'Supermarket');
+addCredit('Content production', 'Supermarket');
+
+renderOut();
+</script>
+</body>
+</html>

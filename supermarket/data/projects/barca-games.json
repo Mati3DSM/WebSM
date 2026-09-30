@@ -1,0 +1,78 @@
+{
+  "client": "Barça Games",
+  "year": "",
+  "segment": "",
+  "services": "Branding, Strategy, Social media strategy, Motion graphics",
+  "intro": "",
+  "thumb": "assets/images/Works/Barca-Games/barca-games-hero.png",
+  "hero": "assets/images/Works/Barca-Games/barca-games-hero.png",
+  "media": [
+    [
+      "quote",
+      ""
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/barca-games-01.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/barca-games-02.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Barca-Games/barca-games-03.jpg",
+        "assets/images/Works/Barca-Games/barca-games-04.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/barca-games-05.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Barca-Games/barca-games-06.jpg",
+        "assets/images/Works/Barca-Games/barca-games-07.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/barca-games-08.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/barca-games-09.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/barca-games-10.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Barca-Games/barca-games-11.jpg",
+        "assets/images/Works/Barca-Games/barca-games-12.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/barca-games-13.jpg"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "client": "UCEMA",
+  "year": "2025",
+  "segment": "",
+  "services": "Branding, Creativity, Visual Communication",
+  "intro": "We developed the visual identity and communication campaign for a special program at UCEMA University. Designed to support first-year students in mastering applied mathematics—a crucial foundation for their academic path across various degree programs—the project spanned branding, creative development, and communication assets. Our goal was to convey approachability, clarity, and the essential value of a strong academic foundation right from the start.",
+  "thumb": "assets/images/Works/UCEMA/UCEMA-Metodo_01.jpg",
+  "hero": "assets/images/Works/UCEMA/UCEMA-Metodo_01.jpg",
+  "media": [
+    [
+      "quote",
+      "Shaping the visual identity and communication for UCEMA."
+    ],
+    [
+      "full",
+      "assets/images/Works/UCEMA/UCEMA-Metodo_02.gif"
+    ],
+    [
+      "full",
+      "assets/images/Works/UCEMA/UCEMA-Metodo_03.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/UCEMA/UCEMA-Metodo_04.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/UCEMA/UCEMA-Metodo_05.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/UCEMA/UCEMA-Metodo_06.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/UCEMA/UCEMA-Metodo_07.gif"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "client": "Deconté",
+  "year": "2017",
+  "segment": "",
+  "services": "Social media strategy, art direction, design, content production",
+  "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
+  "thumb": "assets/images/Works/Deconte/DeconteLogo.png",
+  "hero": "assets/images/Works/Deconte/DeconteBanner.jpeg",
+  "media": [
+    [
+      "full",
+      "assets/images/Works/Deconte/DeconteCard.jpeg"
+    ],
+    [
+      "quote",
+      "One app, three seasons, three graphic identities."
+    ],
+    [
+      "full",
+      "assets/images/Works/Deconte/DeconteFloreros.png"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Deconte/DeconteLetrero.jpeg",
+        "assets/images/Works/Deconte/DeconteTarjeton.jpeg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Deconte/DecontePackaging.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Deconte/DeconteTazas.jpeg"
+    ],
+    [
+      "bleed",
+      "assets/images/Works/Deconte/DeconteDifusor.jpeg"
+    ],
+    [
+      "bleed",
+      "assets/images/Works/Deconte/DeconteLogos.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Deconte/DeconteLaptop.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Deconte/DeconteLogo.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Deconte/DeconteExibidores.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Deconte/DeconteTablet.jpeg"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

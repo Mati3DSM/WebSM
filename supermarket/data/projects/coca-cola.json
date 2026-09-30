@@ -1,0 +1,37 @@
+{
+  "client": "Coca Cola",
+  "year": "",
+  "segment": "",
+  "services": "",
+  "intro": "",
+  "thumb": "assets/images/Works/Cocacola/coca-cola-hero.jpg",
+  "hero": "assets/images/Works/Cocacola/coca-cola-hero.jpg",
+  "media": [
+    [
+      "quote",
+      ""
+    ],
+    [
+      "embed",
+      "-XQAwHtUfhY"
+    ],
+    [
+      "embed",
+      "J8A5fD8K4Ns"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

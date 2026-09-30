@@ -1,0 +1,66 @@
+{
+  "client": "Barça Games",
+  "year": "",
+  "segment": "",
+  "services": "Branding, Strategy, Motion graphics",
+  "intro": "",
+  "thumb": "assets/images/Works/Barca-Games/bg-rob-hero.webp",
+  "hero": "assets/images/Works/Barca-Games/bg-rob-hero.webp",
+  "media": [
+    [
+      "quote",
+      ""
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/bg-rob-01.png"
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/bg-rob-02.png"
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/bg-rob-03.png"
+    ],
+    [
+      "full",
+      "assets/images/Works/Barca-Games/bg-rob-04.png"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Barca-Games/bg-rob-08.png",
+        "assets/images/Works/Barca-Games/bg-rob-09.png"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Barca-Games/bg-rob-10.png",
+        "assets/images/Works/Barca-Games/bg-rob-11.png"
+      ]
+    ],
+    [
+      "vimeo_full",
+      [
+        "https://vimeo.com/1077970839?fl=pl&fe=cm",
+        "9:16"
+      ]
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

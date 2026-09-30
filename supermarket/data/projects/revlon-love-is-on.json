@@ -1,0 +1,81 @@
+{
+  "client": "Revlon",
+  "year": "",
+  "segment": "",
+  "services": "",
+  "intro": "",
+  "thumb": "assets/images/Works/Revlon/revlon-love-hero.jpg",
+  "hero": "assets/images/Works/Revlon/revlon-love-hero.jpg",
+  "media": [
+    [
+      "quote",
+      ""
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-love-01.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-love-02.jpg",
+        "assets/images/Works/Revlon/revlon-love-03.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-love-04.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-love-05.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-love-06.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-love-07.jpg",
+        "assets/images/Works/Revlon/revlon-love-08.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-love-09.jpg",
+        "assets/images/Works/Revlon/revlon-love-10.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-love-11.jpg",
+        "assets/images/Works/Revlon/revlon-love-12.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-love-13.jpg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-love-14.jpg"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "client": "Tigo",
+  "year": "",
+  "segment": "",
+  "services": "",
+  "intro": "",
+  "thumb": "assets/images/Works/Tigo/tigo-rebrand-hero.jpg",
+  "hero": "assets/images/Works/Tigo/tigo-rebrand-hero.jpg",
+  "media": [
+    [
+      "quote",
+      ""
+    ],
+    [
+      "full",
+      "assets/images/Works/Tigo/tigo-rebrand-01.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-02.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-03.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-04.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-05.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-06.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-07.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Tigo/tigo-rebrand-08.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-09.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-10.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-11.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-12.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-13.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-14.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-15.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-16.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Tigo/tigo-rebrand-17.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-18.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-19.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-20.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-21.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-22.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-23.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Tigo/tigo-rebrand-24.jpg",
+        "assets/images/Works/Tigo/tigo-rebrand-25.jpg"
+      ]
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

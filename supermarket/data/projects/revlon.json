@@ -1,0 +1,80 @@
+{
+  "client": "Revlon",
+  "year": "",
+  "segment": "",
+  "services": "",
+  "intro": "",
+  "thumb": "assets/images/Works/Revlon/revlon-campaigns-hero.jpg",
+  "hero": "assets/images/Works/Revlon/revlon-campaigns-hero.jpg",
+  "media": [
+    [
+      "quote",
+      ""
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-campaigns-01.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-campaigns-02.jpg",
+        "assets/images/Works/Revlon/revlon-campaigns-03.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-campaigns-04.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-campaigns-05.jpg",
+        "assets/images/Works/Revlon/revlon-campaigns-06.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-campaigns-07.jpg",
+        "assets/images/Works/Revlon/revlon-campaigns-08.jpg"
+      ]
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-campaigns-09.jpg",
+        "assets/images/Works/Revlon/revlon-campaigns-10.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-campaigns-11.jpg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-campaigns-12.jpg",
+        "assets/images/Works/Revlon/revlon-campaigns-13.jpg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-campaigns-14.jpg"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "client": "Prestix",
+  "year": "2017",
+  "segment": "",
+  "services": "Social media strategy, art direction, design, content production",
+  "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
+  "thumb": "assets/images/Works/Prestix/PrestixLogo.png",
+  "hero": "assets/images/Works/Prestix/PrestixBanner.jpeg",
+  "media": [
+    [
+      "full",
+      "assets/images/Works/Prestix/PrestixLogo.png"
+    ],
+    [
+      "quote",
+      "One app, three seasons, three graphic identities."
+    ],
+    [
+      "full",
+      "assets/images/Works/Prestix/PrestixLogoColor.png"
+    ],
+    [
+      "bleed",
+      "assets/images/Works/Prestix/PrestixIconography.jpeg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Prestix/PrestixIconography2.jpeg",
+        "assets/images/Works/Prestix/PrestixKV.png"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Prestix/PrestixMockupCartelVertical.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Prestix/PrestixBannerCartel.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Prestix/PrestixMockupCartelVertical2.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Prestix/PrestixBannerCartelLargo.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Prestix/PrestixMockupPhone.png"
+    ],
+    [
+      "full",
+      "assets/images/Works/Prestix/PrestixMockupSocialMedia.png"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}

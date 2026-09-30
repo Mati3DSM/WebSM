@@ -1,0 +1,68 @@
+{
+  "client": "Clave",
+  "year": "2017",
+  "segment": "",
+  "services": "Social media strategy, art direction, design, content production",
+  "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
+  "thumb": "assets/images/Works/Clave/ClaveBanner.jpeg",
+  "hero": "assets/images/Works/Clave/ClaveBanner.jpeg",
+  "media": [
+    [
+      "full",
+      "assets/images/Works/Clave/ClaveKV.jpeg"
+    ],
+    [
+      "quote",
+      "One app, three seasons, three graphic identities."
+    ],
+    [
+      "bleed",
+      "assets/images/Works/Clave/ClavePhone.jpeg"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Clave/ClaveMockupCartel.jpeg",
+        "assets/images/Works/Clave/ClaveSocialM.jpeg"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Clave/ClavePhoneSocialM.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Clave/ClaveLaptopSocialM.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Clave/ClaveBleed.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Clave/ClaveMockupCartel2.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Clave/ClaveMockupVerticales.jpeg"
+    ],
+    [
+      "full",
+      "assets/images/Works/Clave/ClaveMockupColectivo.jpeg"
+    ]
+  ],
+  "credits": [
+    [
+      "Creative direction",
+      "Supermarket"
+    ],
+    [
+      "Art direction &amp; design",
+      "Supermarket"
+    ],
+    [
+      "Content production",
+      "Supermarket"
+    ]
+  ]
+}
