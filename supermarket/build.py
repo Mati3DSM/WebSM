@@ -1485,7 +1485,7 @@ PROJECTS = {
                                         ("quote", "One app, three seasons, three graphic identities."),
                                         ("full",  CDN + "images/Works/Cutex/CutexBotellas.jpeg"),
                                         ("full",  CDN + "images/Works/Cutex/CutexEsmaltes.jpeg"),
-                                        ("full",  CDN + "images/Works/Cutex/CutexPapel.jpeg"),
+                                        ("full",  CDN + "images/Works/Cutex/CutexPapel.png"),
                                         ("pair",  [(CDN + "images/Works/Cutex/CutexCartelesVerticales.jpeg"),
                                                    CDN + "images/Works/Cutex/CutexMockupPuesto.jpeg"]),
                                         ("full",  CDN + "images/Works/Cutex/CutexMockupsRevista.jpeg"),
@@ -1495,14 +1495,14 @@ PROJECTS = {
                                         ("bleed",  CDN + "images/Works/Cutex/CutexBannerCalle.jpeg"),
                                         ("pair",  [(CDN + "images/Works/Cutex/CutexMockupDiario2.jpeg"),
                                                     CDN + "images/Works/Cutex/CutexGrid.jpeg"]),
-                                        ("full",  CDN + "images/Works/Cutex/CutexPapel2.jpeg"),
-                                        ("full",  CDN + "images/Works/Cutex/CutexStickers.jpeg"),
+                                        ("full",  CDN + "images/Works/Cutex/CutexPapel2.png"),
+                                        ("full",  CDN + "images/Works/Cutex/CutexStickers.png"),
                                         ("bleed", (CDN + "images/Works/Cutex/CutexGrid2.jpeg")),
                                         ("full",  CDN + "images/Works/Cutex/CutexBotellas2.jpeg"),
                                         ("full",  CDN + "images/Works/Cutex/CutexMockupsShopping.jpeg"),
                                         ("full",  CDN + "images/Works/Cutex/CutexMockupDiario.jpeg"),
                                         ("pair",  [(CDN + "images/Works/Cutex/CutexMockupCartelCalle.jpeg"),
-                                                    CDN + "images/Works/Cutex/CutexMockupCartelesGondolas.jpeg"]),
+                                                    CDN + "images/Works/Cutex/CutexMockupCartelesGondolas.png"]),
                                     ],
                                     "credits": [("Creative direction", "Supermarket"),
                                                 ("Art direction &amp; design", "Supermarket"),
@@ -1571,7 +1571,7 @@ PROJECTS = {
                                             "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                                             "and Carnival — each with its own graphic identity and tone, driving visibility, "
                                             "downloads, and fan engagement through festive, high-impact content."),
-                                        "thumb": CDN + "images/Works/Prestix/PrestixBanner.jpeg", # <- nueva línea
+                                        "thumb": CDN + "images/Works/Prestix/PrestixLogo.png", # <- nueva línea
                                         "hero": CDN + "images/Works/Prestix/PrestixBanner.jpeg",
                                         "media": [
                                             ("full",  CDN + "images/Works/Prestix/PrestixLogo.png"),
@@ -1582,16 +1582,10 @@ PROJECTS = {
                                                        CDN + "images/Works/Prestix/PrestixKV.png"]),
                                             ("full",  CDN + "images/Works/Prestix/PrestixMockupCartelVertical.jpeg"),
                                             ("full", (CDN + "images/Works/Prestix/PrestixBannerCartel.jpeg")),
-                                            ("full", (CDN + "images/Works/Prestix/PrestixMockupPhone.jpeg")),
-                                            ("bleed", (CDN + "images/Works/Wing/WingKVFoto2.jpg")),
-                                            ("full", (CDN + "images/Works/Wing/WingMockupPhone.jpeg")),
-                                            ("full", (CDN + "images/Works/Wing/WingComputer.jpeg")),
-                                            ("pair",  [(CDN + "images/Works/Wing/WingKVFoto.jpg"),
-                                                        CDN + "images/Works/Wing/WingMockupPhone2.jpeg"]),
-                                            ("sheet",  CDN + "images/Works/Wing/WingIconography.jpeg"),
-                                            ("sheet",  CDN + "images/Works/Wing/WingEmbajador.jpeg"),
-                                            ("sheet",  CDN + "images/Works/Wing/WingEmbajador2.jpeg"),
-                                      
+                                            ("full", (CDN + "images/Works/Prestix/PrestixMockupCartelVertical2.jpeg")),
+                                            ("full", (CDN + "images/Works/Prestix/PrestixBannerCartelLargo.jpeg")),
+                                            ("full", (CDN + "images/Works/Prestix/PrestixMockupPhone.png")),
+                                            ("full", (CDN + "images/Works/Prestix/PrestixMockupSocialMedia.png")),
                                         ],
                                         "credits": [("Creative direction", "Supermarket"),
                                                     ("Art direction &amp; design", "Supermarket"),
@@ -1620,8 +1614,9 @@ PROJECTS = {
                                CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakKV4.png"]),
                     ("bleed", (CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakMockupCartelCalle.png")),
                     ("full",  CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakMockupSachetSupermercado.png"),
-                    ("full",  CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakGif.gif"),
-                    ("bleed", (CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakKV5.png")),
+                    ("full", (CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakKV5.png")),
+                    ("bleed",  CDN + "images/Works/ArcorNaturalBreak/ArcorNaturalBreakGif.gif"),
+                   
               
                 ],
                 "credits": [("Creative direction", "Supermarket"),
@@ -1815,12 +1810,12 @@ PROJECTS = {
                                         "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                                         "and Carnival — each with its own graphic identity and tone, driving visibility, "
                                         "downloads, and fan engagement through festive, high-impact content."),
-                                    "thumb": CDN + "images/Works/Deconte/DeconteBanner.jpeg", # <- nueva línea
+                                    "thumb": CDN + "images/Works/Deconte/DeconteLogo.png", # <- nueva línea
                                     "hero": CDN + "images/Works/Deconte/DeconteBanner.jpeg",
                                     "media": [
                                         ("full",  CDN + "images/Works/Deconte/DeconteCard.jpeg"),
                                         ("quote", "One app, three seasons, three graphic identities."),
-                                        ("bleed",  CDN + "images/Works/Deconte/DeconteFloreros.jpeg"),
+                                        ("full",  CDN + "images/Works/Deconte/DeconteFloreros.png"),
                                         ("pair",  [(CDN + "images/Works/Deconte/DeconteLetrero.jpeg"),
                                                    CDN + "images/Works/Deconte/DeconteTarjeton.jpeg"]),
                                         ("full",  CDN + "images/Works/Deconte/DecontePackaging.jpeg"),
@@ -1850,7 +1845,7 @@ PROJECTS = {
                 "tailored campaigns for key moments in the calendar — including Christmas, King's Day, "
                 "and Carnival — each with its own graphic identity and tone, driving visibility, "
                 "downloads, and fan engagement through festive, high-impact content."),
-            "thumb": CDN + "images/Works/RobOrtiz/RobOrtizBanner.jpeg", # <- nueva línea
+            "thumb": CDN + "images/Works/RobOrtiz/RobOrtizThumb.png", # <- nueva línea
             "hero": CDN + "images/Works/RobOrtiz/RobOrtizBanner.jpeg",
             "media": [
                 ("full",  CDN + "images/Works/RobOrtiz/RobOrtizComputer.jpeg"),
@@ -1886,7 +1881,8 @@ PROJECTS = {
                     ("quote", "One app, three seasons, three graphic identities."),
                     ("full",  CDN + "images/Works/Miller/MillerMockupCartelColectivo.jpeg"),
                     ("full",  CDN + "images/Works/Miller/MillerMockupCartel.jpeg"),
-                    ("bleed", (CDN + "images/Works/Miller/MillerExhibidor.jpeg")),
+                    ("full", (CDN + "images/Works/Miller/MillerExhibidor.png")),
+                    ("full",  CDN + "images/Works/Miller/MillerMockupVarios.png"),
                     ("full",  CDN + "images/Works/Miller/MillerMockupCartelSubte.jpeg"),
                 ],
                 "credits": [("Creative direction", "Supermarket"),
@@ -1916,7 +1912,7 @@ PROJECTS = {
                                                    CDN + "images/Works/Clave/ClaveSocialM.jpeg"]),
                                         ("full",  CDN + "images/Works/Clave/ClavePhoneSocialM.jpeg"),
                                         ("full", (CDN + "images/Works/Clave/ClaveLaptopSocialM.jpeg")),
-                                        ("bleed",  CDN + "images/Works/Clave/ClaveBleed.jpeg"),
+                                        ("full",  CDN + "images/Works/Clave/ClaveBleed.jpeg"),
                                         ("full", (CDN + "images/Works/Clave/ClaveMockupCartel2.jpeg")),
                                         ("full", (CDN + "images/Works/Clave/ClaveMockupVerticales.jpeg")),
                                         ("full",  CDN + "images/Works/Clave/ClaveMockupColectivo.jpeg"),
@@ -1949,9 +1945,9 @@ PROJECTS = {
                                                        CDN + "images/Works/tigoooool/TigooooolGrid2.jpeg"]),
                                             ("bleed",  CDN + "images/Works/tigoooool/TigooooolGrid3.jpeg"),
                                             ("full",  CDN + "images/Works/tigoooool/TigooooolMockupEscaleras.jpeg"),
-                                            ("full", (CDN + "images/Works/tigoooool/TigooooolMockupVarios.jpeg")),
-                                            ("bleed", (CDN + "images/Works/tigoooool/TigooooolMockupVarios2.jpeg")),
-                                            ("full", (CDN + "images/Works/tigoooool/TigooooolMockupCarteles.jpeg")),
+                                            ("full", (CDN + "images/Works/tigoooool/TigooooolMockupVarios.png")),
+                                            ("full", (CDN + "images/Works/tigoooool/TigooooolMockupVarios2.png")),
+                                            ("full", (CDN + "images/Works/tigoooool/TigooooolMockupCarteles.png")),
                                             ("full",  CDN + "images/Works/tigoooool/TigooooolGridVerticales.jpeg"),
                                             ("full",  CDN + "images/Works/tigoooool/TigooooolGrid4.jpeg"),
                                       
