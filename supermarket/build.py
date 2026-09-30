@@ -263,7 +263,7 @@ PROJECTS = {
             "client": "Barça Games",
             "year": "",
             "segment": "",
-            "services": "Social media strategy, art direction, design, content production",
+            "services": "Social media strategy, Art direction, Motion graphics, Content production",
             "intro": (
                 "We led the social media campaign for Barça Games, a mobile app offering a wide "
                 "variety of interactive games for FC Barcelona fans. Our work spanned from creative "
