@@ -159,7 +159,7 @@
   var CFG = {
     settle: 0.80,       // altura de la pantalla (0 = arriba, 1 = abajo) desde donde empieza a curvarse
     angle: 34,          // curvatura máxima en el borde inferior, en grados (0 = sin efecto)
-    strips: 16,         // máximo de tiras por elemento (los chicos usan menos)
+    strips: 256,         // máximo de tiras por elemento (los chicos usan menos)
     perspective: 1000,  // px: menor = perspectiva más marcada
     shade: 0,           // sombra en la zona curvada (0 = sin sombra, 0.55 = intensa)
     images: true,       // false = no tocar imágenes
