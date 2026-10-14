@@ -135,19 +135,23 @@
 
 
 /* ---- Paper bend on scroll ----
-   Las imágenes y los textos entran desde el borde inferior de la pantalla
-   curvados como una hoja de papel y se aplanan a medida que suben.
-   Ajustá todo desde CFG.
+   Todo el contenido de la página (imágenes y textos) entra desde el borde
+   inferior de la pantalla curvado como una hoja de papel y se aplana a medida
+   que sube. Ajustá todo desde CFG.
 
-   Imágenes: .card__figure, .tile__figure, .shot (menos sheet/video), .work__hero
-   Textos:   TXT_SEL (más abajo). Los textos del hero quedan afuera a propósito.
-   "sheet" también: sus imágenes forman una sola continua y curvarlas por
-   separado rompería las uniones.
+   Se aplica solo, sin clases ni marcado extra: cualquier <img>, título,
+   párrafo, ítem de lista, leyenda o botón (incluido el título del hero).
+   Quedan planos a propósito:
+     · el video del hero, el header y el menú
+     · videos e iframes (YouTube/Vimeo) y el formulario
+     · el módulo "sheet" (sus imágenes forman una sola continua)
+     · las marquesinas animadas y la vista "index" de works
+   Para excluir algo más, agregá su selector a SKIP.
 
-   Cómo funciona: cada elemento visible se parte en tiras horizontales que se
-   inclinan en cadena (rotateX + perspectiva). Cuánto se inclina cada tira
-   depende de qué tan cerca está del borde inferior de la pantalla. Mientras
-   el elemento está plano se muestra el original, sin tocar nada.          */
+   Cómo funciona: cada elemento cercano a la zona se parte en tiras
+   horizontales que se inclinan en cadena (rotateX + perspectiva). Cuánto se
+   inclina cada tira depende de qué tan cerca está del borde inferior de la
+   pantalla. Mientras el elemento está plano se muestra el original.        */
 (function () {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   if (!('IntersectionObserver' in window)) return;
@@ -155,50 +159,54 @@
   var CFG = {
     settle: 0.80,       // altura de la pantalla (0 = arriba, 1 = abajo) desde donde empieza a curvarse
     angle: 34,          // curvatura máxima en el borde inferior, en grados (0 = sin efecto)
-    strips: 256,         // máximo de tiras por elemento (los textos chicos usan menos)
+    strips: 16,         // máximo de tiras por elemento (los chicos usan menos)
     perspective: 1000,  // px: menor = perspectiva más marcada
     shade: 0,           // sombra en la zona curvada (0 = sin sombra, 0.55 = intensa)
-    text: true          // false = solo imágenes
+    images: true,       // false = no tocar imágenes
+    text: true,         // false = no tocar textos
+    hero: true          // false = dejar plano el texto del hero
   };
-  var IMG_SEL = '.card__figure, .tile__figure, .shot:not(.shot--sheet):not(.shot--video), .work__hero';
-  var TXT_SEL = '.display, .subtitle, .lede, .card__name, .tile__name, .work__intro, .work__quote, .prose, .footer__cta, .pager__name';
-  var SKIP = '.hero, .header, .index, .preview';   // no tocar estas zonas
+  var TXT_SEL = 'h1,h2,h3,h4,h5,h6,p,li,dt,dd,figcaption,blockquote,.btn,.footer__cta,.work__back,.pager__side > span';
+  var SKIP = '.header, .skip, .nav, .index, .preview, .marquee, .form, .shot--sheet, [aria-hidden="true"]';
 
-  /* propiedades que se copian a la versión en tiras del texto */
+  /* propiedades que se copian a la versión en tiras de cada texto */
   var PROPS = ['font-family', 'font-size', 'font-weight', 'font-style', 'font-stretch',
     'font-variation-settings', 'font-feature-settings', 'line-height', 'letter-spacing',
     'word-spacing', 'text-transform', 'text-align', 'text-indent', 'text-decoration-line',
     'text-decoration-color', 'text-wrap', 'white-space', 'word-break', 'overflow-wrap',
     'hyphens', 'color', 'display', 'max-width', 'margin-top', 'margin-bottom',
-    'padding-top', 'padding-right', 'padding-bottom', 'padding-left', 'list-style-type'];
+    'padding-top', 'padding-right', 'padding-bottom', 'padding-left', 'list-style-type',
+    'flex-direction', 'justify-content', 'align-items', 'gap', 'background-color',
+    'border-top-width', 'border-right-width', 'border-bottom-width', 'border-left-width',
+    'border-top-style', 'border-right-style', 'border-bottom-style', 'border-left-style',
+    'border-top-color', 'border-right-color', 'border-bottom-color', 'border-left-color',
+    'border-top-left-radius', 'border-top-right-radius', 'border-bottom-right-radius', 'border-bottom-left-radius'];
 
   var items = [], raf = null, lastY = window.scrollY, vel = 0;
 
   function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
 
   function add(el, kind) {
-    var it = { kind: kind, el: el, frame: kind === 'img' ? el.parentNode : null, stage: null,
-               strips: [], n: 0, h: 0, w: 0, hh: 0, vis: false, built: false, on: false };
+    var it = { kind: kind, el: el, frame: kind === 'img' ? el.parentElement : null, stage: null,
+               strips: [], n: 0, h: 0, w: 0, hh: 0, vis: false, built: false, on: false, skip: false };
+    el._bend = it;
+    items.push(it);
     return it;
   }
 
-  Array.prototype.forEach.call(document.querySelectorAll(IMG_SEL), function (frame) {
-    var img = frame.querySelector('img');
-    if (!img) return;
-    var it = add(img, 'img');
-    it.frame = frame;
-    it.observed = frame;
-    img.addEventListener('load', function () { start(); });
-    items.push(it);
-  });
-
+  if (CFG.images) {
+    Array.prototype.forEach.call(document.querySelectorAll('img'), function (img) {
+      if (img.closest(SKIP) || (!CFG.hero && img.closest('.hero'))) return;
+      var it = add(img, 'img');
+      img.addEventListener('load', function () { start(); });
+    });
+  }
   if (CFG.text) {
     Array.prototype.forEach.call(document.querySelectorAll(TXT_SEL), function (el) {
-      if (el.closest(SKIP)) return;
-      if (el.parentElement && el.parentElement.closest(TXT_SEL)) return;   // sin anidar
-      var it = add(el, 'txt');
-      it.observed = el;
-      items.push(it);
+      if (el.closest(SKIP) || (!CFG.hero && el.closest('.hero'))) return;
+      if (el.querySelector(TXT_SEL)) return;            // se usa el elemento más interno
+      if (!el.textContent.trim()) return;
+      add(el, 'txt');
     });
   }
   if (!items.length) return;
@@ -219,30 +227,24 @@
   function build(it, r) {
     var W = r.width, H = r.height;
     if (W < 2 || H < 2) return false;
+    if (it.kind === 'img' && (W < 60 || H < 60)) { it.skip = true; return false; }   // íconos, logos
     var n = clamp(Math.round(H / 12), 6, CFG.strips), h = H / n;
-    var box;
 
-    if (it.kind === 'img') {
-      var fr = it.frame.getBoundingClientRect();
-      if (getComputedStyle(it.frame).position === 'static') it.frame.style.position = 'relative';
-      if (!it.stage) { it.stage = document.createElement('div'); it.frame.appendChild(it.stage); }
-      box = 'left:' + (r.left - fr.left) + 'px;top:' + (r.top - fr.top) + 'px;';
-    } else {
-      if (!it.stage) { it.stage = document.createElement('div'); document.body.appendChild(it.stage); }
-      box = '';   // la posición de los textos se actualiza en cada frame
-    }
+    it.stage = document.createElement('div');
     it.stage.setAttribute('aria-hidden', 'true');
-    it.stage.style.cssText = 'position:absolute;display:none;pointer-events:none;z-index:1;' +
-      'perspective:' + CFG.perspective + 'px;' + box + 'width:' + W + 'px;height:' + H + 'px';
-    it.stage.innerHTML = '';
+    it.stage.style.cssText = 'position:absolute;left:0;top:0;display:none;pointer-events:none;z-index:1;' +
+      'perspective:' + CFG.perspective + 'px;width:' + W + 'px;height:' + H + 'px';
+    document.body.appendChild(it.stage);
     it.strips = [];
 
-    var tpl, cs, src;
+    var tpl, cs, src, disp;
     if (it.kind === 'img') {
       cs = getComputedStyle(it.el); src = it.el.currentSrc || it.el.src;
     } else {
       tpl = it.el.cloneNode(true);
       inlineStyles(it.el, tpl);
+      disp = getComputedStyle(it.el).display;
+      disp = /flex/.test(disp) ? 'flex' : /grid/.test(disp) ? 'grid' : 'block';
     }
 
     for (var k = 0; k < n; k++) {
@@ -260,8 +262,8 @@
         c = tpl.cloneNode(true);
         c.style.position = 'absolute'; c.style.left = '0'; c.style.top = (-k * h) + 'px';
         c.style.margin = '0'; c.style.width = W + 'px'; c.style.boxSizing = 'border-box';
-        c.style.display = 'block'; c.style.height = 'auto'; c.style.maxWidth = 'none';
-        c.style.opacity = '1'; c.style.transition = 'none';
+        c.style.display = disp; c.style.height = 'auto'; c.style.maxWidth = 'none';
+        c.style.transition = 'none';
       }
       el.appendChild(c);
       var sh = null;
@@ -280,16 +282,13 @@
   function flat(it) {
     it.on = false;
     it.el.style.removeProperty('visibility');
-    if (it.kind === 'img') {
-      it.frame.style.removeProperty('overflow');
-      it.frame.style.removeProperty('background-color');   // vuelve el gris de carga del marco
-    }
+    if (it.frame) it.frame.style.removeProperty('background-color');   // vuelve el gris de carga del marco
     if (it.stage) it.stage.style.display = 'none';
   }
 
   function teardown(it) {
     if (it.on) flat(it);
-    if (it.stage) it.stage.innerHTML = '';
+    if (it.stage) { it.stage.remove(); it.stage = null; }
     it.strips = []; it.built = false;
   }
 
@@ -300,7 +299,7 @@
     });
     start();
   }, { rootMargin: '120px 0px' });
-  items.forEach(function (it) { it.observed._bend = it; io.observe(it.observed); });
+  items.forEach(function (it) { io.observe(it.el); });
 
   function start() { if (!raf) raf = requestAnimationFrame(loop); }
 
@@ -308,9 +307,13 @@
     var vh = window.innerHeight, vw = window.innerWidth, y = window.scrollY, x = window.scrollX;
     vel += ((y - lastY) - vel) * 0.15; lastY = y;
     var amp = CFG.angle * (1 + clamp(Math.abs(vel) / 40, 0, 1) * 0.35);   // scroll rápido = más elástico
+    // al llegar al final de la página el efecto se apaga, para que el footer quede plano
+    var rest = document.documentElement.scrollHeight - (y + vh);
+    amp *= clamp(rest / (vh * 0.35), 0, 1);
     var zone = vh * CFG.settle, span = vh - zone;
 
     items.forEach(function (it) {
+      if (it.skip) return;
       if (!it.vis) { if (it.built) teardown(it); return; }
 
       var r = it.el.getBoundingClientRect();   // el original conserva su layout aunque esté oculto
@@ -324,16 +327,11 @@
       if (!it.on) {
         it.on = true;
         it.el.style.visibility = 'hidden';
-        if (it.kind === 'img') {
-          it.frame.style.overflow = 'visible';              // que la curva no se recorte
-          it.frame.style.backgroundColor = 'transparent';   // sin gris detrás mientras se deforma
-        }
+        if (it.frame) it.frame.style.backgroundColor = 'transparent';   // sin gris detrás mientras se deforma
         it.stage.style.display = 'block';
       }
-      if (it.kind === 'txt') {
-        it.stage.style.left = (r.left + x) + 'px';
-        it.stage.style.top = (r.top + y) + 'px';
-      }
+      it.stage.style.left = (r.left + x) + 'px';
+      it.stage.style.top = (r.top + y) + 'px';
       // el "ojo" de la perspectiva es el centro de la pantalla
       it.stage.style.perspectiveOrigin = (vw / 2 - r.left).toFixed(1) + 'px ' + (vh / 2 - r.top).toFixed(1) + 'px';
 
