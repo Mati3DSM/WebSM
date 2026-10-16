@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/page-transition.js"></script>
+  <link rel="expect" href="#main" blocking="render">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -33,17 +35,21 @@
   </div>
 </header>
 <main id="main">
-<section class="pagehead wrap">
-  <div class="pagehead__row">
-    <h1 class="display">Everything is possible.</h1>
-    <p class="lede" style="max-width:38ch">An independent agency, a design studio, and a production
-    company. We are diverse, collaborative, providing flexibility in customizing each project to suit
-    your business needs.</p>
+<section class="wrap about-hero-section">
+  <div class="about-hero">
+    <div class="about-hero__main">
+      <div class="carousel" data-carousel data-seconds="8" style="--fade:1.2s"><img class="carousel__slide is-active" src="assets/images/studio.jpg" alt="" fetchpriority="high" decoding="async"><img class="carousel__slide" data-src="assets/images/studio-gato.jpg" alt="" decoding="async"><img class="carousel__slide" data-src="assets/images/oficina03.jpg" alt="" decoding="async"><img class="carousel__slide" data-src="assets/images/hamza-shaikh-uXtvnZl_FWM-unsplash.webp" alt="" decoding="async"></div>
+      <h1 class="about-hero__title">Everything<br>is possible.</h1>
+    </div>
+    <div class="about-hero__side">
+      <p class="about-hero__text">An independent agency, a design studio, and a production
+      company. We are diverse, collaborative, providing flexibility in customizing each project to suit
+      your business needs.</p>
+      <div class="about-hero__media">
+        <div class="carousel" data-carousel data-seconds="12" style="--fade:1.2s"><img class="carousel__slide is-active" src="assets/images/studio-gato.jpg" alt="" fetchpriority="high" decoding="async"><img class="carousel__slide" data-src="assets/images/kobu-agency-MBtcLadqc6c-unsplash.webp" alt="" decoding="async"><img class="carousel__slide" data-src="assets/images/philipp-mandler-CiNHG2xuVlQ-unsplash.webp" alt="" decoding="async"><img class="carousel__slide" data-src="assets/images/annie-spratt-hCb3lIB8L8E-unsplash.webp" alt="" decoding="async"></div>
+      </div>
+    </div>
   </div>
-</section>
-
-<section class="wrap section--tight" style="padding-top:0">
-  <ul class="mosaic"><li><img src="assets/images/kobu-agency-MBtcLadqc6c-unsplash.webp" alt="" loading="lazy"></li><li><img src="assets/images/oficina02.jpg" alt="" loading="lazy"></li><li><img src="assets/images/oficina03.jpg" alt="" loading="lazy"></li><li><img src="assets/images/annie-spratt-hCb3lIB8L8E-unsplash.webp" alt="" loading="lazy"></li></ul>
 </section>
 
 <section class="wrap section--tight">
@@ -69,12 +75,8 @@
 
 <section class="wrap section--tight">
   <div class="service__media" style="aspect-ratio:21/9;margin-bottom:clamp(28px,4vw,48px)">
-    <img src="assets/images/SM-About-Us_V2.jpg" alt="" loading="lazy"></div>
-  <div class="statement">
-    <h2 class="title">Supermarket is where AI meets creativity</h2>
-    <p class="lede">Smart tools, sharp minds — design, evolved. Where ideas pop and AI powers up.
-    This is creativity unleashed.</p>
-  </div>
+    <img src="assets/images/SM-About-Us_V2.png" alt="" loading="lazy"></div>
+  
 </section>
 
 <section class="wrap section rule">

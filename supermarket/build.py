@@ -30,8 +30,8 @@ IMG = {
     "of2": CDN + "images/oficina02.jpg",
     "of3": CDN + "images/oficina03.jpg",
     "of1": CDN + "images/oficina01_V2.png",
-    "ai":  CDN + "images/SM-About-Us_V2.jpg",
-    "contact": CDN + "images/phone_006.webp",
+    "ai":  CDN + "images/SM-About-Us_V2.png",
+    "contact": CDN + "images/cuaderno-closeup.jpg",
 }
 TEAM = [
     ("Martín Marinovic", "Founder", CDN + "images/martin.jpeg"),
@@ -164,6 +164,8 @@ def page(title, current, body, description="", pre="", path="", image=None):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{pre}assets/styles.css">
+  <script src="{pre}assets/page-transition.js"></script>
+  <link rel="expect" href="#main" blocking="render">
 </head>
 <body>
 {header(current, pre)}
@@ -319,8 +321,59 @@ works_body = f"""<section class="pagehead wrap">
 </section>"""
 
 # ------------------------------------------------------------------ ABOUT
-mosaic = "".join(f'<li><img src="{IMG[k]}" alt="" loading="lazy"></li>'
-                 for k in ["ab1", "ab2", "ab3", "ab4", "of1", "of2", "of3", "ab5"])
+# ---------------------------------------------------------------------
+#  ABOUT · CARRUSELES DE LA CABECERA
+#
+#  Dos ventanas que cambian de foto solas:
+#    ABOUT_CAROUSEL_1  ventana grande (izquierda). Lleva "Everything is possible." en blanco.
+#    ABOUT_CAROUSEL_2  ventana chica (derecha, debajo del texto).
+#
+#  AGREGAR una foto: copiá una línea de "images", pegala debajo y cambiá la ruta.
+#  SACAR una foto:   borrá su línea.
+#  Se muestran en el orden en que están. Con una sola foto, la ventana queda fija.
+#  Después de editar, volvé a correr:  python3 build.py
+# ---------------------------------------------------------------------
+ABOUT_CAROUSEL_1 = {
+    "seconds": 8,      # cada cuántos segundos cambia de foto
+    "fade": 1.2,       # duración del fundido entre una foto y la siguiente (segundos)
+    "images": [
+        "assets/images/studio.jpg",
+        "assets/images/studio-gato.jpg",
+        "assets/images/oficina03.jpg",
+        "assets/images/hamza-shaikh-uXtvnZl_FWM-unsplash.webp",
+    ],
+}
+
+ABOUT_CAROUSEL_2 = {
+    "seconds": 12,
+    "fade": 1.2,
+    "images": [
+        "assets/images/studio-gato.jpg",
+        "assets/images/kobu-agency-MBtcLadqc6c-unsplash.webp",
+        "assets/images/philipp-mandler-CiNHG2xuVlQ-unsplash.webp",
+        "assets/images/annie-spratt-hCb3lIB8L8E-unsplash.webp",
+    ],
+}
+
+
+def about_carousel(cfg):
+    """Arma el HTML de un carrusel a partir de su dict (ver ABOUT_CAROUSEL_*).
+    La 1.ª foto va con src; las demás con data-src: main.js las carga de a una,
+    justo antes de mostrarlas, para no bajar todas juntas al abrir la página."""
+    imgs = []
+    for n, src in enumerate(cfg["images"]):
+        src = html.escape(src, quote=True)
+        if n == 0:
+            imgs.append(f'<img class="carousel__slide is-active" src="{src}" alt="" fetchpriority="high" decoding="async">')
+        else:
+            imgs.append(f'<img class="carousel__slide" data-src="{src}" alt="" decoding="async">')
+    seconds = cfg.get("seconds", 6)
+    fade = cfg.get("fade", 1.2)
+    rotate = " data-carousel" if len(imgs) > 1 else ""
+    return (f'<div class="carousel"{rotate} data-seconds="{seconds}" style="--fade:{fade}s">'
+            + "".join(imgs) + '</div>')
+
+
 team = "".join(f"""<li><img src="{ph}" alt="{n}" loading="lazy">
   <p class="team__name">{n}</p><p class="meta">{r}</p></li>""" for n, r, ph in TEAM)
 CATS = ["Creativity", "Advertising", "Identity", "Logos", "Strategy", "Media", "Content",
@@ -334,17 +387,21 @@ roles = "".join(f"<li>{r}</li>" for r in ROLES)
 marq = "".join("<span>effective</span>" for _ in range(12))
 marq2 = "".join("<span>no excuses</span>" for _ in range(12))
 
-about_body = f"""<section class="pagehead wrap">
-  <div class="pagehead__row">
-    <h1 class="display">Everything is possible.</h1>
-    <p class="lede" style="max-width:38ch">An independent agency, a design studio, and a production
-    company. We are diverse, collaborative, providing flexibility in customizing each project to suit
-    your business needs.</p>
+about_body = f"""<section class="wrap about-hero-section">
+  <div class="about-hero">
+    <div class="about-hero__main">
+      {about_carousel(ABOUT_CAROUSEL_1)}
+      <h1 class="about-hero__title">Everything<br>is possible.</h1>
+    </div>
+    <div class="about-hero__side">
+      <p class="about-hero__text">An independent agency, a design studio, and a production
+      company. We are diverse, collaborative, providing flexibility in customizing each project to suit
+      your business needs.</p>
+      <div class="about-hero__media">
+        {about_carousel(ABOUT_CAROUSEL_2)}
+      </div>
+    </div>
   </div>
-</section>
-
-<section class="wrap section--tight" style="padding-top:0">
-  <ul class="mosaic">{mosaic}</ul>
 </section>
 
 <section class="wrap section--tight">
@@ -371,11 +428,7 @@ about_body = f"""<section class="pagehead wrap">
 <section class="wrap section--tight">
   <div class="service__media" style="aspect-ratio:21/9;margin-bottom:clamp(28px,4vw,48px)">
     <img src="{IMG['ai']}" alt="" loading="lazy"></div>
-  <div class="statement">
-    <h2 class="title">Supermarket is where AI meets creativity</h2>
-    <p class="lede">Smart tools, sharp minds — design, evolved. Where ideas pop and AI powers up.
-    This is creativity unleashed.</p>
-  </div>
+  
 </section>
 
 <section class="wrap section rule">

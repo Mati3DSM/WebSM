@@ -134,6 +134,66 @@
 })();
 
 
+/* ---- Carruseles (About) ----
+   Cada [data-carousel] rota sus .carousel__slide con un fundido. Los segundos y la
+   duración del fundido los escribe build.py (ABOUT_CAROUSEL_1 / ABOUT_CAROUSEL_2).
+   La foto que entra queda encima de la que sale, así nunca se ve el fondo gris.
+   Pausa sola cuando el carrusel no se ve o la pestaña está en segundo plano. */
+(function () {
+  var roots = document.querySelectorAll('[data-carousel]');
+  if (!roots.length) return;
+
+  Array.prototype.forEach.call(roots, function (root) {
+    var slides = root.querySelectorAll('.carousel__slide');
+    if (slides.length < 2) return;
+    var seconds = Math.max(2, parseFloat(root.getAttribute('data-seconds')) || 6);
+    var cur = 0, timer = null, cleanup = null, inView = true;
+
+    function load(i) {                                  // baja la foto recién cuando hace falta
+      var img = slides[i];
+      if (!img.getAttribute('src') && img.getAttribute('data-src')) img.src = img.getAttribute('data-src');
+    }
+    function ready(i) { return slides[i].complete && slides[i].naturalWidth > 0; }
+    function fadeMs() {
+      var d = getComputedStyle(slides[0]).transitionDuration || '0s';
+      return (parseFloat(d) || 0) * (d.indexOf('ms') > -1 ? 1 : 1000);
+    }
+
+    function show(n) {
+      var prev = slides[cur], next = slides[n];
+      Array.prototype.forEach.call(slides, function (s) {
+        s.style.zIndex = '';
+        if (s !== prev && s !== next) s.classList.remove('is-active');
+      });
+      prev.style.zIndex = '1';
+      next.style.zIndex = '2';
+      next.classList.add('is-active');                  // fundido 0 → 1 por encima de la anterior
+      clearTimeout(cleanup);
+      cleanup = setTimeout(function () { prev.classList.remove('is-active'); prev.style.zIndex = ''; }, fadeMs() + 60);
+      cur = n;
+      load((n + 1) % slides.length);                    // precarga la que sigue
+    }
+
+    function tick() {
+      var n = (cur + 1) % slides.length;
+      load(n);
+      if (ready(n)) show(n);                            // si todavía no cargó, espera al próximo turno
+    }
+    function update() {
+      clearInterval(timer); timer = null;
+      if (inView && !document.hidden) timer = setInterval(tick, seconds * 1000);
+    }
+
+    load(1);
+    document.addEventListener('visibilitychange', update);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) { inView = entries[0].isIntersecting; update(); }).observe(root);
+    }
+    update();
+  });
+})();
+
+
 /* ---- Paper bend on scroll ----
    Todo el contenido de la página (imágenes y textos) entra desde el borde
    inferior de la pantalla curvado como una hoja de papel y se aplana a medida
@@ -146,6 +206,7 @@
      · videos e iframes (YouTube/Vimeo) y el formulario
      · el módulo "sheet" (sus imágenes forman una sola continua)
      · las marquesinas animadas y la vista "index" de works
+     · la cabecera con carruseles del About (.about-hero)
    Para excluir algo más, agregá su selector a SKIP.
 
    Cómo funciona: cada elemento cercano a la zona se parte en tiras
@@ -167,7 +228,7 @@
     hero: true          // false = dejar plano el texto del hero
   };
   var TXT_SEL = 'h1,h2,h3,h4,h5,h6,p,li,dt,dd,figcaption,blockquote,.btn,.footer__cta,.work__back,.pager__side > span';
-  var SKIP = '.header, .skip, .nav, .index, .preview, .marquee, .form, .shot--sheet, [aria-hidden="true"]';
+  var SKIP = '.header, .skip, .nav, .index, .preview, .marquee, .form, .shot--sheet, .about-hero, [aria-hidden="true"]';
 
   /* propiedades que se copian a la versión en tiras de cada texto */
   var PROPS = ['font-family', 'font-size', 'font-weight', 'font-style', 'font-stretch',

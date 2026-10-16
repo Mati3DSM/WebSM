@@ -12,7 +12,8 @@
   --ink-soft:   #6D6D6A;
   --line:       #C7C7C1;
   --dark:       #000000;
-  --accent:     #E0122B;
+  --accent:     #FF82FF;
+  --yellow:     #FFFF00;
 
   /* Type */
   --sans: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -338,7 +339,8 @@ a { color: inherit; text-decoration: none; }
   font-variation-settings: "wdth" 118, "wght" 600;
   letter-spacing: -.03em; white-space: nowrap;
 }
-.marquee--alt .marquee__track { animation-direction: reverse; color: var(--accent); }
+.marquee--alt { background: var(--dark); }
+.marquee--alt .marquee__track { animation-direction: reverse; color: var(--yellow); }
 @keyframes slide { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .marquee__track { animation: none; } }
 
@@ -379,7 +381,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Footer ---------- */
 .footer { background: var(--dark); color: var(--paper-pure); padding-block: clamp(56px, 8vw, 104px); }
-.footer a:hover { color: var(--accent); }
+.footer a:hover { color: var(--yellow); }
 .footer__cta {
   font-size: clamp(2.75rem, 7.6vw, 7rem);
   font-variation-settings: "wdth" 114, "wght" 600;
@@ -525,4 +527,80 @@ a { color: inherit; text-decoration: none; }
   margin-top: 12px; padding-bottom: 18px;
   font-size: 1rem; font-variation-settings: "wdth" 104, "wght" 500;
   letter-spacing: -.01em;
+}
+
+/* ---------- Page transitions: slide ----------
+   Al cambiar de página, la que sale y la que entra se deslizan juntas.
+   La dirección la decide page-transition.js según el orden del menú.
+   El header queda fijo. Sin soporte (o con reduced-motion) se navega normal. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  .header { view-transition-name: site-header; }
+}
+::view-transition-old(site-header) { display: none; }
+::view-transition-new(site-header) { animation: none; }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .65s;                          /* velocidad del slide */
+  animation-timing-function: cubic-bezier(.7, 0, .2, 1);
+  animation-fill-mode: both;
+  mix-blend-mode: normal;
+}
+/* hacia adelante: la actual sale a la izquierda, la nueva entra desde la derecha */
+::view-transition-old(root) { animation-name: pt-out-left; }
+::view-transition-new(root) { animation-name: pt-in-right; }
+/* hacia atrás: al revés */
+html[data-nav="backwards"]::view-transition-old(root) { animation-name: pt-out-right; }
+html[data-nav="backwards"]::view-transition-new(root) { animation-name: pt-in-left; }
+
+@keyframes pt-out-left  { to   { transform: translateX(-100%); } }
+@keyframes pt-in-right  { from { transform: translateX(100%); } }
+@keyframes pt-out-right { to   { transform: translateX(100%); } }
+@keyframes pt-in-left   { from { transform: translateX(-100%); } }
+
+/* ---------- About: cabecera con dos carruseles ----------
+   Ventana grande (izquierda, con el título en blanco) + texto y ventana chica
+   (derecha). Las fotos y los segundos se configuran en build.py
+   (ABOUT_CAROUSEL_1 / ABOUT_CAROUSEL_2). */
+.about-hero-section { padding-top: clamp(32px, 4.5vw, 64px); }
+.about-hero {
+  display: grid; gap: var(--gutter);
+  grid-template-columns: minmax(0, 1.28fr) minmax(0, 1fr);   /* proporción de la referencia */
+}
+.about-hero__main {
+  position: relative; align-self: stretch; min-width: 0;
+  aspect-ratio: 3 / 2;                                       /* alto de ambas columnas */
+  background: var(--line); overflow: hidden;
+}
+/* velo para que el título blanco se lea sobre cualquier foto */
+.about-hero__main::after {
+  content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none;
+  background: linear-gradient(90deg, rgba(0,0,0,.5), rgba(0,0,0,.18) 65%, rgba(0,0,0,.06));
+}
+.about-hero__title {
+  position: absolute; inset: 0; z-index: 4;
+  display: grid; align-content: center; justify-items: start;
+  padding: clamp(20px, 3.2vw, 48px);
+  color: #fff;
+  font-size: clamp(1.75rem, 3.4vw, 3.25rem);                 /* tamaño del título */
+  font-variation-settings: "wdth" 112, "wght" 600;
+  line-height: .95; letter-spacing: -.035em;
+}
+.about-hero__side { display: flex; flex-direction: column; gap: var(--gutter); min-width: 0; }
+.about-hero__text { font-size: var(--fs-md); line-height: 1.45; max-width: 46ch; }
+.about-hero__media { position: relative; flex: 1 1 auto; min-height: 12rem; background: var(--line); overflow: hidden; }
+
+.carousel { position: absolute; inset: 0; overflow: hidden; background: var(--line); }
+.carousel__slide {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; opacity: 0;
+  transition: opacity var(--fade, 1.2s) ease;                 /* fundido entre fotos */
+}
+.carousel__slide.is-active { opacity: 1; }
+
+@media (max-width: 899px) {
+  .about-hero { grid-template-columns: 1fr; }
+  .about-hero__main { aspect-ratio: 4 / 3; }
+  .about-hero__media { flex: none; min-height: 0; aspect-ratio: 16 / 9; }
 }
