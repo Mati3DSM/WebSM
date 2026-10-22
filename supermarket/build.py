@@ -337,10 +337,9 @@ ABOUT_CAROUSEL_1 = {
     "seconds": 8,      # cada cuántos segundos cambia de foto
     "fade": 1.2,       # duración del fundido entre una foto y la siguiente (segundos)
     "images": [
-        "assets/images/studio.jpg",
+        "assets/images/studio-cuadro-negro.jpg",
         "assets/images/studio-gato.jpg",
-        "assets/images/oficina03.jpg",
-        "assets/images/hamza-shaikh-uXtvnZl_FWM-unsplash.webp",
+        "assets/images/studio3.jpg",
     ],
 }
 
@@ -348,10 +347,9 @@ ABOUT_CAROUSEL_2 = {
     "seconds": 12,
     "fade": 1.2,
     "images": [
-        "assets/images/studio-gato.jpg",
-        "assets/images/kobu-agency-MBtcLadqc6c-unsplash.webp",
-        "assets/images/philipp-mandler-CiNHG2xuVlQ-unsplash.webp",
-        "assets/images/annie-spratt-hCb3lIB8L8E-unsplash.webp",
+        "assets/images/gato.png",
+        "assets/images/studio-space-commited.jpg",
+        "assets/images/cuaderno-closeup.jpg",
     ],
 }
 
