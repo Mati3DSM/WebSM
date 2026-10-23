@@ -334,7 +334,7 @@ works_body = f"""<section class="pagehead wrap">
 #  Después de editar, volvé a correr:  python3 build.py
 # ---------------------------------------------------------------------
 ABOUT_CAROUSEL_1 = {
-    "seconds": 8,      # cada cuántos segundos cambia de foto
+    "seconds": 5,      # cada cuántos segundos cambia de foto
     "fade": 1.2,       # duración del fundido entre una foto y la siguiente (segundos)
     "images": [
         "assets/images/studio-cuadro-negro.jpg",
@@ -344,7 +344,7 @@ ABOUT_CAROUSEL_1 = {
 }
 
 ABOUT_CAROUSEL_2 = {
-    "seconds": 12,
+    "seconds": 8,
     "fade": 1.2,
     "images": [
         "assets/images/gato.png",
