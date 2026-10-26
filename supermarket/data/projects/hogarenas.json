@@ -4,12 +4,12 @@
   "segment": "",
   "services": "Social media strategy, art direction, design, content production",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
-  "thumb": "assets/images/Works/Hogarenas/HogarenasThumb.jpg",
-  "hero": "assets/images/Works/Hogarenas/HogarenasBanner.jpeg",
+  "thumb": "assets/images/Works/Hogarenas/HogarenasThumb.webp",
+  "hero": "assets/images/Works/Hogarenas/HogarenasBanner.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/Hogarenas/HogarenasLogo.jpeg"
+      "assets/images/Works/Hogarenas/HogarenasLogo.webp"
     ],
     [
       "quote",
@@ -17,22 +17,22 @@
     ],
     [
       "full",
-      "assets/images/Works/Hogarenas/HogarenasColectivo.jpeg"
+      "assets/images/Works/Hogarenas/HogarenasColectivo.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Hogarenas/HogarenasColectivoParada.jpeg",
-        "assets/images/Works/Hogarenas/HogarenasKV.jpeg"
+        "assets/images/Works/Hogarenas/HogarenasColectivoParada.webp",
+        "assets/images/Works/Hogarenas/HogarenasKV.webp"
       ]
     ],
     [
       "bleed",
-      "assets/images/Works/Hogarenas/HogarenasCarteleria.jpeg"
+      "assets/images/Works/Hogarenas/HogarenasCarteleria.webp"
     ],
     [
       "full",
-      "assets/images/Works/Hogarenas/HogarenasBannerKV2.jpeg"
+      "assets/images/Works/Hogarenas/HogarenasBannerKV2.webp"
     ]
   ],
   "credits": [

@@ -4,12 +4,12 @@
   "segment": "",
   "services": "Social media strategy, art direction, design, content production",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
-  "thumb": "assets/images/Works/Prestix/PrestixLogo.png",
-  "hero": "assets/images/Works/Prestix/PrestixBanner.jpeg",
+  "thumb": "assets/images/Works/Prestix/PrestixLogo.webp",
+  "hero": "assets/images/Works/Prestix/PrestixBanner.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/Prestix/PrestixLogo.png"
+      "assets/images/Works/Prestix/PrestixLogo.webp"
     ],
     [
       "quote",
@@ -17,42 +17,42 @@
     ],
     [
       "full",
-      "assets/images/Works/Prestix/PrestixLogoColor.png"
+      "assets/images/Works/Prestix/PrestixLogoColor.webp"
     ],
     [
       "bleed",
-      "assets/images/Works/Prestix/PrestixIconography.jpeg"
+      "assets/images/Works/Prestix/PrestixIconography.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Prestix/PrestixIconography2.jpeg",
-        "assets/images/Works/Prestix/PrestixKV.png"
+        "assets/images/Works/Prestix/PrestixIconography2.webp",
+        "assets/images/Works/Prestix/PrestixKV.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Prestix/PrestixMockupCartelVertical.jpeg"
+      "assets/images/Works/Prestix/PrestixMockupCartelVertical.webp"
     ],
     [
       "full",
-      "assets/images/Works/Prestix/PrestixBannerCartel.jpeg"
+      "assets/images/Works/Prestix/PrestixBannerCartel.webp"
     ],
     [
       "full",
-      "assets/images/Works/Prestix/PrestixMockupCartelVertical2.jpeg"
+      "assets/images/Works/Prestix/PrestixMockupCartelVertical2.webp"
     ],
     [
       "full",
-      "assets/images/Works/Prestix/PrestixBannerCartelLargo.jpeg"
+      "assets/images/Works/Prestix/PrestixBannerCartelLargo.webp"
     ],
     [
       "full",
-      "assets/images/Works/Prestix/PrestixMockupPhone.png"
+      "assets/images/Works/Prestix/PrestixMockupPhone.webp"
     ],
     [
       "full",
-      "assets/images/Works/Prestix/PrestixMockupSocialMedia.png"
+      "assets/images/Works/Prestix/PrestixMockupSocialMedia.webp"
     ]
   ],
   "credits": [

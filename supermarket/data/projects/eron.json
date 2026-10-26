@@ -4,8 +4,8 @@
   "segment": "",
   "services": "Creativity, Naming, Design, Branding",
   "intro": "Eron is a company committed to excellence, with the vision of becoming the undisputed leader in the provision of specialized services in both the financial sector and the technology industry.\n\nWe are proud to have collaborated in the creation of the D24 brand, an initiative that emerged with the clear mission of positioning itself as the leading provider of expert services in the financial and technological fields.\n\nWith a strategic approach and a deep knowledge of the market, we have worked hard on the conceptualization and development of D24's identity. This new brand reflects our shared commitment to excellence and innovation, and we are confident that it will set a milestone in the business landscape, offering cutting-edge solutions and exceptional quality service in both sectors.",
-  "thumb": "assets/images/Works/Eron/eron-hero.jpg",
-  "hero": "assets/images/Works/Eron/eron-hero.jpg",
+  "thumb": "assets/images/Works/Eron/eron-hero.webp",
+  "hero": "assets/images/Works/Eron/eron-hero.webp",
   "media": [
     [
       "quote",
@@ -13,34 +13,34 @@
     ],
     [
       "full",
-      "assets/images/Works/Eron/eron-01.jpg"
+      "assets/images/Works/Eron/eron-01.webp"
     ],
     [
       "full",
-      "assets/images/Works/Eron/eron-02.jpg"
+      "assets/images/Works/Eron/eron-02.webp"
     ],
     [
       "full",
-      "assets/images/Works/Eron/eron-03.jpg"
+      "assets/images/Works/Eron/eron-03.webp"
     ],
     [
       "full",
-      "assets/images/Works/Eron/eron-04.jpg"
+      "assets/images/Works/Eron/eron-04.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Eron/eron-05.jpg",
-        "assets/images/Works/Eron/eron-06.jpg"
+        "assets/images/Works/Eron/eron-05.webp",
+        "assets/images/Works/Eron/eron-06.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Eron/eron-07.jpg"
+      "assets/images/Works/Eron/eron-07.webp"
     ],
     [
       "full",
-      "assets/images/Works/Eron/eron-08.jpg"
+      "assets/images/Works/Eron/eron-08.webp"
     ]
   ],
   "credits": [

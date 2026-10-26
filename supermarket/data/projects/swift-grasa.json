@@ -4,12 +4,12 @@
   "segment": "",
   "services": "Social media strategy, art direction, design, content production",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
-  "thumb": "assets/images/Works/Swift-Grasa/SwiftGrasaBanner.jpeg",
-  "hero": "assets/images/Works/Swift-Grasa/SwiftGrasaBanner.jpeg",
+  "thumb": "assets/images/Works/Swift-Grasa/SwiftGrasaBanner.webp",
+  "hero": "assets/images/Works/Swift-Grasa/SwiftGrasaBanner.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/Swift-Grasa/SwiftGrasaMockup.jpeg"
+      "assets/images/Works/Swift-Grasa/SwiftGrasaMockup.webp"
     ],
     [
       "quote",
@@ -17,18 +17,18 @@
     ],
     [
       "full",
-      "assets/images/Works/Swift-Grasa/SwiftGrasaMockupSupermercado.jpeg"
+      "assets/images/Works/Swift-Grasa/SwiftGrasaMockupSupermercado.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Swift-Grasa/SwiftGrasaMockupDelantal.jpeg",
-        "assets/images/Works/Swift-Grasa/SwiftGrasaMockupFacturas.jpeg"
+        "assets/images/Works/Swift-Grasa/SwiftGrasaMockupDelantal.webp",
+        "assets/images/Works/Swift-Grasa/SwiftGrasaMockupFacturas.webp"
       ]
     ],
     [
       "bleed",
-      "assets/images/Works/Swift-Grasa/SwiftGrasaBanner.jpeg"
+      "assets/images/Works/Swift-Grasa/SwiftGrasaBanner.webp"
     ]
   ],
   "credits": [

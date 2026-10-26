@@ -4,8 +4,8 @@
   "segment": "",
   "services": "Advertising, Creativity, Design, POP",
   "intro": "We created a campaign to introduce the new spicy versions of SWIFT spreads, bringing a fresh, fun, and eye-catching spin to the original product. The focus was on communicating innovation through a playful tone, inviting consumers to discover the spice in a relaxed and engaging way. With a vibrant and dynamic aesthetic, we aimed for the campaign to feel modern, attractive, and easily recognizable across any format.",
-  "thumb": "assets/images/Works/Swift/swift-picantes-portada.png",
-  "hero": "assets/images/Works/Swift/swift-picantes-portada.png",
+  "thumb": "assets/images/Works/Swift/swift-picantes-portada.webp",
+  "hero": "assets/images/Works/Swift/swift-picantes-portada.webp",
   "media": [
     [
       "quote",
@@ -14,39 +14,39 @@
     [
       "pair",
       [
-        "assets/images/Works/Swift/swift-picantes-Artboard1.png",
-        "assets/images/Works/Swift/swift-picantes-Artboard2.png"
+        "assets/images/Works/Swift/swift-picantes-Artboard1.webp",
+        "assets/images/Works/Swift/swift-picantes-Artboard2.webp"
       ]
     ],
     [
       "bleed",
-      "assets/images/Works/Swift/swift-GIFUntables.gif"
+      "assets/images/Works/Swift/swift-GIFUntables.webp"
     ],
     [
       "sheet",
-      "assets/images/Works/Swift/swift-picantes-Artboard3.png"
+      "assets/images/Works/Swift/swift-picantes-Artboard3.webp"
     ],
     [
       "sheet",
-      "assets/images/Works/Swift/swift-picantes-Artboard4.png"
+      "assets/images/Works/Swift/swift-picantes-Artboard4.webp"
     ],
     [
       "sheet",
-      "assets/images/Works/Swift/swift-picantes-words.gif"
+      "assets/images/Works/Swift/swift-picantes-words.webp"
     ],
     [
       "full",
-      "assets/images/Works/Swift/swift-picantes-billboard.png"
+      "assets/images/Works/Swift/swift-picantes-billboard.webp"
     ],
     [
       "bleed",
-      "assets/images/Works/Swift/swift-GIFSabrosos.gif"
+      "assets/images/Works/Swift/swift-GIFSabrosos.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Swift/swift-picantes-Artboard8.png",
-        "assets/images/Works/Swift/swift-picantes-Artboard9.png"
+        "assets/images/Works/Swift/swift-picantes-Artboard8.webp",
+        "assets/images/Works/Swift/swift-picantes-Artboard9.webp"
       ]
     ],
     [

@@ -4,12 +4,12 @@
   "segment": "",
   "services": "Social media strategy, art direction, design, content production",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
-  "thumb": "assets/images/Works/Cutex-Pro/CutexProBanner.jpeg",
-  "hero": "assets/images/Works/Cutex-Pro/CutexProBanner.jpeg",
+  "thumb": "assets/images/Works/Cutex-Pro/CutexProBanner.webp",
+  "hero": "assets/images/Works/Cutex-Pro/CutexProBanner.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/Cutex-Pro/CutexProGrid.jpeg"
+      "assets/images/Works/Cutex-Pro/CutexProGrid.webp"
     ],
     [
       "quote",
@@ -17,56 +17,56 @@
     ],
     [
       "bleed",
-      "assets/images/Works/Cutex-Pro/CutexProCartel.jpeg"
+      "assets/images/Works/Cutex-Pro/CutexProCartel.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Cutex-Pro/CutexProA4.jpeg",
-        "assets/images/Works/Cutex-Pro/CutexProRevista2.jpeg"
+        "assets/images/Works/Cutex-Pro/CutexProA4.webp",
+        "assets/images/Works/Cutex-Pro/CutexProRevista2.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Cutex-Pro/CutexProStand.jpeg"
+      "assets/images/Works/Cutex-Pro/CutexProStand.webp"
     ],
     [
       "full",
-      "assets/images/Works/Cutex-Pro/CutexProMockupsVarios.jpeg"
+      "assets/images/Works/Cutex-Pro/CutexProMockupsVarios.webp"
     ],
     [
       "bleed",
-      "assets/images/Works/Cutex-Pro/CutexProRevista.jpeg"
+      "assets/images/Works/Cutex-Pro/CutexProRevista.webp"
     ],
     [
       "full",
-      "assets/images/Works/Cutex-Pro/CutexProMockupsVarios2.jpeg"
+      "assets/images/Works/Cutex-Pro/CutexProMockupsVarios2.webp"
     ],
     [
       "full",
-      "assets/images/Works/Cutex-Pro/CutexProCatalogo.jpeg"
+      "assets/images/Works/Cutex-Pro/CutexProCatalogo.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Cutex-Pro/CutexProCartelSalientes.jpeg",
-        "assets/images/Works/Cutex-Pro/CutexProRevista3.jpeg"
+        "assets/images/Works/Cutex-Pro/CutexProCartelSalientes.webp",
+        "assets/images/Works/Cutex-Pro/CutexProRevista3.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Cutex-Pro/CutexProExibidores.jpeg"
+      "assets/images/Works/Cutex-Pro/CutexProExibidores.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Cutex-Pro/CutexProCarteles1.png",
-        "assets/images/Works/Cutex-Pro/CutexProCarteles2.png"
+        "assets/images/Works/Cutex-Pro/CutexProCarteles1.webp",
+        "assets/images/Works/Cutex-Pro/CutexProCarteles2.webp"
       ]
     ],
     [
       "bleed",
-      "assets/images/Works/Cutex-Pro/CutexProTablet.jpeg"
+      "assets/images/Works/Cutex-Pro/CutexProTablet.webp"
     ]
   ],
   "credits": [

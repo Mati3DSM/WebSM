@@ -4,12 +4,12 @@
   "segment": "",
   "services": "Social media strategy, art direction, design, content production",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
-  "thumb": "assets/images/Works/Levite-Limonada/LeviteLimonadaKV.png",
-  "hero": "assets/images/Works/Levite-Limonada/LeviteLimonadaBanner.jpeg",
+  "thumb": "assets/images/Works/Levite-Limonada/LeviteLimonadaKV.webp",
+  "hero": "assets/images/Works/Levite-Limonada/LeviteLimonadaBanner.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/Levite-Limonada/LeviteLimonadaKV.png"
+      "assets/images/Works/Levite-Limonada/LeviteLimonadaKV.webp"
     ],
     [
       "quote",
@@ -17,30 +17,30 @@
     ],
     [
       "full",
-      "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartel.jpeg"
+      "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartel.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartelPlaya.jpeg",
-        "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartelPlaya2.jpeg"
+        "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartelPlaya.webp",
+        "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartelPlaya2.webp"
       ]
     ],
     [
       "bleed",
-      "assets/images/Works/Levite-Limonada/LeviteLimonadaYoga.jpeg"
+      "assets/images/Works/Levite-Limonada/LeviteLimonadaYoga.webp"
     ],
     [
       "full",
-      "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartel2.jpeg"
+      "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartel2.webp"
     ],
     [
       "full",
-      "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartel3.jpeg"
+      "assets/images/Works/Levite-Limonada/LeviteLimonadaMockupCartel3.webp"
     ],
     [
       "bleed",
-      "assets/images/Works/Levite-Limonada/LeviteLimonadaKV2.jpeg"
+      "assets/images/Works/Levite-Limonada/LeviteLimonadaKV2.webp"
     ]
   ],
   "credits": [

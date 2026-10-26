@@ -4,12 +4,12 @@
   "segment": "",
   "services": "Social media strategy, art direction, design, content production",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
-  "thumb": "assets/images/Works/Clave/ClaveBanner.jpeg",
-  "hero": "assets/images/Works/Clave/ClaveBanner.jpeg",
+  "thumb": "assets/images/Works/Clave/ClaveBanner.webp",
+  "hero": "assets/images/Works/Clave/ClaveBanner.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/Clave/ClaveKV.jpeg"
+      "assets/images/Works/Clave/ClaveKV.webp"
     ],
     [
       "quote",
@@ -17,38 +17,38 @@
     ],
     [
       "bleed",
-      "assets/images/Works/Clave/ClavePhone.jpeg"
+      "assets/images/Works/Clave/ClavePhone.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Clave/ClaveMockupCartel.jpeg",
-        "assets/images/Works/Clave/ClaveSocialM.jpeg"
+        "assets/images/Works/Clave/ClaveMockupCartel.webp",
+        "assets/images/Works/Clave/ClaveSocialM.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Clave/ClavePhoneSocialM.jpeg"
+      "assets/images/Works/Clave/ClavePhoneSocialM.webp"
     ],
     [
       "full",
-      "assets/images/Works/Clave/ClaveLaptopSocialM.jpeg"
+      "assets/images/Works/Clave/ClaveLaptopSocialM.webp"
     ],
     [
       "full",
-      "assets/images/Works/Clave/ClaveBleed.jpeg"
+      "assets/images/Works/Clave/ClaveBleed.webp"
     ],
     [
       "full",
-      "assets/images/Works/Clave/ClaveMockupCartel2.jpeg"
+      "assets/images/Works/Clave/ClaveMockupCartel2.webp"
     ],
     [
       "full",
-      "assets/images/Works/Clave/ClaveMockupVerticales.jpeg"
+      "assets/images/Works/Clave/ClaveMockupVerticales.webp"
     ],
     [
       "full",
-      "assets/images/Works/Clave/ClaveMockupColectivo.jpeg"
+      "assets/images/Works/Clave/ClaveMockupColectivo.webp"
     ]
   ],
   "credits": [

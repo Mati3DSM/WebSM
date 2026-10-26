@@ -4,8 +4,8 @@
   "segment": "",
   "services": "Campaign, Strategy, Design, Creativity",
   "intro": "Stanley is synonymous with robustness and durability in the world of products. This reputation is reflected in our 'More' campaign, which communicates the distinctive characteristics of our products in a strong and enduring way.\n\nOur main challenge was to convey the qualities of each product in an elegant and sophisticated way. Using metaphors and powerful visual rhetoric, we create a play of meanings that generate strong and memorable concepts in the minds of our clients.\n\nWe implemented the campaign in a comprehensive manner, both offline and online. From physical points of sale to digital channels and audiovisual media, we made sure that the 'More' message reached every corner. This 360 strategy ensured that the campaign had a full and lasting impact on our audience.",
-  "thumb": "assets/images/Works/Stanley/stanley-hero.jpg",
-  "hero": "assets/images/Works/Stanley/stanley-hero.jpg",
+  "thumb": "assets/images/Works/Stanley/stanley-hero.webp",
+  "hero": "assets/images/Works/Stanley/stanley-hero.webp",
   "media": [
     [
       "quote",
@@ -13,38 +13,38 @@
     ],
     [
       "full",
-      "assets/images/Works/Stanley/stanley-01.jpg"
+      "assets/images/Works/Stanley/stanley-01.webp"
     ],
     [
       "full",
-      "assets/images/Works/Stanley/stanley-02.jpg"
+      "assets/images/Works/Stanley/stanley-02.webp"
     ],
     [
       "full",
-      "assets/images/Works/Stanley/stanley-03.jpg"
+      "assets/images/Works/Stanley/stanley-03.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Stanley/stanley-04.jpg",
-        "assets/images/Works/Stanley/stanley-05.jpg"
+        "assets/images/Works/Stanley/stanley-04.webp",
+        "assets/images/Works/Stanley/stanley-05.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Stanley/stanley-06.jpg"
+      "assets/images/Works/Stanley/stanley-06.webp"
     ],
     [
       "full",
-      "assets/images/Works/Stanley/stanley-07.jpg"
+      "assets/images/Works/Stanley/stanley-07.webp"
     ],
     [
       "full",
-      "assets/images/Works/Stanley/stanley-08.jpg"
+      "assets/images/Works/Stanley/stanley-08.webp"
     ],
     [
       "full",
-      "assets/images/Works/Stanley/stanley-09.jpg"
+      "assets/images/Works/Stanley/stanley-09.webp"
     ]
   ],
   "credits": [

@@ -4,8 +4,8 @@
   "segment": "",
   "services": "",
   "intro": "",
-  "thumb": "assets/images/Works/Sodastream/sodastream-hero.jpg",
-  "hero": "assets/images/Works/Sodastream/sodastream-hero.jpg",
+  "thumb": "assets/images/Works/Sodastream/sodastream-hero.webp",
+  "hero": "assets/images/Works/Sodastream/sodastream-hero.webp",
   "media": [
     [
       "quote",
@@ -13,34 +13,34 @@
     ],
     [
       "full",
-      "assets/images/Works/Sodastream/sodastream-01.png"
+      "assets/images/Works/Sodastream/sodastream-01.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Sodastream/sodastream-02.png",
-        "assets/images/Works/Sodastream/sodastream-03.jpg"
+        "assets/images/Works/Sodastream/sodastream-02.webp",
+        "assets/images/Works/Sodastream/sodastream-03.webp"
       ]
     ],
     [
       "pair",
       [
-        "assets/images/Works/Sodastream/sodastream-04.jpg",
-        "assets/images/Works/Sodastream/sodastream-05.jpg"
+        "assets/images/Works/Sodastream/sodastream-04.webp",
+        "assets/images/Works/Sodastream/sodastream-05.webp"
       ]
     ],
     [
       "pair",
       [
-        "assets/images/Works/Sodastream/sodastream-06.jpg",
-        "assets/images/Works/Sodastream/sodastream-07.jpg"
+        "assets/images/Works/Sodastream/sodastream-06.webp",
+        "assets/images/Works/Sodastream/sodastream-07.webp"
       ]
     ],
     [
       "pair",
       [
-        "assets/images/Works/Sodastream/sodastream-08.jpg",
-        "assets/images/Works/Sodastream/sodastream-09.png"
+        "assets/images/Works/Sodastream/sodastream-08.webp",
+        "assets/images/Works/Sodastream/sodastream-09.webp"
       ]
     ]
   ],

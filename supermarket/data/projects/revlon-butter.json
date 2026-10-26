@@ -4,8 +4,8 @@
   "segment": "",
   "services": "",
   "intro": "",
-  "thumb": "assets/images/Works/Revlon/revlon-colorburst-hero.jpg",
-  "hero": "assets/images/Works/Revlon/revlon-colorburst-hero.jpg",
+  "thumb": "assets/images/Works/Revlon/revlon-colorburst-hero.webp",
+  "hero": "assets/images/Works/Revlon/revlon-colorburst-hero.webp",
   "media": [
     [
       "quote",
@@ -13,39 +13,39 @@
     ],
     [
       "full",
-      "assets/images/Works/Revlon/revlon-colorburst-01.jpg"
+      "assets/images/Works/Revlon/revlon-colorburst-01.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-colorburst-02.jpg",
-        "assets/images/Works/Revlon/revlon-colorburst-03.jpg"
+        "assets/images/Works/Revlon/revlon-colorburst-02.webp",
+        "assets/images/Works/Revlon/revlon-colorburst-03.webp"
       ]
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-colorburst-04.jpg",
-        "assets/images/Works/Revlon/revlon-colorburst-05.jpg"
+        "assets/images/Works/Revlon/revlon-colorburst-04.webp",
+        "assets/images/Works/Revlon/revlon-colorburst-05.webp"
       ]
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-colorburst-06.jpg",
-        "assets/images/Works/Revlon/revlon-colorburst-07.jpg"
+        "assets/images/Works/Revlon/revlon-colorburst-06.webp",
+        "assets/images/Works/Revlon/revlon-colorburst-07.webp"
       ]
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-colorburst-08.jpg",
-        "assets/images/Works/Revlon/revlon-colorburst-09.jpg"
+        "assets/images/Works/Revlon/revlon-colorburst-08.webp",
+        "assets/images/Works/Revlon/revlon-colorburst-09.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Revlon/revlon-colorburst-10.jpg"
+      "assets/images/Works/Revlon/revlon-colorburst-10.webp"
     ]
   ],
   "credits": [

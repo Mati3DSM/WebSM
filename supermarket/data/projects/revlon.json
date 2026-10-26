@@ -4,8 +4,8 @@
   "segment": "",
   "services": "",
   "intro": "",
-  "thumb": "assets/images/Works/Revlon/revlon-campaigns-hero.jpg",
-  "hero": "assets/images/Works/Revlon/revlon-campaigns-hero.jpg",
+  "thumb": "assets/images/Works/Revlon/revlon-campaigns-hero.webp",
+  "hero": "assets/images/Works/Revlon/revlon-campaigns-hero.webp",
   "media": [
     [
       "quote",
@@ -13,54 +13,54 @@
     ],
     [
       "full",
-      "assets/images/Works/Revlon/revlon-campaigns-01.jpg"
+      "assets/images/Works/Revlon/revlon-campaigns-01.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-campaigns-02.jpg",
-        "assets/images/Works/Revlon/revlon-campaigns-03.jpg"
+        "assets/images/Works/Revlon/revlon-campaigns-02.webp",
+        "assets/images/Works/Revlon/revlon-campaigns-03.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Revlon/revlon-campaigns-04.jpg"
+      "assets/images/Works/Revlon/revlon-campaigns-04.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-campaigns-05.jpg",
-        "assets/images/Works/Revlon/revlon-campaigns-06.jpg"
+        "assets/images/Works/Revlon/revlon-campaigns-05.webp",
+        "assets/images/Works/Revlon/revlon-campaigns-06.webp"
       ]
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-campaigns-07.jpg",
-        "assets/images/Works/Revlon/revlon-campaigns-08.jpg"
+        "assets/images/Works/Revlon/revlon-campaigns-07.webp",
+        "assets/images/Works/Revlon/revlon-campaigns-08.webp"
       ]
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-campaigns-09.jpg",
-        "assets/images/Works/Revlon/revlon-campaigns-10.jpg"
-      ]
-    ],
-    [
-      "full",
-      "assets/images/Works/Revlon/revlon-campaigns-11.jpg"
-    ],
-    [
-      "pair",
-      [
-        "assets/images/Works/Revlon/revlon-campaigns-12.jpg",
-        "assets/images/Works/Revlon/revlon-campaigns-13.jpg"
+        "assets/images/Works/Revlon/revlon-campaigns-09.webp",
+        "assets/images/Works/Revlon/revlon-campaigns-10.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Revlon/revlon-campaigns-14.jpg"
+      "assets/images/Works/Revlon/revlon-campaigns-11.webp"
+    ],
+    [
+      "pair",
+      [
+        "assets/images/Works/Revlon/revlon-campaigns-12.webp",
+        "assets/images/Works/Revlon/revlon-campaigns-13.webp"
+      ]
+    ],
+    [
+      "full",
+      "assets/images/Works/Revlon/revlon-campaigns-14.webp"
     ]
   ],
   "credits": [

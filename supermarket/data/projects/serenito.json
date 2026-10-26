@@ -4,34 +4,34 @@
   "segment": "",
   "services": "Branding, Packaging",
   "intro": "",
-  "thumb": "assets/images/Works/Serenito/serenito-hero.jpg",
-  "hero": "assets/images/Works/Serenito/serenito-hero.jpg",
+  "thumb": "assets/images/Works/Serenito/serenito-hero.webp",
+  "hero": "assets/images/Works/Serenito/serenito-hero.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/Serenito/serenito-01.jpg"
+      "assets/images/Works/Serenito/serenito-01.webp"
     ],
     [
       "full",
-      "assets/images/Works/Serenito/serenito-02.jpg"
+      "assets/images/Works/Serenito/serenito-02.webp"
     ],
     [
       "full",
-      "assets/images/Works/Serenito/serenito-03.jpg"
+      "assets/images/Works/Serenito/serenito-03.webp"
     ],
     [
       "full",
-      "assets/images/Works/Serenito/serenito-04.jpg"
+      "assets/images/Works/Serenito/serenito-04.webp"
     ],
     [
       "full",
-      "assets/images/Works/Serenito/serenito-05.jpg"
+      "assets/images/Works/Serenito/serenito-05.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Serenito/serenito-06.jpg",
-        "assets/images/Works/Serenito/serenito-07.jpg"
+        "assets/images/Works/Serenito/serenito-06.webp",
+        "assets/images/Works/Serenito/serenito-07.webp"
       ]
     ]
   ],

@@ -4,12 +4,12 @@
   "segment": "",
   "services": "Social media strategy, art direction, design, content production",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
-  "thumb": "assets/images/Works/Wing/WingBanner.jpeg",
-  "hero": "assets/images/Works/Wing/WingVentana.jpeg",
+  "thumb": "assets/images/Works/Wing/WingBanner.webp",
+  "hero": "assets/images/Works/Wing/WingVentana.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/Wing/WingBanner.jpeg"
+      "assets/images/Works/Wing/WingBanner.webp"
     ],
     [
       "quote",
@@ -17,65 +17,65 @@
     ],
     [
       "full",
-      "assets/images/Works/Wing/WingLogo.jpeg"
+      "assets/images/Works/Wing/WingLogo.webp"
     ],
     [
       "bleed",
-      "assets/images/Works/Wing/WingMockupVertical.jpeg"
+      "assets/images/Works/Wing/WingMockupVertical.webp"
     ],
     [
       "bleed",
-      "assets/images/Works/Wing/WingGrid.jpeg"
+      "assets/images/Works/Wing/WingGrid.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Wing/WingMockupCartel.jpeg",
-        "assets/images/Works/Wing/WingMockupCamion.jpeg"
+        "assets/images/Works/Wing/WingMockupCartel.webp",
+        "assets/images/Works/Wing/WingMockupCamion.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Wing/WingArtesVarios.png"
+      "assets/images/Works/Wing/WingArtesVarios.webp"
     ],
     [
       "full",
-      "assets/images/Works/Wing/WingOficina.jpeg"
+      "assets/images/Works/Wing/WingOficina.webp"
     ],
     [
       "full",
-      "assets/images/Works/Wing/WingMockupPhone.jpeg"
+      "assets/images/Works/Wing/WingMockupPhone.webp"
     ],
     [
       "bleed",
-      "assets/images/Works/Wing/WingKVFoto2.jpg"
+      "assets/images/Works/Wing/WingKVFoto2.webp"
     ],
     [
       "full",
-      "assets/images/Works/Wing/WingMockupPhone.jpeg"
+      "assets/images/Works/Wing/WingMockupPhone.webp"
     ],
     [
       "full",
-      "assets/images/Works/Wing/WingComputer.jpeg"
+      "assets/images/Works/Wing/WingComputer.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Wing/WingKVFoto.jpg",
-        "assets/images/Works/Wing/WingMockupPhone2.jpeg"
+        "assets/images/Works/Wing/WingKVFoto.webp",
+        "assets/images/Works/Wing/WingMockupPhone2.webp"
       ]
     ],
     [
       "sheet",
-      "assets/images/Works/Wing/WingIconography.jpeg"
+      "assets/images/Works/Wing/WingIconography.webp"
     ],
     [
       "sheet",
-      "assets/images/Works/Wing/WingEmbajador.jpeg"
+      "assets/images/Works/Wing/WingEmbajador.webp"
     ],
     [
       "sheet",
-      "assets/images/Works/Wing/WingEmbajador2.jpeg"
+      "assets/images/Works/Wing/WingEmbajador2.webp"
     ]
   ],
   "credits": [

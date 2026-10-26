@@ -4,12 +4,12 @@
   "segment": "",
   "services": "Social media strategy, art direction, design, content production",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
-  "thumb": "assets/images/Works/Mr-Pops/MrPopsKV.jpeg",
-  "hero": "assets/images/Works/Mr-Pops/MrPopsBanner.jpeg",
+  "thumb": "assets/images/Works/Mr-Pops/MrPopsKV.webp",
+  "hero": "assets/images/Works/Mr-Pops/MrPopsBanner.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/Mr-Pops/MrPopsKV.jpeg"
+      "assets/images/Works/Mr-Pops/MrPopsKV.webp"
     ],
     [
       "quote",
@@ -17,30 +17,30 @@
     ],
     [
       "full",
-      "assets/images/Works/Mr-Pops/MrPopsKV2.jpeg"
+      "assets/images/Works/Mr-Pops/MrPopsKV2.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Mr-Pops/MrPopsKV3.jpeg",
-        "assets/images/Works/Mr-Pops/MrPopsKV4.jpeg"
+        "assets/images/Works/Mr-Pops/MrPopsKV3.webp",
+        "assets/images/Works/Mr-Pops/MrPopsKV4.webp"
       ]
     ],
     [
       "bleed",
-      "assets/images/Works/Mr-Pops/MrPopsMockupSupermercadoCartel.jpeg"
+      "assets/images/Works/Mr-Pops/MrPopsMockupSupermercadoCartel.webp"
     ],
     [
       "full",
-      "assets/images/Works/Mr-Pops/MrPopsKV5.jpeg"
+      "assets/images/Works/Mr-Pops/MrPopsKV5.webp"
     ],
     [
       "full",
-      "assets/images/Works/Mr-Pops/MrPopsMockupSupermercadoCaja.jpeg"
+      "assets/images/Works/Mr-Pops/MrPopsMockupSupermercadoCaja.webp"
     ],
     [
       "bleed",
-      "assets/images/Works/Mr-Pops/MrPopsMockupSupermercadoVentana.jpeg"
+      "assets/images/Works/Mr-Pops/MrPopsMockupSupermercadoVentana.webp"
     ]
   ],
   "credits": [

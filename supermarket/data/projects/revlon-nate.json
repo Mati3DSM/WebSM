@@ -4,8 +4,8 @@
   "segment": "",
   "services": "",
   "intro": "",
-  "thumb": "assets/images/Works/Revlon/revlon-nate-hero.jpg",
-  "hero": "assets/images/Works/Revlon/revlon-nate-hero.jpg",
+  "thumb": "assets/images/Works/Revlon/revlon-nate-hero.webp",
+  "hero": "assets/images/Works/Revlon/revlon-nate-hero.webp",
   "media": [
     [
       "quote",
@@ -13,29 +13,29 @@
     ],
     [
       "full",
-      "assets/images/Works/Revlon/revlon-nate-01.jpg"
+      "assets/images/Works/Revlon/revlon-nate-01.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-nate-02.jpg",
-        "assets/images/Works/Revlon/revlon-nate-03.jpg"
+        "assets/images/Works/Revlon/revlon-nate-02.webp",
+        "assets/images/Works/Revlon/revlon-nate-03.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Revlon/revlon-nate-04.jpg"
+      "assets/images/Works/Revlon/revlon-nate-04.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/Revlon/revlon-nate-05.jpg",
-        "assets/images/Works/Revlon/revlon-nate-06.jpg"
+        "assets/images/Works/Revlon/revlon-nate-05.webp",
+        "assets/images/Works/Revlon/revlon-nate-06.webp"
       ]
     ],
     [
       "full",
-      "assets/images/Works/Revlon/revlon-nate-07.jpg"
+      "assets/images/Works/Revlon/revlon-nate-07.webp"
     ]
   ],
   "credits": [

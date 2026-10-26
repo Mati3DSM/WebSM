@@ -4,12 +4,12 @@
   "segment": "",
   "services": "Social media strategy, art direction, design, content production",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  quis nostrud exercitation ullamco laboris nisi ut aliqui strategy to design and production of Instagram posts, Stories, and Reels, helping build an engaging and playful presence for the app across platforms. We developed tailored campaigns for key moments in the calendar — including Christmas, King's Day, and Carnival — each with its own graphic identity and tone, driving visibility, downloads, and fan engagement through festive, high-impact content.",
-  "thumb": "assets/images/Works/RobOrtiz/RobOrtizThumb.png",
-  "hero": "assets/images/Works/RobOrtiz/RobOrtizBanner.jpeg",
+  "thumb": "assets/images/Works/RobOrtiz/RobOrtizThumb.webp",
+  "hero": "assets/images/Works/RobOrtiz/RobOrtizBanner.webp",
   "media": [
     [
       "full",
-      "assets/images/Works/RobOrtiz/RobOrtizComputer.jpeg"
+      "assets/images/Works/RobOrtiz/RobOrtizComputer.webp"
     ],
     [
       "quote",
@@ -17,26 +17,26 @@
     ],
     [
       "full",
-      "assets/images/Works/RobOrtiz/RobOrtizEstudio.jpeg"
+      "assets/images/Works/RobOrtiz/RobOrtizEstudio.webp"
     ],
     [
       "pair",
       [
-        "assets/images/Works/RobOrtiz/RobOrtizPhone.jpeg",
-        "assets/images/Works/RobOrtiz/RobOrtizGrid.jpeg"
+        "assets/images/Works/RobOrtiz/RobOrtizPhone.webp",
+        "assets/images/Works/RobOrtiz/RobOrtizGrid.webp"
       ]
     ],
     [
       "bleed",
-      "assets/images/Works/RobOrtiz/RobOrtizMockupVarios.jpeg"
+      "assets/images/Works/RobOrtiz/RobOrtizMockupVarios.webp"
     ],
     [
       "full",
-      "assets/images/Works/RobOrtiz/RobOrtizNotebook.jpeg"
+      "assets/images/Works/RobOrtiz/RobOrtizNotebook.webp"
     ],
     [
       "bleed",
-      "assets/images/Works/RobOrtiz/RobOrtizVelas.jpeg"
+      "assets/images/Works/RobOrtiz/RobOrtizVelas.webp"
     ]
   ],
   "credits": [
