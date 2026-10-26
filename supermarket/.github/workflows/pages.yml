@@ -1,0 +1,52 @@
+# Guardar en el repo como: .github/workflows/pages.yml
+# Publica SOLO la carpeta supermarket/ como raíz del sitio (así el dominio
+# sirve wearesupermarket.com/ y no wearesupermarket.com/supermarket/).
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar carpeta publicada
+        run: |
+          mkdir _site
+          rsync -a \
+            --exclude='.DS_Store' \
+            --exclude='build.py' \
+            --exclude='optimize.py' \
+            --exclude='data' \
+            --exclude='README.md' \
+            --exclude='Cargar proyecto*' \
+            supermarket/ _site/
+          touch _site/.nojekyll
+
+      - name: Optimizar imágenes (WebP, máx. 2000 px)
+        run: python3 supermarket/optimize.py _site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v5
