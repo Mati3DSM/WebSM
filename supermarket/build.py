@@ -160,6 +160,8 @@ def page(title, current, body, description="", pre="", path="", image=None):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{full_title}</title>{desc}{social}
+  <link rel="icon" type="image/png" href="{pre}assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
@@ -485,7 +487,7 @@ contact_body = f"""<section class="pagehead wrap">
     <div>
       <p class="lede" style="margin-bottom:32px">Feel free to write us a message. We reply within one
       working day.</p>
-      <form class="form" id="contact-form" action="#" method="post" novalidate>
+       <form class="form" id="contact-form" action="https://formspree.io/f/xqppqgnq" method="post" novalidate>
         <div class="field">
           <label for="name">What's your name?</label>
           <input id="name" name="name" type="text" autocomplete="name" required>

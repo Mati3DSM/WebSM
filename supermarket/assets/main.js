@@ -91,31 +91,74 @@
 /* ---- Contact form ----
    Front-end states only. Point `action` at your endpoint
    (Formspree, Webflow, a serverless function) to go live.  */
+
+/* ---- Contact form ---- */
 (function () {
   var form = document.getElementById('contact-form');
   if (!form) return;
+
   var ok = document.querySelector('.form__msg--ok');
   var err = document.querySelector('.form__msg--err');
+  var button = form.querySelector('[type="submit"]');
 
-  form.addEventListener('submit', function (e) {
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
+
     ok.setAttribute('data-show', 'false');
     err.setAttribute('data-show', 'false');
 
     var name = form.elements.name.value.trim();
     var email = form.elements.email.value.trim();
     var message = form.elements.message.value.trim();
-    var valid = name && message && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+    var valid =
+      name &&
+      message &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
     if (!valid) {
+      err.textContent =
+        'Please enter your name, a valid email and your message.';
       err.setAttribute('data-show', 'true');
-      err.focus && err.focus();
+      err.focus();
       return;
     }
-    ok.setAttribute('data-show', 'true');
-    form.reset();
+
+    var originalText = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Sending...';
+
+    try {
+      var response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      ok.textContent = 'Thank you. Your message has been sent.';
+      ok.setAttribute('data-show', 'true');
+      form.reset();
+      ok.focus();
+
+    } catch (error) {
+      err.textContent =
+        'Something went wrong. Your message could not be sent. Please try again.';
+      err.setAttribute('data-show', 'true');
+      err.focus();
+
+    } finally {
+      button.disabled = false;
+      button.textContent = originalText;
+    }
   });
 })();
+
 
 /* ---- Works: grid / index view switch ---- */
 (function () {
